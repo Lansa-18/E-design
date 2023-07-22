@@ -4,8 +4,8 @@
 // MEDIA QUERY BREAKPOINTS!
 $breakpoints: (
   small: 40em,
-  medium: 65em,
-  large: 90em,
+  medium: 55em,
+  large: 65em,
 );
 
 @mixin mq($key){

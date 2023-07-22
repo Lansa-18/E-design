@@ -3,11 +3,21 @@ body {
 }
 body h2 {
   font-size: 1.5rem;
-  color: #fff;
+  color: #000;
 }
 @media (min-width: 40em) {
   body h2 {
     color: #f23234;
+  }
+}
+@media (min-width: 55em) {
+  body h2 {
+    color: blue;
+  }
+}
+@media (min-width: 65em) {
+  body h2 {
+    color: green;
   }
 }
 

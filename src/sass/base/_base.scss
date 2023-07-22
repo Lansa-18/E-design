@@ -5,10 +5,16 @@ body{
 
     h2{
         font-size: 1.5rem;
-        color: $white;
+        color: $black;
 
         @include mq(small){
             color: $red;
+        }
+        @include mq(medium){
+            color: $blue;
+        }
+        @include mq(large){
+            color: $green;
         }
     }
 }
