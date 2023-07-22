@@ -1,1 +1,1 @@
-{"version":3,"sources":["sass\\main.scss"],"names":[],"mappings":"AAEA;EACI,YAHE","file":"main.07544d9b.css","sourceRoot":"..\\src","sourcesContent":["$red: pink;\r\n\r\nbody{\r\n    background: $red;\r\n}"]}
+{"version":3,"sources":["sass\\main.scss","sass\\abstracts\\_variables.scss"],"names":[],"mappings":"AAEA;EACI,YCHE","file":"main.07544d9b.css","sourceRoot":"..\\src","sourcesContent":["@use 'abstracts/variables';\r\n\r\nbody{\r\n    background: variables.$red;\r\n}","$red: pink;"]}

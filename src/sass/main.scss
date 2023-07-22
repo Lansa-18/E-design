@@ -1,5 +1,5 @@
-$red: pink;
+@use 'abstracts/variables';
 
 body{
-    background: $red;
+    background: variables.$red;
 }
