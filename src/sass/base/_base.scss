@@ -1,7 +1,7 @@
 @use '../abstracts' as *;
 
 body{
-    background: rgba($red, .2);
+    background: mix($red, $blue);
 
     h2{
         font-size: 1.5rem;
