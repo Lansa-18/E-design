@@ -1,5 +1,5 @@
-@use '../abstracts';
+@use '../abstracts' as *;
 
 body{
-    background: abstracts.$red;
+    background: $red;
 }
