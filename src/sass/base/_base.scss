@@ -3,7 +3,7 @@
 body{
 
     h2{
-        font-size: 1.5rem;
+        font-size: $p-size;
         color: $sec-orange;
 
         @include mq(small){
@@ -13,7 +13,7 @@ body{
             color: $blue;
         }
         @include mq(large){
-            color: $green;
+            color: $dark-blue;
         }
     }
 }

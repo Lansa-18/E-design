@@ -1,5 +1,5 @@
 body h2 {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   color: hsl(25, 100%, 94%);
 }
 @media (min-width: 40em) {
@@ -14,7 +14,7 @@ body h2 {
 }
 @media (min-width: 65em) {
   body h2 {
-    color: green;
+    color: hsl(219, 9%, 45%);
   }
 }
 
