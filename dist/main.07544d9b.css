@@ -1,13 +1,10 @@
-body {
-  background: #feebeb;
-}
 body h2 {
   font-size: 1.5rem;
-  color: #000;
+  color: hsl(25, 100%, 94%);
 }
 @media (min-width: 40em) {
   body h2 {
-    color: #f23234;
+    color: hsl(26, 100%, 55%);
   }
 }
 @media (min-width: 55em) {
