@@ -9,7 +9,7 @@ body h2 {
 }
 @media (min-width: 55em) {
   body h2 {
-    color: blue;
+    color: hsl(220, 14%, 75%);
   }
 }
 @media (min-width: 65em) {
