@@ -1,9 +1,14 @@
 body {
-  background: #f23234;
+  background: #fff;
 }
 body h2 {
   font-size: 1.5rem;
   color: #fff;
+}
+@media (min-width: 40em) {
+  body h2 {
+    color: #f23234;
+  }
 }
 
 /*# sourceMappingURL=/main.07544d9b.css.map */

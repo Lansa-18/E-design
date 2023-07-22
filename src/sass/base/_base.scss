@@ -1,10 +1,14 @@
 @use '../abstracts' as *;
 
 body{
-    background: $red;
+    background: $white;
 
     h2{
         font-size: 1.5rem;
         color: $white;
+
+        @include mq(small){
+            color: $red;
+        }
     }
 }
