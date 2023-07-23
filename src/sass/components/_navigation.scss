@@ -8,6 +8,10 @@ header{
     border: 1px solid black;
     @include dflexcomp;
 
+    &-list{
+        @include dflexhalf;
+    }
+
     li{
         list-style: none;
     }

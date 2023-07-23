@@ -609,6 +609,10 @@ header {
   align-items: center;
   justify-content: space-between;
 }
+.nav-list {
+  display: flex;
+  align-items: center;
+}
 .nav li {
   list-style: none;
 }
