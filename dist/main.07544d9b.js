@@ -172,7 +172,7 @@ module.exports = reloadCSS;
 var reloadCSS = require('_css_loader');
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"C:\\Users\\Abdul Mapelujo\\Desktop\\Front End Mentor Projects\\E-Design\\src\\fonts\\linea-basic-10.eot":[["linea-basic-10.83017b1d.eot","fonts/linea-basic-10.eot"],"fonts/linea-basic-10.eot"],"C:\\Users\\Abdul Mapelujo\\Desktop\\Front End Mentor Projects\\E-Design\\src\\fonts\\linea-basic-10.woff":[["linea-basic-10.6344cccc.woff","fonts/linea-basic-10.woff"],"fonts/linea-basic-10.woff"],"C:\\Users\\Abdul Mapelujo\\Desktop\\Front End Mentor Projects\\E-Design\\src\\fonts\\linea-basic-10.ttf":[["linea-basic-10.6a0e80fa.ttf","fonts/linea-basic-10.ttf"],"fonts/linea-basic-10.ttf"],"C:\\Users\\Abdul Mapelujo\\Desktop\\Front End Mentor Projects\\E-Design\\src\\fonts\\linea-basic-10.svg":[["linea-basic-10.a05259b5.svg","fonts/linea-basic-10.svg"],"fonts/linea-basic-10.svg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
