@@ -3,9 +3,11 @@
 
 // MEDIA QUERY BREAKPOINTS!
 $breakpoints: (
-  small: 40em,
-  medium: 55em,
-  large: 65em,
+  phone: 35.999em,
+  land-phone: 47.999em,
+  tab-port: 61.999em,
+  tab-land: 74.999em,
+  big-desktop: 87.499em,
 );
 
 @mixin mq($key){
