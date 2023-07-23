@@ -598,9 +598,18 @@ html {
   content: "\e028";
 }
 
+header {
+  width: 90%;
+  margin: auto;
+}
+
 .nav {
   display: flex;
   align-items: center;
+}
+
+.nav li {
+  list-style: none;
 }
 
 /*# sourceMappingURL=/main.07544d9b.css.map */

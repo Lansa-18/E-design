@@ -17,3 +17,8 @@ $breakpoints: (
         @content;
     }
 }
+
+@mixin m-auto{
+  width: 90%;
+  margin: auto;
+}

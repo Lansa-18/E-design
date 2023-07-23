@@ -1,4 +1,14 @@
+@use '../abstracts' as *;
+
+header{
+    @include m-auto;
+}
+
 .nav{
     display: flex;
     align-items: center;
+}
+
+.nav li{
+    list-style: none;
 }
