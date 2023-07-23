@@ -615,6 +615,7 @@ header {
 }
 .nav li {
   list-style: none;
+  font-size: 1.3rem;
 }
 .nav li:not(:last-child) {
   margin-right: 2rem;
