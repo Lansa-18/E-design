@@ -598,4 +598,9 @@ html {
   content: "\e028";
 }
 
+.nav {
+  display: flex;
+  align-items: center;
+}
+
 /*# sourceMappingURL=/main.07544d9b.css.map */
