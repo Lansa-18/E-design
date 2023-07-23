@@ -604,10 +604,10 @@ header {
 }
 
 .nav {
-  border: 1px solid black;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 0.5rem 0;
 }
 .nav-list {
   display: flex;
@@ -631,13 +631,12 @@ header {
   flex-basis: 50%;
 }
 .nav__right {
-  border: 1px solid blue;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 .nav__right .img-avatar {
-  width: 35%;
+  width: 33%;
 }
 
 /*# sourceMappingURL=/main.07544d9b.css.map */
