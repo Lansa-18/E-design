@@ -628,12 +628,13 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-basis: 40%;
+  flex-basis: 50%;
 }
 .nav__right {
   border: 1px solid blue;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .nav__right .img-avatar {
   width: 35%;

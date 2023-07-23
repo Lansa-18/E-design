@@ -29,13 +29,13 @@ header{
     &__left{
         // border: 1px solid red;
         @include dflexcomp;
-        flex-basis: 40%;
+        flex-basis: 50%;
     }
 
     &__right{
         border: 1px solid blue;
-        display: flex;
-        align-items: center;
+        @include dflexcomp;
+
 
         .img-avatar{
             width: 35%;
