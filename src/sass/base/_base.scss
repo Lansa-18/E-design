@@ -1,19 +1,13 @@
 @use '../abstracts' as *;
 
-// body{
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-//     h2{
-//         font-size: $p-size;
-//         color: $sec-orange;
-
-//         @include mq(small){
-//             color: $pry-orange;
-//         }
-//         @include mq(medium){
-//             color: $blue;
-//         }
-//         @include mq(large){
-//             color: $dark-blue;
-//         }
-//     }
-// }
+html{
+    font-size: 62.5%;
+}
