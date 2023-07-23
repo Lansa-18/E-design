@@ -9,6 +9,21 @@
 html {
   font-size: 62.5%;
 }
+@media (min-width: 74.999em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media (min-width: 61.999em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media (min-width: 87.499em) {
+  html {
+    font-size: 75%;
+  }
+}
 
 @font-face {
   font-family: "linea-basic-10";
