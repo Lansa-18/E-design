@@ -614,6 +614,8 @@ header {
 }
 .nav__left {
   border: 1px solid red;
+  display: flex;
+  align-items: center;
 }
 .nav__right {
   border: 1px solid blue;

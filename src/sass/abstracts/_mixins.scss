@@ -28,3 +28,8 @@ $breakpoints: (
   align-items: center;
   justify-content: space-between;
 }
+
+@mixin dflexhalf{
+  display: flex;
+  align-items: center;
+}
