@@ -616,10 +616,18 @@ header {
 .nav li {
   list-style: none;
 }
+.nav li:not(:last-child) {
+  margin-right: 2rem;
+}
+.nav li a {
+  text-decoration: none;
+  color: hsl(219, 9%, 45%);
+}
 .nav__left {
-  border: 1px solid red;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  flex-basis: 40%;
 }
 .nav__right {
   border: 1px solid blue;

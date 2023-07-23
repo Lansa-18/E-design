@@ -14,11 +14,21 @@ header{
 
     li{
         list-style: none;
+
+        &:not(:last-child){
+            margin-right: 2rem;
+        }
+
+        a{
+            text-decoration: none;
+            color: $dark-blue;
+        }
     }
 
     &__left{
-        border: 1px solid red;
-        @include dflexhalf;
+        // border: 1px solid red;
+        @include dflexcomp;
+        flex-basis: 40%;
     }
 
     &__right{
