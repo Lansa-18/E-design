@@ -22,3 +22,9 @@ $breakpoints: (
   width: 90%;
   margin: auto;
 }
+
+@mixin dflexcomp{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

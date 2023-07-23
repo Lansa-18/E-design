@@ -606,10 +606,13 @@ header {
 .nav {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
-
 .nav li {
   list-style: none;
+}
+.nav__right .img-avatar {
+  width: 35%;
 }
 
 /*# sourceMappingURL=/main.07544d9b.css.map */

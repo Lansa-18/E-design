@@ -5,10 +5,16 @@ header{
 }
 
 .nav{
-    display: flex;
-    align-items: center;
-}
+    @include dflexcomp;
 
-.nav li{
-    list-style: none;
+    li{
+        list-style: none;
+    }
+
+    &__right{
+        
+        .img-avatar{
+            width: 35%;
+        }
+    }
 }
