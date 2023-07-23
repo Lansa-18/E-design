@@ -18,6 +18,10 @@ body h2 {
   }
 }
 
+html {
+  font-size: 62.5%;
+}
+
 @font-face {
   font-family: "linea-basic-10";
   src: url("/linea-basic-10.83017b1d.eot");
