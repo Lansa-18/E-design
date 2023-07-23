@@ -5,14 +5,22 @@ header{
 }
 
 .nav{
+    border: 1px solid black;
     @include dflexcomp;
 
     li{
         list-style: none;
     }
 
+    &__left{
+        border: 1px solid red;
+    }
+
     &__right{
-        
+        border: 1px solid blue;
+        display: flex;
+        align-items: center;
+
         .img-avatar{
             width: 35%;
         }

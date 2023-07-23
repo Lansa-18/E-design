@@ -604,12 +604,21 @@ header {
 }
 
 .nav {
+  border: 1px solid black;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 .nav li {
   list-style: none;
+}
+.nav__left {
+  border: 1px solid red;
+}
+.nav__right {
+  border: 1px solid blue;
+  display: flex;
+  align-items: center;
 }
 .nav__right .img-avatar {
   width: 35%;
