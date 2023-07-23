@@ -9,6 +9,11 @@
 html {
   font-size: 62.5%;
 }
+@media (max-width: 87.499em) {
+  html {
+    font-size: 75%;
+  }
+}
 @media (max-width: 74.999em) {
   html {
     font-size: 56.25%;
@@ -17,11 +22,6 @@ html {
 @media (max-width: 61.999em) {
   html {
     font-size: 50%;
-  }
-}
-@media (max-width: 87.499em) {
-  html {
-    font-size: 75%;
   }
 }
 
