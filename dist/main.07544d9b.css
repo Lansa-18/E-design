@@ -631,17 +631,16 @@ header {
   flex-basis: 50%;
 }
 .nav__right {
-  border: 1px solid blue;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-basis: 10%;
+  width: 7%;
 }
 .nav__right .img-cart {
-  width: 17%;
+  width: 20%;
 }
 .nav__right .img-avatar {
-  width: 30%;
+  width: 40%;
 }
 
 /*# sourceMappingURL=/main.07544d9b.css.map */

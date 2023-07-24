@@ -34,15 +34,14 @@ header {
   }
 
   &__right {
-    border: 1px solid blue;
     @include dflexcomp;
-    flex-basis: 10%;
+    width: 7%;
 
     .img-cart {
-      width: 17%;
+      width: 20%;
     }
     .img-avatar {
-      width: 30%;
+      width: 40%;
     }
   }
 }
