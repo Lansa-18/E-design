@@ -636,8 +636,11 @@ header {
   align-items: center;
   justify-content: space-between;
 }
+.nav__right .img-cart {
+  width: 17%;
+}
 .nav__right .img-avatar {
-  width: 33%;
+  width: 30%;
 }
 
 /*# sourceMappingURL=/main.07544d9b.css.map */

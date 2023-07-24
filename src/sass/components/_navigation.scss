@@ -37,8 +37,11 @@ header {
     border: 1px solid blue;
     @include dflexcomp;
 
+    .img-cart {
+      width: 17%;
+    }
     .img-avatar {
-      width: 33%;
+      width: 30%;
     }
   }
 }
