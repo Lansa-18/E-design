@@ -599,11 +599,12 @@ html {
 }
 
 header {
-  width: 80%;
+  width: 85%;
   margin: auto;
 }
 
 .nav {
+  border-bottom: 1px solid hsl(220, 14%, 75%);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -628,7 +629,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-basis: 52%;
+  flex-basis: 50%;
 }
 .nav__right {
   display: flex;
