@@ -631,6 +631,7 @@ header {
   flex-basis: 50%;
 }
 .nav__right {
+  border: 1px solid blue;
   display: flex;
   align-items: center;
   justify-content: space-between;

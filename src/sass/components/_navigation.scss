@@ -34,7 +34,7 @@ header {
   }
 
   &__right {
-    // border: 1px solid blue;
+    border: 1px solid blue;
     @include dflexcomp;
 
     .img-avatar {
