@@ -28,7 +28,6 @@ header {
   }
 
   &__left {
-    // border: 1px solid red;
     @include dflexcomp;
     flex-basis: 50%;
   }
