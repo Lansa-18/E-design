@@ -7,7 +7,7 @@ header {
 .nav {
   // border: 1px solid black;
   @include dflexcomp;
-  padding: 0.9rem 0;
+  padding: 1.5rem 0;
 
   &-list {
     @include dflexhalf;
@@ -35,7 +35,7 @@ header {
 
   &__right {
     @include dflexcomp;
-    width: 7%;
+    width: 8%;
 
     .img-cart {
       width: 20%;
