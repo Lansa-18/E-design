@@ -7,7 +7,7 @@ header {
 .nav {
   // border: 1px solid black;
   @include dflexcomp;
-  padding: 0.5rem 0;
+  padding: 0.9rem 0;
 
   &-list {
     @include dflexhalf;
