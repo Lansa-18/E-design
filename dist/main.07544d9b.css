@@ -635,6 +635,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-basis: 10%;
 }
 .nav__right .img-cart {
   width: 17%;

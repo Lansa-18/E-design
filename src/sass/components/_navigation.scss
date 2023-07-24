@@ -36,6 +36,7 @@ header {
   &__right {
     border: 1px solid blue;
     @include dflexcomp;
+    flex-basis: 10%;
 
     .img-cart {
       width: 17%;
