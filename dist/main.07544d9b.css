@@ -71,4 +71,13 @@ header {
   width: 40%;
 }
 
+.main__content--flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main__content--flex--left {
+  border: 1px solid red;
+}
+
 /*# sourceMappingURL=/main.07544d9b.css.map */

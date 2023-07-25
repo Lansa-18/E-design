@@ -1,4 +1,15 @@
 @use '../abstracts/' as *;
 
 .main__content{
+    &--flex{
+        @include dflexcomp;
+
+        &--left{
+            border: 1px solid red;
+
+            // img{
+            //     width: 20%;
+            // }
+        }
+    }
 }
