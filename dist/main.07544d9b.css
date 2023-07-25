@@ -83,10 +83,13 @@ header {
 }
 .main__content--flex--left {
   border: 1px solid red;
-  flex-basis: 30%;
+  flex-basis: 40%;
+  border-radius: 0.7rem;
 }
 .main__content--flex--left img {
-  width: 50%;
+  width: 100%;
+  display: block;
+  border-radius: 0.7rem;
 }
 .main__content--flex--right {
   border: 1px solid blue;
