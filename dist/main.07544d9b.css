@@ -82,10 +82,11 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 10rem;
 }
 .main__content--flex--left {
   border: 1px solid red;
-  flex-basis: 40%;
+  flex-basis: 80%;
   border-radius: 0.7rem;
 }
 .main__content--flex--left img {
@@ -98,12 +99,17 @@ header {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  flex-basis: 40%;
 }
 .main__content--flex--right h2 {
   color: hsl(26, 100%, 55%);
   font-weight: bolder;
   font-size: 0.9rem;
+}
+.main__content--flex--right h3 {
+  font-size: 3rem;
+}
+.main__content--flex--right p {
+  font-size: 1.5rem;
 }
 
 /*# sourceMappingURL=/main.07544d9b.css.map */
