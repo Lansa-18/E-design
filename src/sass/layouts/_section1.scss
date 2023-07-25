@@ -43,6 +43,11 @@
         color: $dark-blue;
         font-size: 1.5rem;
       }
+
+      .main__content--pricing{
+        display: flex;
+        align-items: center;
+      }
     }
   }
 }

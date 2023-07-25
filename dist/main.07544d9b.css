@@ -112,5 +112,9 @@ header {
   color: hsl(219, 9%, 45%);
   font-size: 1.5rem;
 }
+.main__content--flex--right .main__content--pricing {
+  display: flex;
+  align-items: center;
+}
 
 /*# sourceMappingURL=/main.07544d9b.css.map */
