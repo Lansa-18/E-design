@@ -4,8 +4,10 @@
     width: 82%;
     margin: auto;
     border: 1px solid black;
+    margin-top: 5rem;
     &--flex{
         @include dflexcomp;
+        gap: 5rem;
 
         &--left{
             border: 1px solid red;
@@ -22,7 +24,7 @@
 
         &--right{
             border: 1px solid blue;
-            flex-basis: 50%;
+            // flex-basis: 50%;
         }
     }
 }
