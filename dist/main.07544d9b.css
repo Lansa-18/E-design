@@ -81,11 +81,10 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 5rem;
 }
 .main__content--flex--left {
   border: 1px solid red;
-  flex-basis: 40%;
+  flex-basis: 30%;
   border-radius: 0.7rem;
 }
 .main__content--flex--left img {
@@ -97,7 +96,13 @@ header {
   border: 1px solid blue;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1rem;
+  flex-basis: 30%;
+}
+.main__content--flex--right h2 {
+  color: hsl(26, 100%, 55%);
+  font-weight: bolder;
+  font-size: 0.9rem;
 }
 
 /*# sourceMappingURL=/main.07544d9b.css.map */
