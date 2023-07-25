@@ -78,6 +78,14 @@ header {
 }
 .main__content--flex--left {
   border: 1px solid red;
+  flex-basis: 30%;
+}
+.main__content--flex--left img {
+  width: 20%;
+}
+.main__content--flex--right {
+  border: 1px solid blue;
+  flex-basis: 50%;
 }
 
 /*# sourceMappingURL=/main.07544d9b.css.map */
