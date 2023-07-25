@@ -4,7 +4,7 @@
     width: 82%;
     margin: auto;
     border: 1px solid black;
-    margin-top: 5rem;
+    margin-top: 3rem;
     &--flex{
         @include dflexcomp;
         gap: 5rem;
@@ -24,6 +24,9 @@
 
         &--right{
             border: 1px solid blue;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
             // flex-basis: 50%;
         }
     }

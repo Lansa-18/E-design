@@ -75,7 +75,7 @@ header {
   width: 82%;
   margin: auto;
   border: 1px solid black;
-  margin-top: 5rem;
+  margin-top: 3rem;
 }
 .main__content--flex {
   display: flex;
@@ -95,6 +95,9 @@ header {
 }
 .main__content--flex--right {
   border: 1px solid blue;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
 /*# sourceMappingURL=/main.07544d9b.css.map */
