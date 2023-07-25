@@ -76,6 +76,7 @@ header {
   margin: auto;
   border: 1px solid black;
   margin-top: 3rem;
+  padding: 0 2rem;
 }
 .main__content--flex {
   display: flex;
@@ -97,7 +98,7 @@ header {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  flex-basis: 30%;
+  flex-basis: 40%;
 }
 .main__content--flex--right h2 {
   color: hsl(26, 100%, 55%);
