@@ -1,8 +1,7 @@
 @use '../abstracts/' as *;
 
 .main__content{
-    width: 82%;
-    margin: auto;
+    @include m-auto;
     border: 1px solid black;
     margin-top: 3rem;
     &--flex{
@@ -11,7 +10,7 @@
 
         &--left{
             border: 1px solid red;
-            flex-basis: 30%;
+            flex-basis: 40%;
             border-radius: .7rem;
 
             img{
