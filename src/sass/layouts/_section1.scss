@@ -2,31 +2,32 @@
 
 .main__content {
   @include m-auto;
-  //   border: 1px solid black;
+    border: 1px solid black;
   margin-top: 3rem;
   padding: 0 2rem;
   &--flex {
-    @include dflexcomp;
-    // gap: 7rem;
+    @include dflexhalf;
+    gap: 7rem;
 
     &--left {
-      //   border: 1px solid red;
-      flex-basis: 70%;
+        border: 1px solid red;
+      flex-basis: 43%;
       border-radius: 0.7rem;
 
       img {
-        width: 80%;
+        width: 100%;
         display: block;
         border-radius: 0.7rem;
       }
     }
 
     &--right {
-      //   border: 1px solid blue;
+        border: 1px solid blue;
       display: flex;
       flex-direction: column;
       gap: 1rem;
-      width: 55%;
+    //   width: 55%;
+    flex-basis: 40%;
       //   flex-basis: 40%;
 
       h2 {
@@ -68,6 +69,9 @@
         .amount__container{
             @include dflexcomp;
             background: $blue;
+        }
+        .amount__submit{
+            @include dflexhalf;
         }
       }
     }
