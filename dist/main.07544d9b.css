@@ -139,7 +139,7 @@ header {
   justify-content: space-between;
   background: hsl(220, 14%, 75%);
   flex-basis: 40%;
-  padding: 1rem 0.5rem;
+  padding: 1rem 1rem;
   border-radius: 0.5rem;
 }
 .main__content--flex--right .main__content--amount-flex .amount__submit {
@@ -147,6 +147,7 @@ header {
   color: hsl(0, 0%, 100%);
   display: flex;
   align-items: center;
+  gap: 1rem;
   flex-basis: 55%;
 }
 .main__content--flex--right .main__content--amount-flex .amount__submit > img {
