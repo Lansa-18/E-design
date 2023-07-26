@@ -67,6 +67,7 @@
 
         .amount__container{
             @include dflexcomp;
+            background: $blue;
         }
       }
     }
