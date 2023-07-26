@@ -122,7 +122,7 @@ header {
 .main__content--flex--right .main__content--pricing div {
   background: hsl(25, 100%, 94%);
   color: hsl(26, 100%, 55%);
-  padding: 0.6rem;
+  padding: 0.2rem 0.6rem;
   font-weight: 900;
   border-radius: 0.5rem;
   font-size: 1.6rem;
