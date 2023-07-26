@@ -60,6 +60,15 @@
       .main__content--pricing ~ p {
         text-decoration: line-through;
       }
+
+      .main__content--amount-flex{
+        border: 1px solid red;
+        @include dflexcomp;
+
+        .amount__container{
+            @include dflexcomp;
+        }
+      }
     }
   }
 }

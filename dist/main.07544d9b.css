@@ -127,5 +127,16 @@ header {
 .main__content--flex--right .main__content--pricing ~ p {
   text-decoration: line-through;
 }
+.main__content--flex--right .main__content--amount-flex {
+  border: 1px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main__content--flex--right .main__content--amount-flex .amount__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
 /*# sourceMappingURL=/main.07544d9b.css.map */
