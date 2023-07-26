@@ -99,7 +99,7 @@ header {
   flex-basis: 40%;
 }
 .main__content--flex--right h2 {
-  color: hsl(26, 100%, 55%);
+  color: #ff7d1a;
   font-weight: 900;
   font-size: 0.9rem;
 }
@@ -118,7 +118,7 @@ header {
 }
 .main__content--flex--right .main__content--pricing div {
   background: hsl(25, 100%, 94%);
-  color: hsl(26, 100%, 55%);
+  color: #ff7d1a;
   padding: 0.2rem 0.6rem;
   font-weight: 900;
   border-radius: 0.5rem;
@@ -140,13 +140,16 @@ header {
   flex-basis: 40%;
   padding: 1rem 1rem;
   border-radius: 0.5rem;
+  cursor: pointer;
 }
 .main__content--flex--right .main__content--amount-flex .amount__submit {
-  background: hsl(26, 100%, 55%);
+  background: #ff7d1a;
   color: hsl(0, 0%, 100%);
   flex-basis: 55%;
   padding: 0.7rem 0;
   border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s;
 }
 .main__content--flex--right .main__content--amount-flex .amount__submit > div {
   display: flex;
@@ -155,9 +158,6 @@ header {
   gap: 1rem;
   width: 70%;
   margin: auto;
-}
-.main__content--flex--right .main__content--amount-flex .amount__submit > img {
-  color: hsl(0, 0%, 100%);
 }
 
 /*# sourceMappingURL=/main.07544d9b.css.map */

@@ -72,6 +72,7 @@
           flex-basis: 40%;
           padding: 1rem 1rem;
           border-radius: 0.5rem;
+          cursor: pointer;
         }
 
         .amount__submit {
@@ -80,6 +81,13 @@
           flex-basis: 55%;
           padding: .7rem 0;
           border-radius: 0.5rem;
+          cursor: pointer;
+          transition: all .3s;
+
+          // &:hover{
+          //   box-shadow: rgba(2,0,0,.8);
+          //   // background-color: red;
+          // }
 
           & > div{
             // border: 1px solid red;
@@ -88,9 +96,6 @@
             gap: 1rem;
             width: 70%;
             margin: auto;
-          }
-          & > img {
-            color: $white;
           }
         }
       }
