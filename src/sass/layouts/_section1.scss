@@ -47,6 +47,7 @@
       .main__content--pricing{
         display: flex;
         align-items: center;
+        border: 1px solid red;
 
         div{
             background: $sec-orange;

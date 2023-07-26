@@ -115,6 +115,7 @@ header {
 .main__content--flex--right .main__content--pricing {
   display: flex;
   align-items: center;
+  border: 1px solid red;
 }
 .main__content--flex--right .main__content--pricing div {
   background: hsl(25, 100%, 94%);
