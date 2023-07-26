@@ -63,7 +63,7 @@
       }
 
       .main__content--amount-flex {
-        border: 1px solid red;
+        // border: 1px solid red;
         @include dflexcomp;
 
         .amount__container {
@@ -71,19 +71,27 @@
           background: $blue;
           flex-basis: 40%;
           padding: 1rem 1rem;
-          border-radius: .5rem;
+          border-radius: 0.5rem;
         }
 
         .amount__submit {
           background: $pry-orange;
           color: $white;
-          @include dflexhalf;
-          gap: 1rem;
           flex-basis: 55%;
-            & > img{
-                color: $white;
-            }
+          padding: .7rem 0;
+          border-radius: 0.5rem;
 
+          & > div{
+            // border: 1px solid red;
+            @include dflexhalf;
+            justify-content: center;
+            gap: 1rem;
+            width: 70%;
+            margin: auto;
+          }
+          & > img {
+            color: $white;
+          }
         }
       }
     }

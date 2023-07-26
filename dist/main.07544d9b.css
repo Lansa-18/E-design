@@ -128,7 +128,6 @@ header {
   text-decoration: line-through;
 }
 .main__content--flex--right .main__content--amount-flex {
-  border: 1px solid red;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -145,10 +144,17 @@ header {
 .main__content--flex--right .main__content--amount-flex .amount__submit {
   background: hsl(26, 100%, 55%);
   color: hsl(0, 0%, 100%);
+  flex-basis: 55%;
+  padding: 0.7rem 0;
+  border-radius: 0.5rem;
+}
+.main__content--flex--right .main__content--amount-flex .amount__submit > div {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 1rem;
-  flex-basis: 55%;
+  width: 70%;
+  margin: auto;
 }
 .main__content--flex--right .main__content--amount-flex .amount__submit > img {
   color: hsl(0, 0%, 100%);
