@@ -47,7 +47,6 @@
       .main__content--pricing{
         @include dflexcomp;
         width: 45%;
-        border: 1px solid red;
 
         div{
             background: $sec-orange;
@@ -57,7 +56,10 @@
             border-radius: .5rem;
             font-size: $p-size;
         }
-      }
+    }
+    p{
+        text-decoration: line-through;
+    }
     }
   }
 }

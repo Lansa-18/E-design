@@ -117,7 +117,6 @@ header {
   align-items: center;
   justify-content: space-between;
   width: 45%;
-  border: 1px solid red;
 }
 .main__content--flex--right .main__content--pricing div {
   background: hsl(25, 100%, 94%);
@@ -126,6 +125,9 @@ header {
   font-weight: 900;
   border-radius: 0.5rem;
   font-size: 1.6rem;
+}
+.main__content--flex--right p {
+  text-decoration: line-through;
 }
 
 /*# sourceMappingURL=/main.07544d9b.css.map */
