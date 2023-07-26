@@ -86,7 +86,7 @@ header {
 }
 .main__content--flex--left {
   border: 1px solid red;
-  flex-basis: 43%;
+  flex-basis: 40%;
   border-radius: 0.7rem;
 }
 .main__content--flex--left img {
