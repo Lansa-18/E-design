@@ -2,7 +2,7 @@
 
 .main__content {
   @include m-auto;
-  border: 1px solid black;
+  //   border: 1px solid black;
   margin-top: 3rem;
   padding: 0 2rem;
   &--flex {
@@ -10,7 +10,7 @@
     gap: 7rem;
 
     &--left {
-      border: 1px solid red;
+      //   border: 1px solid red;
       flex-basis: 40%;
       border-radius: 0.7rem;
 
@@ -22,7 +22,7 @@
     }
 
     &--right {
-      border: 1px solid blue;
+      //   border: 1px solid blue;
       display: flex;
       flex-direction: column;
       gap: 1rem;
@@ -69,9 +69,14 @@
         .amount__container {
           @include dflexcomp;
           background: $blue;
+          flex-basis: 40%;
         }
         .amount__submit {
+          background: $pry-orange;
+          color: $white;
+        //   text-align: center;
           @include dflexhalf;
+          flex-basis: 60%;
         }
       }
     }
