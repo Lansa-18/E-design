@@ -139,13 +139,15 @@ header {
   justify-content: space-between;
   background: hsl(220, 14%, 75%);
   flex-basis: 40%;
+  padding: 1rem 0.5rem;
+  border-radius: 0.5rem;
 }
 .main__content--flex--right .main__content--amount-flex .amount__submit {
   background: hsl(26, 100%, 55%);
   color: hsl(0, 0%, 100%);
   display: flex;
   align-items: center;
-  flex-basis: 60%;
+  flex-basis: 55%;
 }
 .main__content--flex--right .main__content--amount-flex .amount__submit > img {
   color: hsl(0, 0%, 100%);

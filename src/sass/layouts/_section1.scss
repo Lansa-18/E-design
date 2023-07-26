@@ -70,13 +70,17 @@
           @include dflexcomp;
           background: $blue;
           flex-basis: 40%;
+          padding: 1rem .5rem;
+          border-radius: .5rem;
         }
         .amount__submit {
           background: $pry-orange;
           color: $white;
         //   text-align: center;
+
+        
           @include dflexhalf;
-          flex-basis: 60%;
+          flex-basis: 55%;
             & > img{
                 color: $white;
             }
