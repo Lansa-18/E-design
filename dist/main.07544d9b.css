@@ -147,5 +147,8 @@ header {
   align-items: center;
   flex-basis: 60%;
 }
+.main__content--flex--right .main__content--amount-flex .amount__submit > img {
+  color: hsl(0, 0%, 100%);
+}
 
 /*# sourceMappingURL=/main.07544d9b.css.map */
