@@ -126,7 +126,7 @@ header {
   border-radius: 0.5rem;
   font-size: 1.6rem;
 }
-.main__content--flex--right p {
+.main__content--flex--right .main__content--pricing ~ p {
   text-decoration: line-through;
 }
 

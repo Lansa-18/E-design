@@ -57,7 +57,7 @@
             font-size: $p-size;
         }
     }
-    p{
+    .main__content--pricing ~ p{
         text-decoration: line-through;
     }
     }
