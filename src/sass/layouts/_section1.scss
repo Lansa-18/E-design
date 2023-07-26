@@ -2,7 +2,7 @@
 
 .main__content {
   @include m-auto;
-    border: 1px solid black;
+  border: 1px solid black;
   margin-top: 3rem;
   padding: 0 2rem;
   &--flex {
@@ -10,7 +10,7 @@
     gap: 7rem;
 
     &--left {
-        border: 1px solid red;
+      border: 1px solid red;
       flex-basis: 40%;
       border-radius: 0.7rem;
 
@@ -22,12 +22,12 @@
     }
 
     &--right {
-        border: 1px solid blue;
+      border: 1px solid blue;
       display: flex;
       flex-direction: column;
       gap: 1rem;
-    //   width: 55%;
-    flex-basis: 40%;
+      //   width: 55%;
+      flex-basis: 40%;
       //   flex-basis: 40%;
 
       h2 {
@@ -62,16 +62,16 @@
         text-decoration: line-through;
       }
 
-      .main__content--amount-flex{
+      .main__content--amount-flex {
         border: 1px solid red;
         @include dflexcomp;
 
-        .amount__container{
-            @include dflexcomp;
-            background: $blue;
+        .amount__container {
+          @include dflexcomp;
+          background: $blue;
         }
-        .amount__submit{
-            @include dflexhalf;
+        .amount__submit {
+          @include dflexhalf;
         }
       }
     }
