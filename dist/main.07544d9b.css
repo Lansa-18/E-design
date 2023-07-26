@@ -116,5 +116,12 @@ header {
   display: flex;
   align-items: center;
 }
+.main__content--flex--right .main__content--pricing div {
+  background: hsl(25, 100%, 94%);
+  color: hsl(26, 100%, 55%);
+  padding: 0.5rem;
+  font-weight: 900;
+  border-radius: 0.5rem;
+}
 
 /*# sourceMappingURL=/main.07544d9b.css.map */

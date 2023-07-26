@@ -47,6 +47,14 @@
       .main__content--pricing{
         display: flex;
         align-items: center;
+
+        div{
+            background: $sec-orange;
+            color: $pry-orange;
+            padding: .5rem;
+            font-weight: 900;
+            border-radius: .5rem;
+        }
       }
     }
   }
