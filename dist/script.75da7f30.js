@@ -120,7 +120,8 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 })({"script.js":[function(require,module,exports) {
 'use strict';
 
-console.log('Hello Lancer, Welcome to this project!');
+var amtAdd = document.querySelector('.amount-plus');
+var amtSub = document.querySelector('.amount-minus');
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';

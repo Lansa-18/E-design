@@ -1,2 +1,4 @@
 'use strict';
-console.log('Hello Lancer, Welcome to this project!');
+
+const amtAdd = document.querySelector('.amount-plus');
+const amtSub = document.querySelector('.amount-minus');
