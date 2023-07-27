@@ -123,10 +123,15 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 var amtAdd = document.querySelector('.amount-plus');
 var amtSub = document.querySelector('.amount-minus');
 var amtVal = document.querySelector('.amount-value');
+var amtSubmit = document.querySelector('.amount-submit');
+
+// Implemwnting the plus sign
 amtAdd.addEventListener('click', function (e) {
   e.preventDefault();
   amtVal.textContent >= 0 ? amtVal.textContent++ : 0;
 });
+
+// Implemwnting the minus sign
 amtSub.addEventListener('click', function (e) {
   e.preventDefault();
   amtVal.textContent > 0 ? amtVal.textContent-- : 0;
