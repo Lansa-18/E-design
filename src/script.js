@@ -16,7 +16,7 @@ amtAdd.addEventListener('click', (e) => {
 
 amtSub.addEventListener('click', (e) => {    
     // e.preventDefault();
-    // amtVal.textContent < 0 ? 0 : amtVal.textContent--;
+    amtVal.textContent > 0 ? amtVal.textContent-- : 0 ;
     // amtVal.textContent--;
 });
 
