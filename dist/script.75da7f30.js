@@ -124,20 +124,15 @@ var amtAdd = document.querySelector('.amount-plus');
 var amtSub = document.querySelector('.amount-minus');
 var amtVal = document.querySelector('.amount-value');
 amtAdd.addEventListener('click', function (e) {
-  // e.preventDefault();
-  // amtVal.textContent < 0 ? 0 : amtVal.textContent++;
-
-  if (amtVal.textContent >= 0) {
-    amtVal.textContent++;
-  } else {
-    amtVal.textContent = 0;
-  }
+  e.preventDefault();
+  amtVal.textContent >= 0 ? amtVal.textContent++ : 0;
 });
 amtSub.addEventListener('click', function (e) {
   e.preventDefault();
   amtVal.textContent > 0 ? amtVal.textContent-- : 0;
 });
-console.log('Hello World');
+
+// console.log('Hello World');
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
