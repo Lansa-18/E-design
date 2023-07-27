@@ -81,7 +81,8 @@ header {
   cursor: pointer;
   transition: all 0.3s;
 }
-.amount__submit > div {
+.amount__submit .submit-btn {
+  border: 1px solid red;
   display: flex;
   align-items: center;
   justify-content: center;

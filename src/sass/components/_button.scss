@@ -9,13 +9,8 @@
   cursor: pointer;
   transition: all 0.3s;
 
-  // &:hover{
-  //   box-shadow: rgba(2,0,0,.8);
-  //   // background-color: red;
-  // }
-
-  & > div {
-    // border: 1px solid red;
+  .submit-btn{
+    border: 1px solid red;
     @include dflexhalf;
     justify-content: center;
     gap: 1rem;
