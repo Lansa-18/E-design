@@ -125,11 +125,11 @@ var amtSub = document.querySelector('.amount-minus');
 var amtVal = document.querySelector('.amount-value');
 amtAdd.addEventListener('click', function (e) {
   // e.preventDefault();
-  amtVal.textContent++;
+  amtVal < 0 ? 0 : amtVal.textContent++;
 });
 amtSub.addEventListener('click', function (e) {
   // e.preventDefault();
-  amtVal.textContent--;
+  amtVal < 0 ? 0 : amtVal.textContent++;
 });
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
