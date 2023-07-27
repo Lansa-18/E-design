@@ -60,10 +60,10 @@ header {
     .img-avatar {
       width: 40%;
       cursor: pointer;
+      border-radius: 50%;
 
       &:hover{
         border: 2px solid $pry-orange;
-        border-radius: 50%;
       }
     }
   }

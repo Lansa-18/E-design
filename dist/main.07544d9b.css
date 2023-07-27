@@ -87,10 +87,10 @@ header {
 .nav__right .img-avatar {
   width: 40%;
   cursor: pointer;
+  border-radius: 50%;
 }
 .nav__right .img-avatar:hover {
   border: 2px solid #ff7d1a;
-  border-radius: 50%;
 }
 
 .amount__submit {
