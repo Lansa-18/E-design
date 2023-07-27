@@ -75,13 +75,14 @@ header {
   background: #ff7d1a;
   color: hsl(0, 0%, 100%);
   border-radius: 50%;
-  height: 1rem;
-  width: 1rem;
+  height: 1.2rem;
+  width: 1.2rem;
   text-align: center;
   font-size: 0.9rem;
+  padding: 0.15rem;
   position: absolute;
-  right: -0.3rem;
-  top: -0.2rem;
+  right: -0.4rem;
+  top: -0.4rem;
 }
 .nav__right .img-avatar {
   width: 40%;
