@@ -7,6 +7,7 @@ const amtVal = document.querySelector('.amount-value');
 amtAdd.addEventListener('click', (e) => {    
     // e.preventDefault();
     // amtVal.textContent < 0 ? 0 : amtVal.textContent++;
+
     if (amtVal.textContent >= 0) {
         amtVal.textContent ++;
     } else {
@@ -15,9 +16,8 @@ amtAdd.addEventListener('click', (e) => {
 });
 
 amtSub.addEventListener('click', (e) => {    
-    // e.preventDefault();
+    e.preventDefault();
     amtVal.textContent > 0 ? amtVal.textContent-- : 0 ;
-    // amtVal.textContent--;
 });
 
 console.log('Hello World');

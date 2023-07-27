@@ -126,6 +126,7 @@ var amtVal = document.querySelector('.amount-value');
 amtAdd.addEventListener('click', function (e) {
   // e.preventDefault();
   // amtVal.textContent < 0 ? 0 : amtVal.textContent++;
+
   if (amtVal.textContent >= 0) {
     amtVal.textContent++;
   } else {
@@ -133,11 +134,9 @@ amtAdd.addEventListener('click', function (e) {
   }
 });
 amtSub.addEventListener('click', function (e) {
-  // e.preventDefault();
+  e.preventDefault();
   amtVal.textContent > 0 ? amtVal.textContent-- : 0;
-  // amtVal.textContent--;
 });
-
 console.log('Hello World');
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
