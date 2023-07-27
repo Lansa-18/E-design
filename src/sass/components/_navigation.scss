@@ -59,6 +59,12 @@ header {
     }
     .img-avatar {
       width: 40%;
+      cursor: pointer;
+
+      &:hover{
+        border: 2px solid $pry-orange;
+        border-radius: 50%;
+      }
     }
   }
 }
