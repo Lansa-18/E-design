@@ -72,6 +72,15 @@ header {
   border: 1px solid blue;
   display: block;
 }
+.nav__right .cart-dropdown .cart-amount {
+  background: #ff7d1a;
+  color: hsl(0, 0%, 100%);
+  border-radius: 50%;
+  padding: 2rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
 .nav__right .img-avatar {
   width: 40%;
 }

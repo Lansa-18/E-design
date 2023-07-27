@@ -43,6 +43,16 @@ header {
         border: 1px solid blue;
         display: block;
       }
+
+      .cart-amount{
+        background: $pry-orange;
+        color: $white;
+        border-radius: 50%;
+        padding: 2rem;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
     }
     .img-avatar {
       width: 40%;
