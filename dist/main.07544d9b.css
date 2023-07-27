@@ -130,10 +130,21 @@ header {
   flex-basis: 40%;
   border-radius: 0.7rem;
 }
-.main__content--flex--left img {
+.main__content--flex--left .main__content--img img {
+  border: 1px solid red;
   width: 100%;
   display: block;
   border-radius: 0.7rem;
+}
+.main__content--flex--left .main__content--img-gallery {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid blue;
+}
+.main__content--flex--left .main__content--img-gallery img {
+  width: 20%;
+  display: block;
 }
 .main__content--flex--right {
   display: flex;

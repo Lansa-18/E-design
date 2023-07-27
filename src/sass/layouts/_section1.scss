@@ -14,11 +14,26 @@
       flex-basis: 40%;
       border-radius: 0.7rem;
 
-      img {
-        width: 100%;
-        display: block;
-        border-radius: 0.7rem;
+      .main__content--img{
+        img {
+          border: 1px solid red;
+          width: 100%;
+          display: block;
+          border-radius: 0.7rem;
+        }
       }
+
+      .main__content--img-gallery{
+        @include dflexcomp;
+        border: 1px solid blue;
+        
+        img{
+
+          width: 20%;
+          display: block;
+        }
+      }
+
     }
 
     &--right {
