@@ -36,8 +36,13 @@ header {
     @include dflexcomp;
     width: 8%;
 
-    .img-cart {
-      width: 20%;
+    .cart-dropdown{    
+      position: relative;  
+
+      .img-cart{
+        border: 1px solid blue;
+        display: block;
+      }
     }
     .img-avatar {
       width: 40%;

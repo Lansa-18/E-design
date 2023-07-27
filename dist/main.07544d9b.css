@@ -65,8 +65,12 @@ header {
   justify-content: space-between;
   width: 8%;
 }
-.nav__right .img-cart {
-  width: 20%;
+.nav__right .cart-dropdown {
+  position: relative;
+}
+.nav__right .cart-dropdown .img-cart {
+  border: 1px solid blue;
+  display: block;
 }
 .nav__right .img-avatar {
   width: 40%;
