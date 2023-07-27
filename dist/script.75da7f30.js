@@ -122,6 +122,15 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
 var amtAdd = document.querySelector('.amount-plus');
 var amtSub = document.querySelector('.amount-minus');
+var amtVal = document.querySelector('.amount-value');
+amtAdd.addEventListener('click', function (e) {
+  // e.preventDefault();
+  amtVal.textContent++;
+});
+amtSub.addEventListener('click', function (e) {
+  // e.preventDefault();
+  amtVal.textContent--;
+});
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
