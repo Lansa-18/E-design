@@ -123,7 +123,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 var amtAdd = document.querySelector('.amount-plus');
 var amtSub = document.querySelector('.amount-minus');
 var amtVal = document.querySelector('.amount-value');
-var amtSubmit = document.querySelector('.amount-submit');
+var amtSubmit = document.querySelector('.amount__submit');
 
 // Implemwnting the plus sign
 amtAdd.addEventListener('click', function (e) {
@@ -135,6 +135,11 @@ amtAdd.addEventListener('click', function (e) {
 amtSub.addEventListener('click', function (e) {
   e.preventDefault();
   amtVal.textContent > 0 ? amtVal.textContent-- : 0;
+});
+
+// Implementing the add to cart functionality
+amtSubmit.addEventListener('click', function () {
+  amtVal.textContent = 0;
 });
 
 // console.log('Hello World');
