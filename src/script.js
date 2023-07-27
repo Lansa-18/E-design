@@ -4,6 +4,7 @@ const amtAdd = document.querySelector('.amount-plus');
 const amtSub = document.querySelector('.amount-minus');
 const amtVal = document.querySelector('.amount-value');
 const amtSubmit = document.querySelector('.amount__submit');
+const cartAmt = document.querySelector('.cart-amount');
 
 // Implemwnting the plus sign
 amtAdd.addEventListener('click', (e) => {    
@@ -19,6 +20,8 @@ amtSub.addEventListener('click', (e) => {
 
 // Implementing the add to cart functionality
 amtSubmit.addEventListener('click', () => {
+    cartAmt.style.display = 'block';
+    cartAmt.textContent = amtVal.textContent;
     amtVal.textContent = 0;
 });
 

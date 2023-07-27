@@ -72,6 +72,7 @@ header {
   display: block;
 }
 .nav__right .cart-dropdown .cart-amount {
+  display: none;
   background: #ff7d1a;
   color: hsl(0, 0%, 100%);
   border-radius: 50%;
