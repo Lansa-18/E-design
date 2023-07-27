@@ -6,11 +6,21 @@ const amtVal = document.querySelector('.amount-value');
 
 amtAdd.addEventListener('click', (e) => {    
     // e.preventDefault();
-    amtVal.textContent < 0 ? 0 : amtVal.textContent++;
+    // amtVal.textContent < 0 ? 0 : amtVal.textContent++;
+    if (amtVal.textContent < 0) {
+        amtVal.textContent ++;
+    } else {
+        amtVal.textContent = 0;
+    }
 });
 
 amtSub.addEventListener('click', (e) => {    
     // e.preventDefault();
-    amtVal.textContent < 0 ? 0 : amtVal.textContent--;
+    // amtVal.textContent < 0 ? 0 : amtVal.textContent--;
+    if (amtVal.textContent < 0) {
+        amtVal.textContent ++;
+    } else {
+        amtVal.textContent = 0;
+    }
 });
 
