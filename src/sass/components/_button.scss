@@ -1,25 +1,25 @@
-@use '../abstracts/' as *;
+@use "../abstracts/" as *;
 
 .amount__submit {
-    background: $pry-orange;
-    color: $white;
-    flex-basis: 55%;
-    padding: .7rem 0;
-    border-radius: 0.5rem;
-    cursor: pointer;
-    transition: all .3s;
+  background: $pry-orange;
+  color: $white;
+  flex-basis: 55%;
+  padding: 0.7rem 0;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s;
 
-    // &:hover{
-    //   box-shadow: rgba(2,0,0,.8);
-    //   // background-color: red;
-    // }
+  // &:hover{
+  //   box-shadow: rgba(2,0,0,.8);
+  //   // background-color: red;
+  // }
 
-    & > div{
-      // border: 1px solid red;
-      @include dflexhalf;
-      justify-content: center;
-      gap: 1rem;
-      width: 70%;
-      margin: auto;
-    }
+  & > div {
+    // border: 1px solid red;
+    @include dflexhalf;
+    justify-content: center;
+    gap: 1rem;
+    width: 70%;
+    margin: auto;
   }
+}
