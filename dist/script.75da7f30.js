@@ -125,6 +125,10 @@ var amtSub = document.querySelector('.amount-minus');
 var amtVal = document.querySelector('.amount-value');
 var amtSubmit = document.querySelector('.amount__submit');
 var cartAmt = document.querySelector('.cart-amount');
+var mImg = document.querySelector('.m-img1');
+var mImg2 = document.querySelector('.m-img2');
+var mImg3 = document.querySelector('.m-img3');
+var mImg4 = document.querySelector('.m-img4');
 
 // Implemwnting the plus sign
 amtAdd.addEventListener('click', function (e) {

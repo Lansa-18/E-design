@@ -6,6 +6,11 @@ const amtVal = document.querySelector('.amount-value');
 const amtSubmit = document.querySelector('.amount__submit');
 const cartAmt = document.querySelector('.cart-amount');
 
+const mImg = document.querySelector('.m-img1');
+const mImg2 = document.querySelector('.m-img2');
+const mImg3 = document.querySelector('.m-img3');
+const mImg4 = document.querySelector('.m-img4');
+
 // Implemwnting the plus sign
 amtAdd.addEventListener('click', (e) => {    
     e.preventDefault();
