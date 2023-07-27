@@ -79,10 +79,12 @@ header {
   padding: 0.7rem 0;
   border-radius: 0.5rem;
   cursor: pointer;
-  transition: all 0.3s;
+  transition: all 0.5s;
+}
+.amount__submit:hover {
+  transform: scale(1.05);
 }
 .amount__submit .submit-btn {
-  border: 1px solid red;
   display: flex;
   align-items: center;
   justify-content: center;

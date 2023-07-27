@@ -7,10 +7,13 @@
   padding: 0.7rem 0;
   border-radius: 0.5rem;
   cursor: pointer;
-  transition: all 0.3s;
+  transition: all .5s;
+
+  &:hover{
+    transform: scale(1.05);
+  }
 
   .submit-btn{
-    border: 1px solid red;
     @include dflexhalf;
     justify-content: center;
     gap: 1rem;
