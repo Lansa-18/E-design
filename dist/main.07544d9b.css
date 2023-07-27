@@ -131,7 +131,6 @@ header {
   border-radius: 0.7rem;
 }
 .main__content--flex--left .main__content--img img {
-  border: 1px solid red;
   width: 100%;
   display: block;
   border-radius: 0.7rem;
@@ -140,11 +139,15 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border: 1px solid blue;
+  margin-top: 2rem;
 }
 .main__content--flex--left .main__content--img-gallery img {
+  border-radius: 0.5rem;
   width: 20%;
   display: block;
+}
+.main__content--flex--left .main__content--img-gallery img:hover {
+  border: 2px solid #ff7d1a;
 }
 .main__content--flex--right {
   display: flex;

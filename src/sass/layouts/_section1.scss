@@ -16,7 +16,7 @@
 
       .main__content--img{
         img {
-          border: 1px solid red;
+          // border: 1px solid red;
           width: 100%;
           display: block;
           border-radius: 0.7rem;
@@ -25,12 +25,17 @@
 
       .main__content--img-gallery{
         @include dflexcomp;
-        border: 1px solid blue;
-        
-        img{
+        // border: 1px solid blue;
+        margin-top: 2rem;
 
+        img{
+          border-radius: .5rem;
           width: 20%;
           display: block;
+
+          &:hover{
+            border: 2px solid $pry-orange;
+          }
         }
       }
 
