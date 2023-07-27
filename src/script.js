@@ -6,11 +6,11 @@ const amtVal = document.querySelector('.amount-value');
 
 amtAdd.addEventListener('click', (e) => {    
     // e.preventDefault();
-    amtVal < 0 ? 0 : amtVal.textContent++;
+    amtVal.textContent < 0 ? 0 : amtVal.textContent++;
 });
 
 amtSub.addEventListener('click', (e) => {    
     // e.preventDefault();
-    amtVal < 0 ? 0 : amtVal.textContent--;
+    amtVal.textContent < 0 ? 0 : amtVal.textContent--;
 });
 
