@@ -135,14 +135,14 @@ var mImg = document.querySelectorAll(".m-img");
 var renderedImg = document.querySelector(".render-img");
 var switchImg = function switchImg() {
   mImg.forEach(function (cur, i, arr) {
-    if (cur[i] === 0) {
-      cur.setAttribute("src", "./images/image-product-1.jpg");
-    } else if (cur[i] === 1) {
-      cur.setAttribute("src", "./images/image-product-2.jpg");
-    } else if (cur[i] === 2) {
-      cur.setAttribute("src", "./images/image-product-3.jpg");
-    } else if (cur[i] === 4) {
-      cur.setAttribute("src", "./images/image-product-4.jpg");
+    if (i === 0) {
+      renderedImg.setAttribute("src", "./images/image-product-1.jpg");
+    } else if (i === 1) {
+      renderedImg.setAttribute("src", "./image-product-2.a6df5b34.jpg");
+    } else if (i === 2) {
+      renderedImg.setAttribute("src", "./images/image-product-3.jpg");
+    } else if (i === 4) {
+      renderedImg.setAttribute("src", "./images/image-product-4.jpg");
     }
   });
 };
