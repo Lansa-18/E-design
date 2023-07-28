@@ -167,14 +167,16 @@ amtSubmit.addEventListener("click", function () {
 });
 mImg.forEach(function (cur, i, arr) {
   cur.addEventListener("click", function (e) {
+    console.log(cur);
     if (i === 0) {
-      renderedImg.setAttribute("src", "./images/image-product-1.jpg");
+      renderedImg.setAttribute("src", "/images/image-product-1.jpg");
     } else if (i === 1) {
-      renderedImg.setAttribute("src", "./images/image-product-2.jpg");
+      renderedImg.setAttribute("src", "/images/image-product-2.jpg");
+      console.log(renderedImg);
     } else if (i === 2) {
-      renderedImg.setAttribute("src", "./images/image-product-3.jpg");
+      renderedImg.setAttribute("src", "/images/image-product-3.jpg");
     } else if (i === 4) {
-      renderedImg.setAttribute("src", "./images/image-product-4.jpg");
+      renderedImg.setAttribute("src", "/images/image-product-4.jpg");
     }
   });
 });
