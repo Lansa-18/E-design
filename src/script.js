@@ -47,10 +47,18 @@ amtSubmit.addEventListener("click", () => {
   amtVal.textContent = 0;
 });
 
-mImg.forEach((cur, i, arr)=>{
-    cur.addEventListener('click', (e) => {
-        console.log(e.target);
-    })
-})
+mImg.forEach((cur, i, arr) => {
+  cur.addEventListener("click", (e) => {
+    if (cur[i] === 0) {
+      cur.setAttribute("src", "./images/image-product-1.jpg");
+    } else if (cur[i] === 1) {
+      cur.setAttribute("src", "./images/image-product-2.jpg");
+    } else if (cur[i] === 2) {
+      cur.setAttribute("src", "./images/image-product-3.jpg");
+    } else if (cur[i] === 4) {
+      cur.setAttribute("src", "./images/image-product-4.jpg");
+    }
+  });
+});
 
 // console.log(mImg);
