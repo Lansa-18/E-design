@@ -168,13 +168,13 @@ amtSubmit.addEventListener("click", function () {
 mImg.forEach(function (cur, i, arr) {
   cur.addEventListener("click", function (e) {
     if (cur[i] === 0) {
-      cur.setAttribute("src", "./images/image-product-1.jpg");
+      renderedImg.setAttribute("src", "./images/image-product-1.jpg");
     } else if (cur[i] === 1) {
-      cur.setAttribute("src", "./images/image-product-2.jpg");
+      renderedImg.setAttribute("src", "./images/image-product-2.jpg");
     } else if (cur[i] === 2) {
-      cur.setAttribute("src", "./images/image-product-3.jpg");
+      renderedImg.setAttribute("src", "./images/image-product-3.jpg");
     } else if (cur[i] === 4) {
-      cur.setAttribute("src", "./images/image-product-4.jpg");
+      renderedImg.setAttribute("src", "./images/image-product-4.jpg");
     }
   });
 });
