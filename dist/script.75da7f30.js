@@ -152,7 +152,7 @@ amtSubmit.addEventListener("click", function () {
   cartAmt.textContent = amtVal.textContent;
   amtVal.textContent = 0;
 });
-mImg.addEventListener('click', function () {});
+mImg.addEventListener("click", function () {});
 var switchImg = function switchImg() {
   mImg.forEach(function (cur, i, arr) {
     if (cur[i] === 0) {
