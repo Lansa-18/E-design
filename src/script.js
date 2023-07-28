@@ -35,8 +35,15 @@ amtSubmit.addEventListener('click', () => {
 
 mImg.forEach((cur,i,arr) => {
     if (cur[i] === 0) {
-        cur.setAttribute('src')
+        cur.setAttribute('src', './images/image-product-1.jpg');
+    } else if(cur[i] === 1){
+        cur.setAttribute('src', './images/image-product-2.jpg') 
+    } else if(cur[i] === 1){
+        cur.setAttribute('src', './images/image-product-2.jpg') 
+    } else if(cur[i] === 1){
+        cur.setAttribute('src', './images/image-product-2.jpg') 
     }
+
 })
 
 // console.log('Hello World');
