@@ -12,6 +12,7 @@ const cartAmt = document.querySelector('.cart-amount');
 // const mImg4 = document.querySelector('.m-img4');
 
 const mImg = document.querySelectorAll('.m-img');
+const renderedImg = document.querySelector('.render-img');
 
 // Implemwnting the plus sign
 amtAdd.addEventListener('click', (e) => {    
@@ -31,5 +32,11 @@ amtSubmit.addEventListener('click', () => {
     cartAmt.textContent = amtVal.textContent;
     amtVal.textContent = 0;
 });
+
+mImg.forEach((cur,i,arr) => {
+    if (cur[i] === 0) {
+        cur.setAttribute('src')
+    }
+})
 
 // console.log('Hello World');

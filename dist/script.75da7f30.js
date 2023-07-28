@@ -132,6 +132,7 @@ var cartAmt = document.querySelector('.cart-amount');
 // const mImg4 = document.querySelector('.m-img4');
 
 var mImg = document.querySelectorAll('.m-img');
+var renderedImg = document.querySelector('.render-img');
 
 // Implemwnting the plus sign
 amtAdd.addEventListener('click', function (e) {
@@ -150,6 +151,11 @@ amtSubmit.addEventListener('click', function () {
   cartAmt.style.display = 'block';
   cartAmt.textContent = amtVal.textContent;
   amtVal.textContent = 0;
+});
+mImg.forEach(function (cur, i, arr) {
+  if (cur[i] === 0) {
+    cur.setAttribute('src');
+  }
 });
 
 // console.log('Hello World');
