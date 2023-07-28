@@ -133,6 +133,19 @@ var cartAmt = document.querySelector(".cart-amount");
 
 var mImg = document.querySelectorAll(".m-img");
 var renderedImg = document.querySelector(".render-img");
+var switchImg = function switchImg() {
+  mImg.forEach(function (cur, i, arr) {
+    if (cur[i] === 0) {
+      cur.setAttribute("src", "./images/image-product-1.jpg");
+    } else if (cur[i] === 1) {
+      cur.setAttribute("src", "./images/image-product-2.jpg");
+    } else if (cur[i] === 2) {
+      cur.setAttribute("src", "./images/image-product-3.jpg");
+    } else if (cur[i] === 4) {
+      cur.setAttribute("src", "./images/image-product-4.jpg");
+    }
+  });
+};
 
 // Implemwnting the plus sign
 amtAdd.addEventListener("click", function (e) {
@@ -153,19 +166,6 @@ amtSubmit.addEventListener("click", function () {
   amtVal.textContent = 0;
 });
 mImg.addEventListener("click", function () {});
-var switchImg = function switchImg() {
-  mImg.forEach(function (cur, i, arr) {
-    if (cur[i] === 0) {
-      cur.setAttribute("src", "./images/image-product-1.jpg");
-    } else if (cur[i] === 1) {
-      cur.setAttribute("src", "./images/image-product-2.jpg");
-    } else if (cur[i] === 2) {
-      cur.setAttribute("src", "./images/image-product-3.jpg");
-    } else if (cur[i] === 4) {
-      cur.setAttribute("src", "./images/image-product-4.jpg");
-    }
-  });
-};
 
 // console.log('Hello World');
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
