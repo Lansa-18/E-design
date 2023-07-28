@@ -169,14 +169,13 @@ mImg.forEach(function (cur, i, arr) {
   cur.addEventListener("click", function (e) {
     console.log(cur);
     if (i === 0) {
-      renderedImg.setAttribute("src", "/images/image-product-1.jpg");
+      renderedImg.setAttribute("src", "/image-product-1.12c5dacc.jpg");
     } else if (i === 1) {
-      renderedImg.setAttribute("src", "/images/image-product-2.jpg");
-      console.log(renderedImg);
+      renderedImg.setAttribute("src", "/image-product-2.a6df5b34.jpg");
     } else if (i === 2) {
-      renderedImg.setAttribute("src", "/images/image-product-3.jpg");
-    } else if (i === 4) {
-      renderedImg.setAttribute("src", "/images/image-product-4.jpg");
+      renderedImg.setAttribute("src", "/image-product-3.143cec63.jpg");
+    } else if (i === 3) {
+      renderedImg.setAttribute("src", "/image-product-4.8eede8d0.jpg");
     }
   });
 });
