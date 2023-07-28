@@ -131,6 +131,8 @@ var cartAmt = document.querySelector('.cart-amount');
 // const mImg3 = document.querySelector('.m-img3');
 // const mImg4 = document.querySelector('.m-img4');
 
+var mImg = document.querySelectorAll('.m-img');
+
 // Implemwnting the plus sign
 amtAdd.addEventListener('click', function (e) {
   e.preventDefault();

@@ -11,6 +11,8 @@ const cartAmt = document.querySelector('.cart-amount');
 // const mImg3 = document.querySelector('.m-img3');
 // const mImg4 = document.querySelector('.m-img4');
 
+const mImg = document.querySelectorAll('.m-img');
+
 // Implemwnting the plus sign
 amtAdd.addEventListener('click', (e) => {    
     e.preventDefault();
