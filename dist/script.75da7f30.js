@@ -152,17 +152,20 @@ amtSubmit.addEventListener("click", function () {
   cartAmt.textContent = amtVal.textContent;
   amtVal.textContent = 0;
 });
-mImg.forEach(function (cur, i, arr) {
-  if (cur[i] === 0) {
-    cur.setAttribute("src", "./images/image-product-1.jpg");
-  } else if (cur[i] === 1) {
-    cur.setAttribute("src", "./images/image-product-2.jpg");
-  } else if (cur[i] === 2) {
-    cur.setAttribute("src", "./images/image-product-3.jpg");
-  } else if (cur[i] === 4) {
-    cur.setAttribute("src", "./images/image-product-4.jpg");
-  }
-});
+mImg.addEventListener('click', function () {});
+var switchImg = function switchImg() {
+  mImg.forEach(function (cur, i, arr) {
+    if (cur[i] === 0) {
+      cur.setAttribute("src", "./images/image-product-1.jpg");
+    } else if (cur[i] === 1) {
+      cur.setAttribute("src", "./images/image-product-2.jpg");
+    } else if (cur[i] === 2) {
+      cur.setAttribute("src", "./images/image-product-3.jpg");
+    } else if (cur[i] === 4) {
+      cur.setAttribute("src", "./images/image-product-4.jpg");
+    }
+  });
+};
 
 // console.log('Hello World');
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
