@@ -49,13 +49,13 @@ amtSubmit.addEventListener("click", () => {
 
 mImg.forEach((cur, i, arr) => {
   cur.addEventListener("click", (e) => {
-    if (cur[i] === 0) {
+    if (i === 0) {
       renderedImg.setAttribute("src", "./images/image-product-1.jpg");
-    } else if (cur[i] === 1) {
+    } else if (i === 1) {
       renderedImg.setAttribute("src", "./images/image-product-2.jpg");
-    } else if (cur[i] === 2) {
+    } else if (i === 2) {
       renderedImg.setAttribute("src", "./images/image-product-3.jpg");
-    } else if (cur[i] === 4) {
+    } else if (i === 4) {
       renderedImg.setAttribute("src", "./images/image-product-4.jpg");
     }
   });
