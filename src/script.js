@@ -47,6 +47,8 @@ amtSubmit.addEventListener("click", () => {
   amtVal.textContent = 0;
 });
 
-mImg.addEventListener("click", switchImg);
+mImg.addEventListener("click", (e) => {
+    console.log(e.target);;
+});
 
-// console.log('Hello World');
+// console.log(mImg);

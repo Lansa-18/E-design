@@ -165,9 +165,12 @@ amtSubmit.addEventListener("click", function () {
   cartAmt.textContent = amtVal.textContent;
   amtVal.textContent = 0;
 });
-mImg.addEventListener("click", switchImg);
+mImg.addEventListener("click", function (e) {
+  console.log(e.target);
+  ;
+});
 
-// console.log('Hello World');
+// console.log(mImg);
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
