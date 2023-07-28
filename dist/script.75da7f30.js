@@ -118,49 +118,49 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"script.js":[function(require,module,exports) {
-'use strict';
+"use strict";
 
-var amtAdd = document.querySelector('.amount-plus');
-var amtSub = document.querySelector('.amount-minus');
-var amtVal = document.querySelector('.amount-value');
-var amtSubmit = document.querySelector('.amount__submit');
-var cartAmt = document.querySelector('.cart-amount');
+var amtAdd = document.querySelector(".amount-plus");
+var amtSub = document.querySelector(".amount-minus");
+var amtVal = document.querySelector(".amount-value");
+var amtSubmit = document.querySelector(".amount__submit");
+var cartAmt = document.querySelector(".cart-amount");
 
 // const mImg = document.querySelector('.m-img1');
 // const mImg2 = document.querySelector('.m-img2');
 // const mImg3 = document.querySelector('.m-img3');
 // const mImg4 = document.querySelector('.m-img4');
 
-var mImg = document.querySelectorAll('.m-img');
-var renderedImg = document.querySelector('.render-img');
+var mImg = document.querySelectorAll(".m-img");
+var renderedImg = document.querySelector(".render-img");
 
 // Implemwnting the plus sign
-amtAdd.addEventListener('click', function (e) {
+amtAdd.addEventListener("click", function (e) {
   e.preventDefault();
   amtVal.textContent >= 0 ? amtVal.textContent++ : 0;
 });
 
 // Implemwnting the minus sign
-amtSub.addEventListener('click', function (e) {
+amtSub.addEventListener("click", function (e) {
   e.preventDefault();
   amtVal.textContent > 0 ? amtVal.textContent-- : 0;
 });
 
 // Implementing the add to cart functionality
-amtSubmit.addEventListener('click', function () {
-  cartAmt.style.display = 'block';
+amtSubmit.addEventListener("click", function () {
+  cartAmt.style.display = "block";
   cartAmt.textContent = amtVal.textContent;
   amtVal.textContent = 0;
 });
 mImg.forEach(function (cur, i, arr) {
   if (cur[i] === 0) {
-    cur.setAttribute('src', './images/image-product-1.jpg');
+    cur.setAttribute("src", "./images/image-product-1.jpg");
   } else if (cur[i] === 1) {
-    cur.setAttribute('src', './images/image-product-2.jpg');
+    cur.setAttribute("src", "./images/image-product-2.jpg");
   } else if (cur[i] === 2) {
-    cur.setAttribute('src', './images/image-product-3.jpg');
+    cur.setAttribute("src", "./images/image-product-3.jpg");
   } else if (cur[i] === 4) {
-    cur.setAttribute('src', './images/image-product-4.jpg');
+    cur.setAttribute("src", "./images/image-product-4.jpg");
   }
 });
 
