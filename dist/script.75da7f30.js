@@ -165,7 +165,7 @@ amtSubmit.addEventListener("click", function () {
   cartAmt.textContent = amtVal.textContent;
   amtVal.textContent = 0;
 });
-mImg.addEventListener("click", function () {});
+mImg.addEventListener("click", switchImg);
 
 // console.log('Hello World');
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {

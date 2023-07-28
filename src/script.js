@@ -15,18 +15,18 @@ const mImg = document.querySelectorAll(".m-img");
 const renderedImg = document.querySelector(".render-img");
 
 const switchImg = () => {
-    mImg.forEach((cur, i, arr) => {
-      if (cur[i] === 0) {
-        cur.setAttribute("src", "./images/image-product-1.jpg");
-      } else if (cur[i] === 1) {
-        cur.setAttribute("src", "./images/image-product-2.jpg");
-      } else if (cur[i] === 2) {
-        cur.setAttribute("src", "./images/image-product-3.jpg");
-      } else if (cur[i] === 4) {
-        cur.setAttribute("src", "./images/image-product-4.jpg");
-      }
-    });
-  };
+  mImg.forEach((cur, i, arr) => {
+    if (cur[i] === 0) {
+      cur.setAttribute("src", "./images/image-product-1.jpg");
+    } else if (cur[i] === 1) {
+      cur.setAttribute("src", "./images/image-product-2.jpg");
+    } else if (cur[i] === 2) {
+      cur.setAttribute("src", "./images/image-product-3.jpg");
+    } else if (cur[i] === 4) {
+      cur.setAttribute("src", "./images/image-product-4.jpg");
+    }
+  });
+};
 
 // Implemwnting the plus sign
 amtAdd.addEventListener("click", (e) => {
@@ -47,8 +47,6 @@ amtSubmit.addEventListener("click", () => {
   amtVal.textContent = 0;
 });
 
-mImg.addEventListener("click", () => {});
-
-
+mImg.addEventListener("click", switchImg);
 
 // console.log('Hello World');
