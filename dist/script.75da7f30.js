@@ -165,9 +165,10 @@ amtSubmit.addEventListener("click", function () {
   cartAmt.textContent = amtVal.textContent;
   amtVal.textContent = 0;
 });
-mImg.addEventListener("click", function (e) {
-  console.log(e.target);
-  ;
+mImg.forEach(function (cur, i, arr) {
+  cur.addEventListener('click', function (e) {
+    console.log(e.target);
+  });
 });
 
 // console.log(mImg);

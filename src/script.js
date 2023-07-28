@@ -47,8 +47,10 @@ amtSubmit.addEventListener("click", () => {
   amtVal.textContent = 0;
 });
 
-mImg.addEventListener("click", (e) => {
-    console.log(e.target);;
-});
+mImg.forEach((cur, i, arr)=>{
+    cur.addEventListener('click', (e) => {
+        console.log(e.target);
+    })
+})
 
 // console.log(mImg);
