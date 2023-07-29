@@ -49,6 +49,13 @@ mImg.forEach((cur, i, arr) => {
     } else if (i === 3) {
       renderedImg.setAttribute("src", "/image-product-4.8eede8d0.jpg");
     }
+
+    // Removing the active-img class from other images
+    mImg.forEach((img, index) => {
+        if (index !== i) {
+            img.classList.add('active-img');
+        }
+    })
   });
 });
 
