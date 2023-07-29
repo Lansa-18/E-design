@@ -14,20 +14,6 @@ const cartAmt = document.querySelector(".cart-amount");
 const mImg = document.querySelectorAll(".m-img");
 const renderedImg = document.querySelector(".render-img");
 
-const switchImg = () => {
-  mImg.forEach((cur, i, arr) => {
-    if (i === 0) {
-      renderedImg.setAttribute("src", "./images/image-product-1.jpg");
-    } else if (i === 1) {
-      renderedImg.setAttribute("src", "./image-product-2.a6df5b34.jpg");
-    } else if (i === 2) {
-      renderedImg.setAttribute("src", "./images/image-product-3.jpg");
-    } else if (i === 4) {
-      renderedImg.setAttribute("src", "./images/image-product-4.jpg");
-    }
-  });
-};
-
 // Implemwnting the plus sign
 amtAdd.addEventListener("click", (e) => {
   e.preventDefault();
@@ -53,7 +39,6 @@ amtVal.textContent = 0;
 
 mImg.forEach((cur, i, arr) => {
   cur.addEventListener("click", (e) => {
-    console.log(cur);
     if (i === 0) {
       renderedImg.setAttribute("src", "/image-product-1.12c5dacc.jpg");
     } else if (i === 1) {
