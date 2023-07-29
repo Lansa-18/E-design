@@ -159,10 +159,6 @@ amtSubmit.addEventListener("click", function () {
   }, 0);
   console.log(amtTotal);
 });
-var amtTotal = cartAmtHolder.reduce(function (acc, amt) {
-  return acc + amt;
-}, 0);
-console.log(amtTotal);
 mImg.forEach(function (cur, i, arr) {
   cur.addEventListener("click", function (e) {
     if (i === 0) {
