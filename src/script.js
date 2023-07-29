@@ -46,6 +46,9 @@ amtSubmit.addEventListener("click", () => {
   cartAmt.style.display = "block";
 //   cartAmt.textContent = amtVal.textContent;
 //   amtVal.textContent = 0;
+
+    cartAmtHolder.push(amtVal.textContent);
+    console.log(cartAmtHolder);
 });
 
 mImg.forEach((cur, i, arr) => {
