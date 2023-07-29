@@ -50,7 +50,8 @@ mImg.forEach((cur, i, arr) => {
       renderedImg.setAttribute("src", "/image-product-4.8eede8d0.jpg");
     }
 
-    cur.classList.toggle('.active-img');
+    i = 1 ? cur.classList.remove('.active-img') : cur.classList.add('.active-img');
+    // cur.classList.toggle('.active-img');
   });
 });
 
