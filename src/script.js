@@ -45,10 +45,10 @@ let cartAmtHolder = [];
 amtSubmit.addEventListener("click", () => {
   cartAmt.style.display = "block";
 //   cartAmt.textContent = amtVal.textContent;
-//   amtVal.textContent = 0;
 
-    cartAmtHolder.push(amtVal.textContent);
-    console.log(cartAmtHolder);
+cartAmtHolder.push(amtVal.textContent);
+console.log(cartAmtHolder);
+amtVal.textContent = 0;
 });
 
 mImg.forEach((cur, i, arr) => {

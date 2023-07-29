@@ -164,10 +164,10 @@ var cartAmtHolder = [];
 amtSubmit.addEventListener("click", function () {
   cartAmt.style.display = "block";
   //   cartAmt.textContent = amtVal.textContent;
-  //   amtVal.textContent = 0;
 
   cartAmtHolder.push(amtVal.textContent);
   console.log(cartAmtHolder);
+  amtVal.textContent = 0;
 });
 mImg.forEach(function (cur, i, arr) {
   cur.addEventListener("click", function (e) {
