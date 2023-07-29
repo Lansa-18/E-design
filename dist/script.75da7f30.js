@@ -166,7 +166,7 @@ mImg.forEach(function (cur, i, arr) {
       renderedImg.setAttribute("src", "/image-product-1.12c5dacc.jpg");
     } else if (i === 1) {
       renderedImg.setAttribute("src", "/image-product-2.a6df5b34.jpg");
-      cur.classList.add('active-img');
+      cur.classList.contains('active-img') ? cur.classList.remove('active-img') : cur.classList.add('active-img');
     } else if (i === 2) {
       renderedImg.setAttribute("src", "/image-product-3.143cec63.jpg");
     } else if (i === 3) {
