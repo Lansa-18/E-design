@@ -160,12 +160,13 @@ amtSub.addEventListener("click", function (e) {
 });
 
 // Implementing the add to cart functionality
-var cartAmtHolder;
+var cartAmtHolder = [];
 amtSubmit.addEventListener("click", function () {
   cartAmt.style.display = "block";
-  cartAmt.textContent = amtVal.textContent;
-  amtVal.textContent = 0;
+  //   cartAmt.textContent = amtVal.textContent;
+  //   amtVal.textContent = 0;
 });
+
 mImg.forEach(function (cur, i, arr) {
   cur.addEventListener("click", function (e) {
     console.log(cur);

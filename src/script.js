@@ -41,11 +41,11 @@ amtSub.addEventListener("click", (e) => {
 });
 
 // Implementing the add to cart functionality
-let cartAmtHolder;
+let cartAmtHolder = [];
 amtSubmit.addEventListener("click", () => {
   cartAmt.style.display = "block";
-  cartAmt.textContent = amtVal.textContent;
-  amtVal.textContent = 0;
+//   cartAmt.textContent = amtVal.textContent;
+//   amtVal.textContent = 0;
 });
 
 mImg.forEach((cur, i, arr) => {
