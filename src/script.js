@@ -34,6 +34,7 @@ amtSubmit.addEventListener("click", () => {
   cartAmtHolder.push(amtVal.textContent);
   console.log(cartAmtHolder);
   amtVal.textContent = 0;
+  return cartAmtHolder;
 });
 
 const amtTotal = cartAmtHolder.reduce((acc, amt) => acc + amt, 0);
