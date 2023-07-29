@@ -47,8 +47,10 @@ mImg.forEach((cur, i, arr) => {
       cur.classList.contains('active-img') ? cur.classList.remove('active-img') : cur.classList.add('active-img');
     } else if (i === 2) {
       renderedImg.setAttribute("src", "/image-product-3.143cec63.jpg");
+      cur.classList.contains('active-img') ? cur.classList.remove('active-img') : cur.classList.add('active-img');
     } else if (i === 3) {
       renderedImg.setAttribute("src", "/image-product-4.8eede8d0.jpg");
+      cur.classList.contains('active-img') ? cur.classList.remove('active-img') : cur.classList.add('active-img');
     }
 
     // i === 0 ? cur.classList.toggle('active-img') : cur.classList.toggle('active-img');
