@@ -154,7 +154,10 @@ amtSubmit.addEventListener("click", function () {
   cartAmtHolder.push(amtVal.textContent);
   console.log(cartAmtHolder);
   amtVal.textContent = 0;
-  return cartAmtHolder;
+  var amtTotal = cartAmtHolder.reduce(function (acc, amt) {
+    return acc + amt;
+  }, 0);
+  console.log(amtTotal);
 });
 var amtTotal = cartAmtHolder.reduce(function (acc, amt) {
   return acc + amt;
