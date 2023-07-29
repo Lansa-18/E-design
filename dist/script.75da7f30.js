@@ -150,9 +150,13 @@ amtSub.addEventListener("click", function (e) {
 var cartAmtHolder = [];
 amtSubmit.addEventListener("click", function () {
   cartAmt.style.display = "block";
-  //   cartAmt.textContent = amtVal.textContent;S
+  //   cartAmt.textContent = amtVal.textContent;
   cartAmtHolder.push(amtVal.textContent);
   console.log(cartAmtHolder);
+  var amtTotal = cartAmtHolder.reduce(function (acc, amt) {
+    return acc + amt;
+  }, 0);
+  console.log(amtTotal);
   amtVal.textContent = 0;
 });
 mImg.forEach(function (cur, i, arr) {

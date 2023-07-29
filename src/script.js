@@ -30,9 +30,11 @@ amtSub.addEventListener("click", (e) => {
 let cartAmtHolder = [];
 amtSubmit.addEventListener("click", () => {
   cartAmt.style.display = "block";
-  //   cartAmt.textContent = amtVal.textContent;S
+  //   cartAmt.textContent = amtVal.textContent;
   cartAmtHolder.push(amtVal.textContent);
   console.log(cartAmtHolder);
+  const amtTotal = cartAmtHolder.reduce((acc, amt) => acc + amt, 0);
+  console.log(amtTotal);
   amtVal.textContent = 0;
 });
 
