@@ -158,6 +158,8 @@ amtSubmit.addEventListener("click", function () {
   }, 0);
   cartAmt.textContent = amtTotal;
 });
+
+// Implementing the img-thumbnails functionality.
 mImg.forEach(function (cur, i, arr) {
   cur.addEventListener("click", function (e) {
     if (i === 0) {
@@ -169,6 +171,7 @@ mImg.forEach(function (cur, i, arr) {
     } else if (i === 3) {
       renderedImg.setAttribute("src", "/image-product-4.8eede8d0.jpg");
     }
+    cur.classList.toggle('.active-img');
   });
 });
 
