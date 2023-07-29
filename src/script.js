@@ -33,10 +33,11 @@ amtSubmit.addEventListener("click", () => {
   //   cartAmt.textContent = amtVal.textContent;
   cartAmtHolder.push(amtVal.textContent);
   console.log(cartAmtHolder);
-  const amtTotal = cartAmtHolder.reduce((acc, amt) => acc + amt, 0);
-  console.log(amtTotal);
   amtVal.textContent = 0;
 });
+
+const amtTotal = cartAmtHolder.reduce((acc, amt) => acc + amt, 0);
+console.log(amtTotal);
 
 mImg.forEach((cur, i, arr) => {
   cur.addEventListener("click", (e) => {

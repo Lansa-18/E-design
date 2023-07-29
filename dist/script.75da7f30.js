@@ -153,12 +153,12 @@ amtSubmit.addEventListener("click", function () {
   //   cartAmt.textContent = amtVal.textContent;
   cartAmtHolder.push(amtVal.textContent);
   console.log(cartAmtHolder);
-  var amtTotal = cartAmtHolder.reduce(function (acc, amt) {
-    return acc + amt;
-  }, 0);
-  console.log(amtTotal);
   amtVal.textContent = 0;
 });
+var amtTotal = cartAmtHolder.reduce(function (acc, amt) {
+  return acc + amt;
+}, 0);
+console.log(amtTotal);
 mImg.forEach(function (cur, i, arr) {
   cur.addEventListener("click", function (e) {
     if (i === 0) {
