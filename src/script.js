@@ -44,17 +44,11 @@ mImg.forEach((cur, i, arr) => {
       renderedImg.setAttribute("src", "/image-product-1.12c5dacc.jpg");
     } else if (i === 1) {
       renderedImg.setAttribute("src", "/image-product-2.a6df5b34.jpg");
-      cur.classList.contains('active-img') ? cur.classList.remove('active-img') : cur.classList.add('active-img');
     } else if (i === 2) {
       renderedImg.setAttribute("src", "/image-product-3.143cec63.jpg");
-      cur.classList.contains('active-img') ? cur.classList.remove('active-img') : cur.classList.add('active-img');
     } else if (i === 3) {
       renderedImg.setAttribute("src", "/image-product-4.8eede8d0.jpg");
-      cur.classList.contains('active-img') ? cur.classList.remove('active-img') : cur.classList.add('active-img');
     }
-
-    // i === 0 ? cur.classList.toggle('active-img') : cur.classList.toggle('active-img');
-    // cur.classList.toggle('.active-img');
   });
 });
 
