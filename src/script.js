@@ -30,11 +30,10 @@ amtSub.addEventListener("click", (e) => {
 let cartAmtHolder = [];
 amtSubmit.addEventListener("click", () => {
   cartAmt.style.display = "block";
-//   cartAmt.textContent = amtVal.textContent;
-
-cartAmtHolder.push(amtVal.textContent);
-console.log(cartAmtHolder);
-amtVal.textContent = 0;
+  //   cartAmt.textContent = amtVal.textContent;S
+  cartAmtHolder.push(amtVal.textContent);
+  console.log(cartAmtHolder);
+  amtVal.textContent = 0;
 });
 
 mImg.forEach((cur, i, arr) => {
@@ -42,8 +41,8 @@ mImg.forEach((cur, i, arr) => {
     if (i === 0) {
       renderedImg.setAttribute("src", "/image-product-1.12c5dacc.jpg");
     } else if (i === 1) {
-        renderedImg.setAttribute("src", "/image-product-2.a6df5b34.jpg");
-        console.log(renderedImg);
+      renderedImg.setAttribute("src", "/image-product-2.a6df5b34.jpg");
+      console.log(renderedImg);
     } else if (i === 2) {
       renderedImg.setAttribute("src", "/image-product-3.143cec63.jpg");
     } else if (i === 3) {

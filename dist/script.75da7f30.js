@@ -150,8 +150,7 @@ amtSub.addEventListener("click", function (e) {
 var cartAmtHolder = [];
 amtSubmit.addEventListener("click", function () {
   cartAmt.style.display = "block";
-  //   cartAmt.textContent = amtVal.textContent;
-
+  //   cartAmt.textContent = amtVal.textContent;S
   cartAmtHolder.push(amtVal.textContent);
   console.log(cartAmtHolder);
   amtVal.textContent = 0;
