@@ -52,10 +52,13 @@ mImg.forEach((cur, i, arr) => {
 
     // Removing the active-img class from other images
     mImg.forEach((img, index) => {
-        if (index !== i) {
-            img.classList.add('active-img');
-        }
-    })
+      if (index !== i) {
+        img.classList.remove("active-img");
+      }
+    });
+
+    // Adding the active-img to the clicked class
+    cur.classList.add("active-img");
   });
 });
 

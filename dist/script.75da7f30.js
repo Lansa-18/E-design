@@ -175,9 +175,12 @@ mImg.forEach(function (cur, i, arr) {
     // Removing the active-img class from other images
     mImg.forEach(function (img, index) {
       if (index !== i) {
-        img.classList.add('active-img');
+        img.classList.remove("active-img");
       }
     });
+
+    // Adding the active-img to the clicked class
+    cur.classList.add("active-img");
   });
 });
 
