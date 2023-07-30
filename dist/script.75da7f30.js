@@ -128,6 +128,7 @@ var cartAmt = document.querySelector(".cart-amount");
 var mImg = document.querySelectorAll(".m-img");
 var renderedImg = document.querySelector(".render-img");
 var cartIcon = document.querySelector(".img-cart");
+var cartDrop = document.querySelector('.cart__dropdown');
 
 // Implemwnting the plus sign
 amtAdd.addEventListener("click", function (e) {
@@ -180,9 +181,7 @@ mImg.forEach(function (cur, i, arr) {
 });
 
 // Implementing the cart dropdown functionality
-cartIcon.addEventListener('click', function () {
-  console.log('Cart was clicked');
-});
+cartIcon.addEventListener('click', function () {});
 
 // console.log(mImg);
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {

@@ -10,6 +10,7 @@ const mImg = document.querySelectorAll(".m-img");
 const renderedImg = document.querySelector(".render-img");
 
 const cartIcon = document.querySelector(".img-cart");
+const cartDrop = document.querySelector('.cart__dropdown');
 
 // Implemwnting the plus sign
 amtAdd.addEventListener("click", (e) => {
@@ -61,7 +62,7 @@ mImg.forEach((cur, i, arr) => {
 
 // Implementing the cart dropdown functionality
 cartIcon.addEventListener('click', ()=> {
-    console.log('Cart was clicked');
+    
 })
 
 
