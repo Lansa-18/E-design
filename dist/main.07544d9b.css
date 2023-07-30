@@ -113,6 +113,17 @@ header {
   text-align: center;
   color: hsl(220, 14%, 75%);
 }
+.nav__right .cart__dropdown--contents .cart__content--flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+}
+.nav__right .cart__dropdown--contents .cart__content--flex .img-thumb {
+  width: 20%;
+  border-radius: 0.5rem;
+}
 .nav__right .img-avatar {
   width: 40%;
   cursor: pointer;
