@@ -108,7 +108,6 @@ header {
 .nav__right .cart__dropdown--contents h3 {
   text-align: center;
   color: hsl(220, 14%, 75%);
-  display: none;
 }
 .nav__right .img-avatar {
   width: 40%;
