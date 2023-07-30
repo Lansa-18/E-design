@@ -67,14 +67,21 @@ header {
       z-index: 3;
       top: 5rem;
       right: 4rem;
-      width: 15%;
+      width: 20%;
 
       h3{
         padding: .8rem;
       }
 
       &--contents{
-        border-top: 1px solid $dark-blue;
+        border-top: 1px solid $blue;
+        min-height: 20vh;
+
+        h3{
+          text-align: center;
+          color: $blue;
+          display: none;
+        }
       }
     }
 
