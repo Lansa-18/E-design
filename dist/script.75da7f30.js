@@ -181,7 +181,9 @@ mImg.forEach(function (cur, i, arr) {
 });
 
 // Implementing the cart dropdown functionality
-cartIcon.addEventListener('click', function () {});
+cartIcon.addEventListener('click', function () {
+  cartDrop.classList.toggle('hidden');
+});
 
 // console.log(mImg);
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {

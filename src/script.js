@@ -62,7 +62,7 @@ mImg.forEach((cur, i, arr) => {
 
 // Implementing the cart dropdown functionality
 cartIcon.addEventListener('click', ()=> {
-    
+    cartDrop.classList.toggle('hidden');
 })
 
 
