@@ -72,6 +72,10 @@ header {
       h3{
         padding: .8rem;
       }
+
+      &--contents{
+        border-top: 1px solid $dark-blue;
+      }
     }
 
     .img-avatar {

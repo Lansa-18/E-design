@@ -101,6 +101,9 @@ header {
 .nav__right .cart__dropdown h3 {
   padding: 0.8rem;
 }
+.nav__right .cart__dropdown--contents {
+  border-top: 1px solid hsl(219, 9%, 45%);
+}
 .nav__right .img-avatar {
   width: 40%;
   cursor: pointer;
