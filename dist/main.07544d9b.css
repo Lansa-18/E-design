@@ -69,13 +69,13 @@ header {
   justify-content: space-between;
   width: 8%;
 }
-.nav__right .cart-dropdown {
+.nav__right .cart-div {
   position: relative;
 }
-.nav__right .cart-dropdown .img-cart {
+.nav__right .cart-div .img-cart {
   display: block;
 }
-.nav__right .cart-dropdown .cart-amount {
+.nav__right .cart-div .cart-amount {
   display: none;
   background: #ff7d1a;
   color: hsl(0, 0%, 100%);
