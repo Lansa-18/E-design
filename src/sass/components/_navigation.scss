@@ -58,6 +58,22 @@ header {
         top: -.4rem;
       }
     }
+
+    .cart__dropdown{
+      // padding: ;
+      background-color: $white;
+      box-shadow:  0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      position: absolute;
+      z-index: 3;
+      top: 5rem;
+      right: 4rem;
+      width: 15%;
+
+      h3{
+        padding: .8rem;
+      }
+    }
+
     .img-avatar {
       width: 40%;
       cursor: pointer;
@@ -68,4 +84,6 @@ header {
       }
     }
   }
+
+
 }

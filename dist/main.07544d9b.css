@@ -89,6 +89,18 @@ header {
   right: -0.4rem;
   top: -0.4rem;
 }
+.nav__right .cart__dropdown {
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  position: absolute;
+  z-index: 3;
+  top: 5rem;
+  right: 4rem;
+  width: 15%;
+}
+.nav__right .cart__dropdown h3 {
+  padding: 0.8rem;
+}
 .nav__right .img-avatar {
   width: 40%;
   cursor: pointer;
