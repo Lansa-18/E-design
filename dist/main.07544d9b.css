@@ -30,6 +30,10 @@ html {
   border: 2px solid #ff7d1a;
 }
 
+.hidden {
+  display: none;
+}
+
 header {
   width: 85%;
   margin: auto;
