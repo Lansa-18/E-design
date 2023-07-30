@@ -125,14 +125,9 @@ var amtSub = document.querySelector(".amount-minus");
 var amtVal = document.querySelector(".amount-value");
 var amtSubmit = document.querySelector(".amount__submit");
 var cartAmt = document.querySelector(".cart-amount");
-
-// const mImg = document.querySelector('.m-img1');
-// const mImg2 = document.querySelector('.m-img2');
-// const mImg3 = document.querySelector('.m-img3');
-// const mImg4 = document.querySelector('.m-img4');
-
 var mImg = document.querySelectorAll(".m-img");
 var renderedImg = document.querySelector(".render-img");
+var cartIcon = document.querySelector(".img-cart");
 
 // Implemwnting the plus sign
 amtAdd.addEventListener("click", function (e) {
@@ -182,6 +177,11 @@ mImg.forEach(function (cur, i, arr) {
     // Adding the active-img to the clicked class
     cur.classList.add("active-img");
   });
+});
+
+// Implementing the cart dropdown functionality
+cartIcon.addEventListener('click', function () {
+  console.log('Cart was clicked');
 });
 
 // console.log(mImg);

@@ -6,13 +6,10 @@ const amtVal = document.querySelector(".amount-value");
 const amtSubmit = document.querySelector(".amount__submit");
 const cartAmt = document.querySelector(".cart-amount");
 
-// const mImg = document.querySelector('.m-img1');
-// const mImg2 = document.querySelector('.m-img2');
-// const mImg3 = document.querySelector('.m-img3');
-// const mImg4 = document.querySelector('.m-img4');
-
 const mImg = document.querySelectorAll(".m-img");
 const renderedImg = document.querySelector(".render-img");
+
+const cartIcon = document.querySelector(".img-cart");
 
 // Implemwnting the plus sign
 amtAdd.addEventListener("click", (e) => {
@@ -61,5 +58,13 @@ mImg.forEach((cur, i, arr) => {
     cur.classList.add("active-img");
   });
 });
+
+// Implementing the cart dropdown functionality
+cartIcon.addEventListener('click', ()=> {
+    console.log('Cart was clicked');
+})
+
+
+
 
 // console.log(mImg);
