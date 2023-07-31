@@ -126,7 +126,7 @@ header {
 }
 .nav__right .cart__dropdown--contents .cart__content--flex .content-texts p {
   color: hsl(219, 9%, 45%);
-  font-weight: 700;
+  font-weight: 600;
   font-size: 1rem;
 }
 .nav__right .cart__dropdown--contents .cart__content--flex .content-texts span {
