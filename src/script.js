@@ -29,12 +29,12 @@ amtSub.addEventListener("click", (e) => {
 const addToCart = (cartamt) => {
     const priceShoe = 125 * cartamt;
   cartContFlex.innerHTML = `
-      <img class="img-thumb" src="./images/image-product-1-thumbnail.jpg" alt="shoe1-thumb">
+      <img class="img-thumb" src="/image-product-1-thumbnail.64dcbb28.jpg" alt="shoe1-thumb">
       <div class="content-texts">
         <p class="p1">Fall Limited Edition Sneakers</p>
         <p class="p2">$125 x ${cartamt} = <span>$${priceShoe}.00</span></p>
       </div>
-      <img class="img-delete" src="./images/icon-delete.svg" alt="icon-delete">
+      <img class="img-delete" src="/icon-delete.022a9515.svg" alt="icon-delete">
       `;
 };
 
@@ -47,7 +47,7 @@ amtSubmit.addEventListener("click", () => {
   amtVal.textContent = 0;
   const amtTotal = cartAmtHolder.reduce((acc, amt) => acc + parseFloat(amt), 0);
   cartAmt.textContent = amtTotal;
-  addToCart(cartAmt.textContent)
+//   addToCart(cartAmt.textContent);
 });
 
 // Implementing the img-thumbnails functionality.

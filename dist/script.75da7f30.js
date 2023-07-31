@@ -146,7 +146,7 @@ amtSub.addEventListener("click", function (e) {
 //  Function responsibe for adding items into the cart
 var addToCart = function addToCart(cartamt) {
   var priceShoe = 125 * cartamt;
-  cartContFlex.innerHTML = "\n      <img class=\"img-thumb\" src=\"./images/image-product-1-thumbnail.jpg\" alt=\"shoe1-thumb\">\n      <div class=\"content-texts\">\n        <p class=\"p1\">Fall Limited Edition Sneakers</p>\n        <p class=\"p2\">$125 x ".concat(cartamt, " = <span>$").concat(priceShoe, ".00</span></p>\n      </div>\n      <img class=\"img-delete\" src=\"./images/icon-delete.svg\" alt=\"icon-delete\">\n      ");
+  cartContFlex.innerHTML = "\n      <img class=\"img-thumb\" src=\"/image-product-1-thumbnail.64dcbb28.jpg\" alt=\"shoe1-thumb\">\n      <div class=\"content-texts\">\n        <p class=\"p1\">Fall Limited Edition Sneakers</p>\n        <p class=\"p2\">$125 x ".concat(cartamt, " = <span>$").concat(priceShoe, ".00</span></p>\n      </div>\n      <img class=\"img-delete\" src=\"/icon-delete.022a9515.svg\" alt=\"icon-delete\">\n      ");
 };
 
 // Implementing the add to cart functionality
@@ -160,7 +160,7 @@ amtSubmit.addEventListener("click", function () {
     return acc + parseFloat(amt);
   }, 0);
   cartAmt.textContent = amtTotal;
-  addToCart(cartAmt.textContent);
+  //   addToCart(cartAmt.textContent);
 });
 
 // Implementing the img-thumbnails functionality.
