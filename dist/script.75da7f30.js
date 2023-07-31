@@ -187,7 +187,9 @@ cartIcon.addEventListener('click', function () {
 });
 
 //  Function responsibe for adding items into the cart
-var addToCart = function addToCart(cartamt) {};
+var addToCart = function addToCart(cartamt) {
+  cartContFlex.innerHTML = "\n    <img class=\"img-thumb\" src=\"./images/image-product-1-thumbnail.jpg\" alt=\"shoe1-thumb\">\n    <div class=\"content-texts\">\n      <p class=\"p1\">Fall Limited Edition Sneakers</p>\n      <p class=\"p2\">$125.00 x ".concat(cartamt, " <span>$375.00</span></p>\n    </div>\n    <img class=\"img-delete\" src=\"./images/icon-delete.svg\" alt=\"icon-delete\">\n    ");
+};
 
 // console.log(mImg);
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {

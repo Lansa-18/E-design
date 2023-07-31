@@ -68,7 +68,14 @@ cartIcon.addEventListener('click', ()=> {
 
 //  Function responsibe for adding items into the cart
 const addToCart = (cartamt) => {
-
+    cartContFlex.innerHTML = `
+    <img class="img-thumb" src="./images/image-product-1-thumbnail.jpg" alt="shoe1-thumb">
+    <div class="content-texts">
+      <p class="p1">Fall Limited Edition Sneakers</p>
+      <p class="p2">$125.00 x ${cartamt} <span>$375.00</span></p>
+    </div>
+    <img class="img-delete" src="./images/icon-delete.svg" alt="icon-delete">
+    `
 }
 
 
