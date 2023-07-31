@@ -129,6 +129,10 @@ header {
   font-weight: 700;
   font-size: 1rem;
 }
+.nav__right .cart__dropdown--contents .cart__content--flex .content-texts span {
+  color: black;
+  font-weight: 800;
+}
 .nav__right .img-avatar {
   width: 40%;
   cursor: pointer;
