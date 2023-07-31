@@ -124,7 +124,7 @@ header {
   width: 20%;
   border-radius: 0.5rem;
 }
-.nav__right .cart__dropdown--contents .cart__content--flex .content--texts p {
+.nav__right .cart__dropdown--contents .cart__content--flex .content-texts p {
   border: 1px solid red;
 }
 .nav__right .img-avatar {
