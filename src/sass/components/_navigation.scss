@@ -36,14 +36,14 @@ header {
     @include dflexcomp;
     width: 8%;
 
-    .cart-div{    
-      position: relative;  
+    .cart-div {
+      position: relative;
 
-      .img-cart{
+      .img-cart {
         display: block;
       }
 
-      .cart-amount{
+      .cart-amount {
         display: none;
         background: $pry-orange;
         color: $white;
@@ -51,59 +51,58 @@ header {
         height: 1.2rem;
         width: 1.2rem;
         text-align: center;
-        font-size: .9rem;
-        padding: .15rem;
+        font-size: 0.9rem;
+        padding: 0.15rem;
         position: absolute;
-        right: -.4rem;
-        top: -.4rem;
+        right: -0.4rem;
+        top: -0.4rem;
       }
     }
 
-    .cart__dropdown{
+    .cart__dropdown {
       // padding: ;
       background-color: $white;
-      box-shadow:  0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
       position: absolute;
       z-index: 3;
       top: 5rem;
       right: 4rem;
       width: 20%;
 
-      h3{
-        padding: .8rem;
+      h3 {
+        padding: 0.8rem;
       }
 
-      &--contents{
+      &--contents {
         border-top: 1px solid $blue;
-        min-height: 20vh;
+        min-height: 15vh;
 
-        h3{
+        h3 {
           text-align: center;
           color: $blue;
         }
 
-        .cart__content--flex{
+        .cart__content--flex {
           @include dflexcomp;
           width: 90%;
           margin: auto;
 
-          .img-thumb{
+          .img-thumb {
             width: 20%;
-            border-radius: .5rem;
+            border-radius: 0.5rem;
           }
 
-          .content-texts{
-            p{
+          .content-texts {
+            p {
               color: $dark-blue;
               font-weight: 600;
               font-size: 1rem;
             }
 
-            span{
+            span {
               color: $black;
               font-weight: 800;
             }
-
           }
         }
       }
@@ -114,11 +113,9 @@ header {
       cursor: pointer;
       border-radius: 50%;
 
-      &:hover{
+      &:hover {
         border: 2px solid $pry-orange;
       }
     }
   }
-
-
 }
