@@ -125,8 +125,8 @@ header {
   border-radius: 0.5rem;
 }
 .nav__right .cart__dropdown--contents .cart__content--flex .content-texts p {
-  border: 1px solid red;
-  color: hsl(220, 14%, 75%);
+  color: hsl(219, 9%, 45%);
+  font-weight: 700;
   font-size: 1rem;
 }
 .nav__right .img-avatar {
