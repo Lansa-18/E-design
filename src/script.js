@@ -11,6 +11,7 @@ const renderedImg = document.querySelector(".render-img");
 
 const cartIcon = document.querySelector(".img-cart");
 const cartDrop = document.querySelector('.cart__dropdown');
+const cartContFlex = document.querySelector('.cart__content--flex');
 
 // Implemwnting the plus sign
 amtAdd.addEventListener("click", (e) => {

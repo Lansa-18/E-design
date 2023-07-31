@@ -129,6 +129,7 @@ var mImg = document.querySelectorAll(".m-img");
 var renderedImg = document.querySelector(".render-img");
 var cartIcon = document.querySelector(".img-cart");
 var cartDrop = document.querySelector('.cart__dropdown');
+var cartContFlex = document.querySelector('.cart__content--flex');
 
 // Implemwnting the plus sign
 amtAdd.addEventListener("click", function (e) {
