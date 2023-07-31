@@ -65,6 +65,11 @@ cartIcon.addEventListener('click', ()=> {
     cartDrop.classList.toggle('hidden');
 })
 
+//  Function responsibe for adding items into the cart
+const addToCart = () => {
+    
+}
+
 
 
 
