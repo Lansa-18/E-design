@@ -186,7 +186,7 @@ cartIcon.addEventListener('click', function () {
 });
 
 //  Function responsibe for adding items into the cart
-var addToCart = function addToCart() {};
+var addToCart = function addToCart(cartamt) {};
 
 // console.log(mImg);
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {

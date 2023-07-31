@@ -66,8 +66,8 @@ cartIcon.addEventListener('click', ()=> {
 })
 
 //  Function responsibe for adding items into the cart
-const addToCart = () => {
-    
+const addToCart = (cartamt) => {
+
 }
 
 
