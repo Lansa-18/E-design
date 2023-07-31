@@ -128,8 +128,8 @@ var cartAmt = document.querySelector(".cart-amount");
 var mImg = document.querySelectorAll(".m-img");
 var renderedImg = document.querySelector(".render-img");
 var cartIcon = document.querySelector(".img-cart");
-var cartDrop = document.querySelector('.cart__dropdown');
-var cartContFlex = document.querySelector('.cart__content--flex');
+var cartDrop = document.querySelector(".cart__dropdown");
+var cartContFlex = document.querySelector(".cart__content--flex");
 
 //  Function responsibe for adding items into the cart
 var addToCart = function addToCart(cartamt) {
@@ -187,8 +187,8 @@ mImg.forEach(function (cur, i, arr) {
 });
 
 // Implementing the cart dropdown functionality
-cartIcon.addEventListener('click', function () {
-  cartDrop.classList.toggle('hidden');
+cartIcon.addEventListener("click", function () {
+  cartDrop.classList.toggle("hidden");
 });
 
 // console.log(mImg);

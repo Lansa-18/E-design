@@ -10,20 +10,20 @@ const mImg = document.querySelectorAll(".m-img");
 const renderedImg = document.querySelector(".render-img");
 
 const cartIcon = document.querySelector(".img-cart");
-const cartDrop = document.querySelector('.cart__dropdown');
-const cartContFlex = document.querySelector('.cart__content--flex');
+const cartDrop = document.querySelector(".cart__dropdown");
+const cartContFlex = document.querySelector(".cart__content--flex");
 
 //  Function responsibe for adding items into the cart
 const addToCart = (cartamt) => {
-    cartContFlex.innerHTML = `
+  cartContFlex.innerHTML = `
     <img class="img-thumb" src="./images/image-product-1-thumbnail.jpg" alt="shoe1-thumb">
     <div class="content-texts">
       <p class="p1">Fall Limited Edition Sneakers</p>
       <p class="p2">$125.00 x ${cartamt} <span>$375.00</span></p>
     </div>
     <img class="img-delete" src="./images/icon-delete.svg" alt="icon-delete">
-    `
-}
+    `;
+};
 
 // Implemwnting the plus sign
 amtAdd.addEventListener("click", (e) => {
@@ -74,13 +74,8 @@ mImg.forEach((cur, i, arr) => {
 });
 
 // Implementing the cart dropdown functionality
-cartIcon.addEventListener('click', ()=> {
-    cartDrop.classList.toggle('hidden');
-})
-
-
-
-
-
+cartIcon.addEventListener("click", () => {
+  cartDrop.classList.toggle("hidden");
+});
 
 // console.log(mImg);
