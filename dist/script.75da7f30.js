@@ -130,7 +130,7 @@ var renderedImg = document.querySelector(".render-img");
 var cartIcon = document.querySelector(".img-cart");
 var cartDrop = document.querySelector(".cart__dropdown");
 var cartContFlex = document.querySelector(".cart__content--flex");
-var cartConth3 = document.querySelector('.cart__content--h3');
+var cartConth3 = document.querySelector(".cart__content--h3");
 
 // Implemwnting the plus sign
 amtAdd.addEventListener("click", function (e) {
@@ -160,9 +160,8 @@ amtSubmit.addEventListener("click", function () {
   var amtTotal = cartAmtHolder.reduce(function (acc, amt) {
     return acc + parseFloat(amt);
   }, 0);
-  amtTotal > 0 ? cartAmt.textContent = amtTotal : cartAmt.style.display = 'none', cartContFlex.style.display = 'none';
+  amtTotal > 0 ? cartAmt.textContent = amtTotal : cartAmt.style.display = "none", cartContFlex.style.display = "none", cartConth3.classList.add("hidden");
   //   cartAmt.textContent = amtTotal;
-  cartConth3.classList.add('hidden');
   addToCart(cartAmt.textContent);
 });
 
