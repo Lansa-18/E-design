@@ -64,6 +64,7 @@ header {
 }
 .nav li a:hover {
   color: #ff7d1a;
+  font-weight: 600;
 }
 .nav__left {
   display: flex;
