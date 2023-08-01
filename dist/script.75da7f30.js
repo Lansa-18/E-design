@@ -160,7 +160,7 @@ amtSubmit.addEventListener("click", function () {
     return acc + parseFloat(amt);
   }, 0);
   cartAmt.textContent = amtTotal;
-  //   addToCart(cartAmt.textContent);
+  addToCart(cartAmt.textContent);
 });
 
 // Implementing the img-thumbnails functionality.

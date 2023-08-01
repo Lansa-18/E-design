@@ -47,7 +47,7 @@ amtSubmit.addEventListener("click", () => {
   amtVal.textContent = 0;
   const amtTotal = cartAmtHolder.reduce((acc, amt) => acc + parseFloat(amt), 0);
   cartAmt.textContent = amtTotal;
-//   addToCart(cartAmt.textContent);
+  addToCart(cartAmt.textContent);
 });
 
 // Implementing the img-thumbnails functionality.
