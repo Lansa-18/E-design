@@ -163,7 +163,7 @@ amtSubmit.addEventListener("click", function () {
     return acc + parseFloat(amt);
   }, 0);
 
-  // Updating the UI based on the condition true or false of the amtTotal variable. 
+  // Updating the UI based on the condition true or false of the amtTotal variable.
   amtTotal > 0 ? (cartAmt.textContent = amtTotal, cartConth3.classList.add("hidden"), cartContFlex.style.display = "flex") : (cartAmt.style.display = "none", cartContFlex.style.display = "none");
 
   // calling the function addToCart to display the UI in the cart.
