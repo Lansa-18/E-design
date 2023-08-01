@@ -162,7 +162,7 @@ amtSubmit.addEventListener("click", function () {
   }, 0);
   amtTotal > 0 ? cartAmt.textContent = amtTotal : cartAmt.style.display = 'none';
   cartConth3.classList.add('hidden');
-  addToCart(cartAmt.textContent);
+  //   addToCart(cartAmt.textContent);
 });
 
 // Implementing the img-thumbnails functionality.
