@@ -153,14 +153,20 @@ var addToCart = function addToCart(cartamt) {
 // Implementing the add to cart functionality
 var cartAmtHolder = [];
 amtSubmit.addEventListener("click", function () {
+  // setting the cart amount to be visible
   cartAmt.style.display = "block";
-  //   cartAmt.textContent = amtVal.textContent;
   cartAmtHolder.push(amtVal.textContent);
   amtVal.textContent = 0;
+
+  // adding up all the numbers in the holders array and then storing it into a variable
   var amtTotal = cartAmtHolder.reduce(function (acc, amt) {
     return acc + parseFloat(amt);
   }, 0);
+
+  // Updating the UI based on the condition true or false of the amtTotal variable. 
   amtTotal > 0 ? (cartAmt.textContent = amtTotal, cartConth3.classList.add("hidden"), cartContFlex.style.display = "flex") : (cartAmt.style.display = "none", cartContFlex.style.display = "none");
+
+  // calling the function addToCart to display the UI in the cart.
   addToCart(cartAmt.textContent);
 });
 
