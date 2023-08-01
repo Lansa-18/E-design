@@ -102,9 +102,6 @@ header {
   right: 4rem;
   width: 20%;
 }
-.nav__right .cart__dropdown h3 {
-  padding: 0.8rem;
-}
 .nav__right .cart__dropdown--contents {
   border-top: 1px solid hsl(220, 14%, 75%);
   min-height: 15vh;
@@ -112,6 +109,7 @@ header {
 .nav__right .cart__dropdown--contents h3 {
   text-align: center;
   color: hsl(220, 14%, 75%);
+  border: 1px solid red;
 }
 .nav__right .cart__dropdown--contents .cart__content--flex {
   display: flex;
