@@ -130,6 +130,7 @@ var renderedImg = document.querySelector(".render-img");
 var cartIcon = document.querySelector(".img-cart");
 var cartDrop = document.querySelector(".cart__dropdown");
 var cartContFlex = document.querySelector(".cart__content--flex");
+var cartConth3 = document.querySelector('.cart__content--h3');
 
 // Implemwnting the plus sign
 amtAdd.addEventListener("click", function (e) {
@@ -160,6 +161,7 @@ amtSubmit.addEventListener("click", function () {
     return acc + parseFloat(amt);
   }, 0);
   cartAmt.textContent = amtTotal;
+  cartConth3.classList.add('hidden');
   addToCart(cartAmt.textContent);
 });
 
