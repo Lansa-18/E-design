@@ -60,6 +60,10 @@ header {
 .nav li a {
   text-decoration: none;
   color: hsl(219, 9%, 45%);
+  transition: all 0.3s;
+}
+.nav li a:hover {
+  color: #ff7d1a;
 }
 .nav__left {
   display: flex;
