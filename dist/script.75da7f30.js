@@ -160,8 +160,8 @@ amtSubmit.addEventListener("click", function () {
   var amtTotal = cartAmtHolder.reduce(function (acc, amt) {
     return acc + parseFloat(amt);
   }, 0);
-  //   amtTotal > 0 ?  : cartDrop.style.display = 'none', cartAmt.style.display = 'none';
-  cartAmt.textContent = amtTotal;
+  amtTotal > 0 ? cartAmt.textContent = amtTotal : cartAmt.style.display = 'none', cartContFlex.classList.add('hidden');
+  //   cartAmt.textContent = amtTotal;
   cartConth3.classList.add('hidden');
   addToCart(cartAmt.textContent);
 });
