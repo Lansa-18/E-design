@@ -68,14 +68,18 @@ header {
       right: 4rem;
       width: 20%;
 
+      .cart-heading{
+        padding: .8rem;
+      }
+
       &--contents {
         border-top: 1px solid $blue;
         min-height: 15vh;
+        padding: 1rem 0 0 0;
 
         h3 {
           text-align: center;
           color: $blue;
-          border: 1px solid red
         }
 
         .cart__content--flex {
