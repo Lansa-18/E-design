@@ -12,7 +12,7 @@ const renderedImg = document.querySelector(".render-img");
 const cartIcon = document.querySelector(".img-cart");
 const cartDrop = document.querySelector(".cart__dropdown");
 const cartContFlex = document.querySelector(".cart__content--flex");
-const cartConth3 = document.querySelector('.cart__content--h3');
+const cartConth3 = document.querySelector(".cart__content--h3");
 
 // Implemwnting the plus sign
 amtAdd.addEventListener("click", (e) => {
@@ -47,8 +47,11 @@ amtSubmit.addEventListener("click", () => {
   cartAmtHolder.push(amtVal.textContent);
   amtVal.textContent = 0;
   const amtTotal = cartAmtHolder.reduce((acc, amt) => acc + parseFloat(amt), 0);
-  amtTotal > 0 ? (cartAmt.textContent = amtTotal, cartConth3.classList.add('hidden'), cartContFlex.style.display = 'flex') : (cartAmt.style.display = 'none', cartContFlex.style.display = 'none');
-//   cartAmt.textContent = amtTotal;;
+  amtTotal > 0
+    ? ((cartAmt.textContent = amtTotal),
+      cartConth3.classList.add("hidden"),
+      (cartContFlex.style.display = "flex"))
+    : ((cartAmt.style.display = "none"), (cartContFlex.style.display = "none"));
   addToCart(cartAmt.textContent);
 });
 
