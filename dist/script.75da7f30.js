@@ -134,7 +134,7 @@ var cartConth3 = document.querySelector(".cart__content--h3");
 
 // Defining img file path of the images
 var thumb1 = "/image-product-1-thumbnail.64dcbb28.jpg";
-// const thumb2 = "/image-product-1-thumbnail.64dcbb28.jpg";
+var thumb2 = "/image-product-2-thumbnail.e8d992f7.jpg";
 // const thumb3 = "/image-product-1-thumbnail.64dcbb28.jpg";
 // const thumb4 = "/image-product-1-thumbnail.64dcbb28.jpg";
 
@@ -188,6 +188,7 @@ mImg.forEach(function (cur, i, arr) {
       renderedImg.setAttribute("src", "/image-product-1.12c5dacc.jpg");
     } else if (i === 1) {
       renderedImg.setAttribute("src", "/image-product-2.a6df5b34.jpg");
+      cartImgChange(thumb1);
     } else if (i === 2) {
       renderedImg.setAttribute("src", "/image-product-3.143cec63.jpg");
     } else if (i === 3) {
