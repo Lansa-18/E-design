@@ -33,14 +33,9 @@ amtSub.addEventListener("click", (e) => {
 });
 
 //  Function responsibe for adding items into the cart
-const addToCart = (cartamt) => {
+const addToCart = (cartamt, thumbImg) => {
     // calculation of the price of shoe
     const priceShoe = 125 * cartamt;
-
-};
-
-// Updating the UI based on the 'cartamt' value passed into the function.
-const cartImgChange = (thumbImg, cartamt) => {
     cartContFlex.innerHTML = `
     <img class="img-thumb" src = ${thumbImg} alt="shoe1-thumb">
     <div class="content-texts">
@@ -49,7 +44,19 @@ const cartImgChange = (thumbImg, cartamt) => {
     </div>
     <img class="img-delete" src="/icon-delete.022a9515.svg" alt="icon-delete">
     `;
-}
+};
+
+// Updating the UI based on the 'cartamt' value passed into the function.
+// const cartImgChange = (thumbImg, cartamt) => {
+//     cartContFlex.innerHTML = `
+//     <img class="img-thumb" src = ${thumbImg} alt="shoe1-thumb">
+//     <div class="content-texts">
+//       <p class="p1">Fall Limited Edition Sneakers</p>
+//       <p class="p2">$125 x ${cartamt} = <span>$${priceShoe}.00</span></p>
+//     </div>
+//     <img class="img-delete" src="/icon-delete.022a9515.svg" alt="icon-delete">
+//     `;
+// }
 
 // Implementing the add to cart functionality
 let cartAmtHolder = [];
@@ -70,7 +77,7 @@ amtSubmit.addEventListener("click", () => {
     : ((cartAmt.style.display = "none"), (cartContFlex.style.display = "none"));
 
   // calling the function addToCart to display the UI in the cart.
-  addToCart(cartAmt.textContent);
+//   addToCart(cartAmt.textContent, thumb1);
 });
 
 // Implementing the img-thumbnails functionality.
@@ -78,9 +85,9 @@ mImg.forEach((cur, i, arr) => {
   cur.addEventListener("click", (e) => {
     if (i === 0) {
       renderedImg.setAttribute("src", "/image-product-1.12c5dacc.jpg");
+      addToCart(cartAmt.textContent, thumb1);
     } else if (i === 1) {
       renderedImg.setAttribute("src", "/image-product-2.a6df5b34.jpg");
-      cartImgChange(thumb2, cartAmt.textContent);
     } else if (i === 2) {
       renderedImg.setAttribute("src", "/image-product-3.143cec63.jpg");
     } else if (i === 3) {
