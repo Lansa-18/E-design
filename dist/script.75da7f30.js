@@ -160,13 +160,13 @@ var addToCart = function addToCart(cartamt) {
   // calculation of the price of shoe
   var priceShoe = 125 * cartamt;
   if (renderedImg.src === "./images/image-product-1.jpg") {
-    cartImgChange(thumb1, cartAmt.textContent, priceShoe);
+    cartImgChange(thumb1, cartamt, priceShoe);
   } else if (renderedImg.src === "./images/image-product-2.jpg") {
-    cartImgChange(thumb1, cartAmt.textContent, priceShoe);
+    cartImgChange(thumb1, cartamt, priceShoe);
   } else if (renderedImg.src === "./images/image-product-3.jpg") {
-    cartImgChange(thumb1, cartAmt.textContent, priceShoe);
+    cartImgChange(thumb1, cartamt, priceShoe);
   } else if (renderedImg.src === "./images/image-product-4.jpg") {
-    cartImgChange(thumb1, cartAmt.textContent, priceShoe);
+    cartImgChange(thumb1, cartamt, priceShoe);
   }
 
   // cartContFlex.innerHTML = `
