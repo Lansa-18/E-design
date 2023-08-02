@@ -150,24 +150,27 @@ amtSub.addEventListener("click", function (e) {
   amtVal.textContent > 0 ? amtVal.textContent-- : 0;
 });
 
+// Updating the UI based on the 'cartamt' value passed into the function.
+var cartImgChange = function cartImgChange(thumbImg, cartamt, priceShoe) {
+  cartContFlex.innerHTML = "\n    <img class=\"img-thumb\" src = ".concat(thumbImg, " alt=\"shoe1-thumb\">\n    <div class=\"content-texts\">\n      <p class=\"p1\">Fall Limited Edition Sneakers</p>\n      <p class=\"p2\">$125 x ").concat(cartamt, " = <span>$").concat(priceShoe, ".00</span></p>\n    </div>\n    <img class=\"img-delete\" src=\"/icon-delete.022a9515.svg\" alt=\"icon-delete\">\n    ");
+};
+
 //  Function responsibe for adding items into the cart
 var addToCart = function addToCart(cartamt, thumbImg) {
   // calculation of the price of shoe
   var priceShoe = 125 * cartamt;
-  cartContFlex.innerHTML = "\n    <img class=\"img-thumb\" src = ".concat(thumbImg, " alt=\"shoe1-thumb\">\n    <div class=\"content-texts\">\n      <p class=\"p1\">Fall Limited Edition Sneakers</p>\n      <p class=\"p2\">$125 x ").concat(cartamt, " = <span>$").concat(priceShoe, ".00</span></p>\n    </div>\n    <img class=\"img-delete\" src=\"/icon-delete.022a9515.svg\" alt=\"icon-delete\">\n    ");
+  if (renderedImg.src = "./images/image-product-1.jpg") {
+    cartImgChange(thumb1, cartamt, priceShoe);
+  }
+  // cartContFlex.innerHTML = `
+  // <img class="img-thumb" src = ${thumbImg} alt="shoe1-thumb">
+  // <div class="content-texts">
+  //   <p class="p1">Fall Limited Edition Sneakers</p>
+  //   <p class="p2">$125 x ${cartamt} = <span>$${priceShoe}.00</span></p>
+  // </div>
+  // <img class="img-delete" src="/icon-delete.022a9515.svg" alt="icon-delete">
+  // `;
 };
-
-// Updating the UI based on the 'cartamt' value passed into the function.
-// const cartImgChange = (thumbImg, cartamt) => {
-//     cartContFlex.innerHTML = `
-//     <img class="img-thumb" src = ${thumbImg} alt="shoe1-thumb">
-//     <div class="content-texts">
-//       <p class="p1">Fall Limited Edition Sneakers</p>
-//       <p class="p2">$125 x ${cartamt} = <span>$${priceShoe}.00</span></p>
-//     </div>
-//     <img class="img-delete" src="/icon-delete.022a9515.svg" alt="icon-delete">
-//     `;
-// }
 
 // Implementing the add to cart functionality
 var cartAmtHolder = [];
@@ -186,7 +189,7 @@ amtSubmit.addEventListener("click", function () {
   amtTotal > 0 ? (cartAmt.textContent = amtTotal, cartConth3.classList.add("hidden"), cartContFlex.style.display = "flex") : (cartAmt.style.display = "none", cartContFlex.style.display = "none");
 
   // calling the function addToCart to display the UI in the cart.
-  //   addToCart(cartAmt.textContent, thumb1);
+  addToCart(cartAmt.textContent, thumb1);
 });
 
 // Implementing the img-thumbnails functionality.
