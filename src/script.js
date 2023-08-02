@@ -30,10 +30,11 @@ amtSub.addEventListener("click", (e) => {
 const addToCart = (cartamt) => {
     // calculation of the price of shoe
     const priceShoe = 125 * cartamt;
+
 };
 
 // Updating the UI based on the 'cartamt' value passed into the function.
-const cartImgChange = () {
+const cartImgChange = (thumbImg) => {
     cartContFlex.innerHTML = `
     <img class="img-thumb" src="/image-product-1-thumbnail.64dcbb28.jpg" alt="shoe1-thumb">
     <div class="content-texts">
@@ -43,6 +44,7 @@ const cartImgChange = () {
     <img class="img-delete" src="/icon-delete.022a9515.svg" alt="icon-delete">
     `;
 }
+
 // Implementing the add to cart functionality
 let cartAmtHolder = [];
 amtSubmit.addEventListener("click", () => {
