@@ -161,6 +161,32 @@ var cartImgChange = function cartImgChange(thumbImg, cartamt) {
   cartContFlex.innerHTML = "\n    <img class=\"img-thumb\" src = ".concat(thumbImg, " alt=\"shoe1-thumb\">\n    <div class=\"content-texts\">\n      <p class=\"p1\">Fall Limited Edition Sneakers</p>\n      <p class=\"p2\">$125 x ").concat(cartamt, " = <span>$").concat(priceShoe, ".00</span></p>\n    </div>\n    <img class=\"img-delete\" src=\"/icon-delete.022a9515.svg\" alt=\"icon-delete\">\n    ");
 };
 
+// Implementing the img-thumbnails functionality.
+mImg.forEach(function (cur, i, arr) {
+  cur.addEventListener("click", function (e) {
+    if (i === 0) {
+      renderedImg.setAttribute("src", "/image-product-1.12c5dacc.jpg");
+    } else if (i === 1) {
+      renderedImg.setAttribute("src", "/image-product-2.a6df5b34.jpg");
+      cartImgChange(thumb2, cartAmt.textContent);
+    } else if (i === 2) {
+      renderedImg.setAttribute("src", "/image-product-3.143cec63.jpg");
+    } else if (i === 3) {
+      renderedImg.setAttribute("src", "/image-product-4.8eede8d0.jpg");
+    }
+
+    // Removing the active-img class from other images
+    mImg.forEach(function (img, index) {
+      if (index !== i) {
+        img.classList.remove("active-img");
+      }
+    });
+
+    // Adding the active-img to the clicked class
+    cur.classList.add("active-img");
+  });
+});
+
 // Implementing the add to cart functionality
 var cartAmtHolder = [];
 amtSubmit.addEventListener("click", function () {
@@ -179,32 +205,6 @@ amtSubmit.addEventListener("click", function () {
 
   // calling the function addToCart to display the UI in the cart.
   addToCart(cartAmt.textContent);
-});
-
-// Implementing the img-thumbnails functionality.
-mImg.forEach(function (cur, i, arr) {
-  cur.addEventListener("click", function (e) {
-    if (i === 0) {
-      renderedImg.setAttribute("src", "/image-product-1.12c5dacc.jpg");
-    } else if (i === 1) {
-      renderedImg.setAttribute("src", "/image-product-2.a6df5b34.jpg");
-      cartImgChange(thumb1);
-    } else if (i === 2) {
-      renderedImg.setAttribute("src", "/image-product-3.143cec63.jpg");
-    } else if (i === 3) {
-      renderedImg.setAttribute("src", "/image-product-4.8eede8d0.jpg");
-    }
-
-    // Removing the active-img class from other images
-    mImg.forEach(function (img, index) {
-      if (index !== i) {
-        img.classList.remove("active-img");
-      }
-    });
-
-    // Adding the active-img to the clicked class
-    cur.classList.add("active-img");
-  });
 });
 
 // Implementing the cart dropdown functionality

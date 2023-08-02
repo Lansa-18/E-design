@@ -51,6 +51,32 @@ const cartImgChange = (thumbImg, cartamt) => {
     `;
 }
 
+// Implementing the img-thumbnails functionality.
+mImg.forEach((cur, i, arr) => {
+  cur.addEventListener("click", (e) => {
+    if (i === 0) {
+      renderedImg.setAttribute("src", "/image-product-1.12c5dacc.jpg");
+    } else if (i === 1) {
+      renderedImg.setAttribute("src", "/image-product-2.a6df5b34.jpg");
+      cartImgChange(thumb2, cartAmt.textContent);
+    } else if (i === 2) {
+      renderedImg.setAttribute("src", "/image-product-3.143cec63.jpg");
+    } else if (i === 3) {
+      renderedImg.setAttribute("src", "/image-product-4.8eede8d0.jpg");
+    }
+
+    // Removing the active-img class from other images
+    mImg.forEach((img, index) => {
+      if (index !== i) {
+        img.classList.remove("active-img");
+      }
+    });
+
+    // Adding the active-img to the clicked class
+    cur.classList.add("active-img");
+  });
+});
+
 // Implementing the add to cart functionality
 let cartAmtHolder = [];
 amtSubmit.addEventListener("click", () => {
@@ -73,31 +99,6 @@ amtSubmit.addEventListener("click", () => {
   addToCart(cartAmt.textContent);
 });
 
-// Implementing the img-thumbnails functionality.
-mImg.forEach((cur, i, arr) => {
-  cur.addEventListener("click", (e) => {
-    if (i === 0) {
-      renderedImg.setAttribute("src", "/image-product-1.12c5dacc.jpg");
-    } else if (i === 1) {
-      renderedImg.setAttribute("src", "/image-product-2.a6df5b34.jpg");
-      cartImgChange(thumb1)
-    } else if (i === 2) {
-      renderedImg.setAttribute("src", "/image-product-3.143cec63.jpg");
-    } else if (i === 3) {
-      renderedImg.setAttribute("src", "/image-product-4.8eede8d0.jpg");
-    }
-
-    // Removing the active-img class from other images
-    mImg.forEach((img, index) => {
-      if (index !== i) {
-        img.classList.remove("active-img");
-      }
-    });
-
-    // Adding the active-img to the clicked class
-    cur.classList.add("active-img");
-  });
-});
 
 // Implementing the cart dropdown functionality
 cartIcon.addEventListener("click", () => {
