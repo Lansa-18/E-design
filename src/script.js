@@ -40,9 +40,9 @@ const addToCart = (cartamt) => {
 };
 
 // Updating the UI based on the 'cartamt' value passed into the function.
-const cartImgChange = (thumbImg) => {
+const cartImgChange = (thumbImg, cartamt) => {
     cartContFlex.innerHTML = `
-    <img class="img-thumb" src="/image-product-1-thumbnail.64dcbb28.jpg" alt="shoe1-thumb">
+    <img class="img-thumb" src = ${thumbImg} alt="shoe1-thumb">
     <div class="content-texts">
       <p class="p1">Fall Limited Edition Sneakers</p>
       <p class="p2">$125 x ${cartamt} = <span>$${priceShoe}.00</span></p>
