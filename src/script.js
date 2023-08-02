@@ -51,6 +51,28 @@ const cartImgChange = (thumbImg, cartamt) => {
     `;
 }
 
+// Implementing the add to cart functionality
+let cartAmtHolder = [];
+amtSubmit.addEventListener("click", () => {
+  // setting the cart amount to be visible
+  cartAmt.style.display = "block";
+  cartAmtHolder.push(amtVal.textContent);
+  amtVal.textContent = 0;
+
+  // adding up all the numbers in the holders array and then storing it into a variable
+  const amtTotal = cartAmtHolder.reduce((acc, amt) => acc + parseFloat(amt), 0);
+
+  // Updating the UI based on the condition true or false of the amtTotal variable.
+  amtTotal > 0
+    ? ((cartAmt.textContent = amtTotal),
+      cartConth3.classList.add("hidden"),
+      (cartContFlex.style.display = "flex"))
+    : ((cartAmt.style.display = "none"), (cartContFlex.style.display = "none"));
+
+  // calling the function addToCart to display the UI in the cart.
+  addToCart(cartAmt.textContent);
+});
+
 // Implementing the img-thumbnails functionality.
 mImg.forEach((cur, i, arr) => {
   cur.addEventListener("click", (e) => {
@@ -76,29 +98,6 @@ mImg.forEach((cur, i, arr) => {
     cur.classList.add("active-img");
   });
 });
-
-// Implementing the add to cart functionality
-let cartAmtHolder = [];
-amtSubmit.addEventListener("click", () => {
-  // setting the cart amount to be visible
-  cartAmt.style.display = "block";
-  cartAmtHolder.push(amtVal.textContent);
-  amtVal.textContent = 0;
-
-  // adding up all the numbers in the holders array and then storing it into a variable
-  const amtTotal = cartAmtHolder.reduce((acc, amt) => acc + parseFloat(amt), 0);
-
-  // Updating the UI based on the condition true or false of the amtTotal variable.
-  amtTotal > 0
-    ? ((cartAmt.textContent = amtTotal),
-      cartConth3.classList.add("hidden"),
-      (cartContFlex.style.display = "flex"))
-    : ((cartAmt.style.display = "none"), (cartContFlex.style.display = "none"));
-
-  // calling the function addToCart to display the UI in the cart.
-  addToCart(cartAmt.textContent);
-});
-
 
 // Implementing the cart dropdown functionality
 cartIcon.addEventListener("click", () => {
