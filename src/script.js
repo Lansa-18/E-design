@@ -14,6 +14,12 @@ const cartDrop = document.querySelector(".cart__dropdown");
 const cartContFlex = document.querySelector(".cart__content--flex");
 const cartConth3 = document.querySelector(".cart__content--h3");
 
+// Defining img file path of the images
+const thumb1 = "/image-product-1-thumbnail.64dcbb28.jpg";
+// const thumb2 = "/image-product-1-thumbnail.64dcbb28.jpg";
+// const thumb3 = "/image-product-1-thumbnail.64dcbb28.jpg";
+// const thumb4 = "/image-product-1-thumbnail.64dcbb28.jpg";
+
 // Implemwnting the plus sign
 amtAdd.addEventListener("click", (e) => {
   e.preventDefault();

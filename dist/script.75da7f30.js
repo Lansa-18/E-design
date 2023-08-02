@@ -132,6 +132,12 @@ var cartDrop = document.querySelector(".cart__dropdown");
 var cartContFlex = document.querySelector(".cart__content--flex");
 var cartConth3 = document.querySelector(".cart__content--h3");
 
+// Defining img file path of the images
+var thumb1 = "/image-product-1-thumbnail.64dcbb28.jpg";
+// const thumb2 = "/image-product-1-thumbnail.64dcbb28.jpg";
+// const thumb3 = "/image-product-1-thumbnail.64dcbb28.jpg";
+// const thumb4 = "/image-product-1-thumbnail.64dcbb28.jpg";
+
 // Implemwnting the plus sign
 amtAdd.addEventListener("click", function (e) {
   e.preventDefault();
