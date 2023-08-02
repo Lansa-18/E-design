@@ -28,20 +28,21 @@ amtSub.addEventListener("click", (e) => {
 
 //  Function responsibe for adding items into the cart
 const addToCart = (cartamt) => {
-  // calculation of the price of shoe
-  const priceShoe = 125 * cartamt;
-
-  // Updating the UI based on the 'cartamt' value passed into the function.
-  cartContFlex.innerHTML = `
-      <img class="img-thumb" src="/image-product-1-thumbnail.64dcbb28.jpg" alt="shoe1-thumb">
-      <div class="content-texts">
-        <p class="p1">Fall Limited Edition Sneakers</p>
-        <p class="p2">$125 x ${cartamt} = <span>$${priceShoe}.00</span></p>
-      </div>
-      <img class="img-delete" src="/icon-delete.022a9515.svg" alt="icon-delete">
-      `;
+    // calculation of the price of shoe
+    const priceShoe = 125 * cartamt;
 };
 
+// Updating the UI based on the 'cartamt' value passed into the function.
+const cartImgChange = () {
+    cartContFlex.innerHTML = `
+    <img class="img-thumb" src="/image-product-1-thumbnail.64dcbb28.jpg" alt="shoe1-thumb">
+    <div class="content-texts">
+      <p class="p1">Fall Limited Edition Sneakers</p>
+      <p class="p2">$125 x ${cartamt} = <span>$${priceShoe}.00</span></p>
+    </div>
+    <img class="img-delete" src="/icon-delete.022a9515.svg" alt="icon-delete">
+    `;
+}
 // Implementing the add to cart functionality
 let cartAmtHolder = [];
 amtSubmit.addEventListener("click", () => {
@@ -93,5 +94,12 @@ mImg.forEach((cur, i, arr) => {
 cartIcon.addEventListener("click", () => {
   cartDrop.classList.toggle("hidden");
 });
+
+
+const isTrue = true == [];
+const isFalse = true == ![];
+// console.log(isTrue + isFalse);
+console.log(![]);
+
 
 // console.log(mImg);
