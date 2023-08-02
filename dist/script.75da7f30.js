@@ -156,12 +156,19 @@ var cartImgChange = function cartImgChange(thumbImg, cartamt, priceShoe) {
 };
 
 //  Function responsibe for adding items into the cart
-var addToCart = function addToCart(cartamt, thumbImg) {
+var addToCart = function addToCart(cartamt) {
   // calculation of the price of shoe
   var priceShoe = 125 * cartamt;
-  if (renderedImg.src = "./images/image-product-1.jpg") {
-    cartImgChange(thumb1, cartamt, priceShoe);
+  if (renderedImg.src === "./images/image-product-1.jpg") {
+    cartImgChange(thumb1, cartAmt.textContent, priceShoe);
+  } else if (renderedImg.src === "./images/image-product-2.jpg") {
+    cartImgChange(thumb1, cartAmt.textContent, priceShoe);
+  } else if (renderedImg.src === "./images/image-product-3.jpg") {
+    cartImgChange(thumb1, cartAmt.textContent, priceShoe);
+  } else if (renderedImg.src === "./images/image-product-4.jpg") {
+    cartImgChange(thumb1, cartAmt.textContent, priceShoe);
   }
+
   // cartContFlex.innerHTML = `
   // <img class="img-thumb" src = ${thumbImg} alt="shoe1-thumb">
   // <div class="content-texts">
@@ -189,7 +196,7 @@ amtSubmit.addEventListener("click", function () {
   amtTotal > 0 ? (cartAmt.textContent = amtTotal, cartConth3.classList.add("hidden"), cartContFlex.style.display = "flex") : (cartAmt.style.display = "none", cartContFlex.style.display = "none");
 
   // calling the function addToCart to display the UI in the cart.
-  addToCart(cartAmt.textContent, thumb1);
+  addToCart(cartAmt.textContent);
 });
 
 // Implementing the img-thumbnails functionality.
