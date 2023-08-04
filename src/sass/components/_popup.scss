@@ -22,10 +22,24 @@
 
         .popup__img{
             width: 100%;
+
             img{
                 width: 100%;
                 display: block;
                 border-radius: 0.7rem;
+            }
+
+            .prevs-div, .next-div{
+                background-color: $white;
+                border-radius: 50%;
+                width: 35px;
+                height: 35px;
+                position: relative;
+
+                img{
+                    @include center-vertical-horizontal;
+                    width: 35%;
+                }
             }
         }
 
