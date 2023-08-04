@@ -48,6 +48,13 @@ const addToCart = (cartamt) => {
     `;
 };
 
+
+// const delIcon = document.querySelector('.img-delete');
+
+// delIcon.addEventListener('click', ()=>{
+//     console.log('i was clicked');
+// })
+
 // Implementing the add to cart functionality
 let cartAmtHolder = [];
 amtSubmit.addEventListener("click", () => {
