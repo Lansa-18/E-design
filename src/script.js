@@ -37,6 +37,7 @@ amtSub.addEventListener("click", (e) => {
 const addToCart = (cartamt) => {
     // calculation of the price of shoe
     const priceShoe = 125 * cartamt;
+    
     cartContFlex.innerHTML = `
     <img class="img-thumb" src = ${thumb1} alt="shoe1-thumb">
     <div class="content-texts">
