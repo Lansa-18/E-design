@@ -16,7 +16,7 @@ const cartConth3 = document.querySelector(".cart__content--h3");
 
 // Defining img file path of the images
 const thumb1 = "/image-product-1-thumbnail.64dcbb28.jpg";
-const thumb2 = "/image-product-2-thumbnail.e8d992f7.jpg";
+// const thumb2 = "/image-product-2-thumbnail.e8d992f7.jpg";
 // const thumb3 = "/image-product-1-thumbnail.64dcbb28.jpg";
 // const thumb4 = "/image-product-1-thumbnail.64dcbb28.jpg";
 
@@ -37,7 +37,7 @@ amtSub.addEventListener("click", (e) => {
 const addToCart = (cartamt) => {
     // calculation of the price of shoe
     const priceShoe = 125 * cartamt;
-    
+
     cartContFlex.innerHTML = `
     <img class="img-thumb" src = ${thumb1} alt="shoe1-thumb">
     <div class="content-texts">
@@ -75,7 +75,6 @@ mImg.forEach((cur, i, arr) => {
   cur.addEventListener("click", (e) => {
     if (i === 0) {
       renderedImg.setAttribute("src", "/image-product-1.12c5dacc.jpg");
-      addToCart(cartAmt.textContent, thumb1);
     } else if (i === 1) {
       renderedImg.setAttribute("src", "/image-product-2.a6df5b34.jpg");
     } else if (i === 2) {
