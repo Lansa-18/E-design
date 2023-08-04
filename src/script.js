@@ -32,23 +32,11 @@ amtSub.addEventListener("click", (e) => {
   amtVal.textContent > 0 ? amtVal.textContent-- : 0;
 });
 
-// Updating the UI based on the 'cartamt' value passed into the function.
-const cartImgChange = (thumbImg, cartamt, priceShoe) => {
-    cartContFlex.innerHTML = `
-    <img class="img-thumb" src = ${thumbImg} alt="shoe1-thumb">
-    <div class="content-texts">
-      <p class="p1">Fall Limited Edition Sneakers</p>
-      <p class="p2">$125 x ${cartamt} = <span>$${priceShoe}.00</span></p>
-    </div>
-    <img class="img-delete" src="/icon-delete.022a9515.svg" alt="icon-delete">
-    `;
-}
 
 //  Function responsibe for adding items into the cart
 const addToCart = (cartamt) => {
     // calculation of the price of shoe
     const priceShoe = 125 * cartamt;
-
     cartContFlex.innerHTML = `
     <img class="img-thumb" src = ${thumbImg} alt="shoe1-thumb">
     <div class="content-texts">
