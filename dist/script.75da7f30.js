@@ -138,6 +138,8 @@ var thumb1 = "/image-product-1-thumbnail.64dcbb28.jpg";
 // const thumb3 = "/image-product-1-thumbnail.64dcbb28.jpg";
 // const thumb4 = "/image-product-1-thumbnail.64dcbb28.jpg";
 
+var popup = document.querySelector('.popup');
+
 // Implemwnting the plus sign
 amtAdd.addEventListener("click", function (e) {
   e.preventDefault();
@@ -149,6 +151,12 @@ amtSub.addEventListener("click", function (e) {
   e.preventDefault();
   amtVal.textContent > 0 ? amtVal.textContent-- : 0;
 });
+
+// Implementing img-popup
+// renderedImg.addEventListener('click', ()=>{
+//     popup.style.opacity = '100';
+//     popup.style.viibility = 'visible';
+// })
 
 //  Function responsibe for adding items into the cart
 var addToCart = function addToCart(cartamt) {

@@ -178,10 +178,18 @@ header {
   height: 100vh;
   z-index: 3000;
   transition: all 0.5s;
-  opacity: 0;
-  visibility: hidden;
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(20px);
+}
+.popup__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.popup:target {
+  opacity: 1;
+  visibility: visible;
 }
 
 .main__content {

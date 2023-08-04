@@ -9,8 +9,17 @@
     height: 100vh;
     z-index: 3000;
     transition: all 0.5s;
-    opacity: 0;
-    visibility: hidden;
+    // opacity: 0;
+    // visibility: hidden;
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(20px);
+
+    &__content{
+        @include center-vertical-horizontal;
+    }
+
+    &:target{
+        opacity: 1;
+        visibility: visible;
+    }
 }
