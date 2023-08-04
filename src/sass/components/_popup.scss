@@ -13,9 +13,28 @@
     // visibility: hidden;
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(20px);
+    
 
     &__content{
         @include center-vertical-horizontal;
+        border: 1px solid red;
+        width: 34%;
+
+        .popup__img{
+            width: 100%;
+            img{
+                width: 100%;
+                display: block;
+                border-radius: 0.7rem;
+            }
+        }
+
+        .popup__img-gallery{
+
+            img{
+                width: 10%;
+            }
+        }
     }
 
     &:target{

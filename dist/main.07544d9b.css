@@ -186,6 +186,19 @@ header {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  border: 1px solid red;
+  width: 34%;
+}
+.popup__content .popup__img {
+  width: 100%;
+}
+.popup__content .popup__img img {
+  width: 100%;
+  display: block;
+  border-radius: 0.7rem;
+}
+.popup__content .popup__img-gallery img {
+  width: 10%;
 }
 .popup:target {
   opacity: 1;
