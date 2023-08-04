@@ -48,24 +48,15 @@ const cartImgChange = (thumbImg, cartamt, priceShoe) => {
 const addToCart = (cartamt) => {
     // calculation of the price of shoe
     const priceShoe = 125 * cartamt;
-    if (renderedImg.src === "./images/image-product-1.jpg") {
-        cartImgChange(thumb1, cartamt, priceShoe)
-    } else if (renderedImg.src === "./images/image-product-2.jpg") {
-        cartImgChange(thumb1, cartamt, priceShoe)
-    } else if (renderedImg.src === "./images/image-product-3.jpg") {
-        cartImgChange(thumb1, cartamt, priceShoe)
-    } else if (renderedImg.src === "./images/image-product-4.jpg") {
-        cartImgChange(thumb1, cartamt, priceShoe)
-    }
 
-    // cartContFlex.innerHTML = `
-    // <img class="img-thumb" src = ${thumbImg} alt="shoe1-thumb">
-    // <div class="content-texts">
-    //   <p class="p1">Fall Limited Edition Sneakers</p>
-    //   <p class="p2">$125 x ${cartamt} = <span>$${priceShoe}.00</span></p>
-    // </div>
-    // <img class="img-delete" src="/icon-delete.022a9515.svg" alt="icon-delete">
-    // `;
+    cartContFlex.innerHTML = `
+    <img class="img-thumb" src = ${thumbImg} alt="shoe1-thumb">
+    <div class="content-texts">
+      <p class="p1">Fall Limited Edition Sneakers</p>
+      <p class="p2">$125 x ${cartamt} = <span>$${priceShoe}.00</span></p>
+    </div>
+    <img class="img-delete" src="/icon-delete.022a9515.svg" alt="icon-delete">
+    `;
 };
 
 // Implementing the add to cart functionality
