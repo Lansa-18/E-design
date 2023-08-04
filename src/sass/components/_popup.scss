@@ -1,0 +1,16 @@
+@use "../abstracts" as *;
+
+.popup{
+    background-color: $black-o;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 3000;
+    transition: all 0.5s;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(20px);
+}
