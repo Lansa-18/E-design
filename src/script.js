@@ -38,7 +38,7 @@ const addToCart = (cartamt) => {
     // calculation of the price of shoe
     const priceShoe = 125 * cartamt;
     cartContFlex.innerHTML = `
-    <img class="img-thumb" src = ${thumbImg} alt="shoe1-thumb">
+    <img class="img-thumb" src = ${thumb1} alt="shoe1-thumb">
     <div class="content-texts">
       <p class="p1">Fall Limited Edition Sneakers</p>
       <p class="p2">$125 x ${cartamt} = <span>$${priceShoe}.00</span></p>
