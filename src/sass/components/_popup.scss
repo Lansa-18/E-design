@@ -22,6 +22,7 @@
 
         .popup__img{
             width: 100%;
+            position: relative;
 
             img{
                 width: 100%;
@@ -40,6 +41,11 @@
                     @include center-vertical-horizontal;
                     width: 35%;
                 }
+            }
+
+            .prevs-div{
+                bottom: 50%;
+                border: 1px solid red;
             }
         }
 

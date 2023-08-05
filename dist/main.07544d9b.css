@@ -191,6 +191,7 @@ header {
 }
 .popup__content .popup__img {
   width: 100%;
+  position: relative;
 }
 .popup__content .popup__img img {
   width: 100%;
@@ -210,6 +211,10 @@ header {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 35%;
+}
+.popup__content .popup__img .prevs-div {
+  bottom: 50%;
+  border: 1px solid red;
 }
 .popup__content .popup__img-gallery img {
   width: 10%;
