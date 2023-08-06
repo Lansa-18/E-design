@@ -220,7 +220,7 @@ header {
   right: -1.4rem;
 }
 .popup__content .popup__img-gallery img {
-  width: 30%;
+  width: 20%;
 }
 .popup:target {
   opacity: 1;
