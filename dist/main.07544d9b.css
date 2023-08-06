@@ -192,7 +192,6 @@ header {
 .popup__content .popup__img {
   width: 100%;
   position: relative;
-  border: 1px solid blue;
 }
 .popup__content .popup__img img {
   width: 100%;
