@@ -17,7 +17,7 @@
 
     &__content{
         @include center-vertical-horizontal;
-        border: 1px solid red;
+        // border: 1px solid red;
         width: 34%;
 
         .popup__img{
@@ -54,8 +54,12 @@
 
         .popup__img-gallery{
 
+            @include dflexcomp;
+            
             img{
                 width: 20%;
+
+                border-radius: .7rem;
             }
         }
     }

@@ -186,7 +186,6 @@ header {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  border: 1px solid red;
   width: 34%;
 }
 .popup__content .popup__img {
@@ -219,8 +218,14 @@ header {
 .popup__content .popup__img .next-div {
   right: -1.4rem;
 }
+.popup__content .popup__img-gallery {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 .popup__content .popup__img-gallery img {
   width: 20%;
+  border-radius: 0.7rem;
 }
 .popup:target {
   opacity: 1;
