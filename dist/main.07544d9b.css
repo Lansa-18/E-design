@@ -213,6 +213,7 @@ header {
   width: 35%;
 }
 .popup__content .popup__img .prevs-div {
+  bottom: 18rem;
   border: 1px solid red;
 }
 .popup__content .popup__img-gallery img {
