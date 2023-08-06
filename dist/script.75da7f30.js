@@ -126,8 +126,9 @@ var amtVal = document.querySelector(".amount-value");
 var amtSubmit = document.querySelector(".amount__submit");
 var cartAmt = document.querySelector(".cart-amount");
 var mImg = document.querySelectorAll(".m-img");
-// const renderedImg = document.querySelector(".render-img");
-var renderedImg = document.querySelectorAll(".render-img");
+var renderedImg = document.querySelector(".render-img");
+// const renderedImg = document.querySelectorAll(".render-img");
+
 var cartIcon = document.querySelector(".img-cart");
 var cartDrop = document.querySelector(".cart__dropdown");
 var cartContFlex = document.querySelector(".cart__content--flex");
