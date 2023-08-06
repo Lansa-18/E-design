@@ -36,6 +36,7 @@
                 width: 35px;
                 height: 35px;
                 position: relative;
+                // top: 5rem;
 
                 img{
                     @include center-vertical-horizontal;
@@ -44,7 +45,7 @@
             }
 
             .prevs-div{
-                bottom: 50%;
+                // bottom: 50%;
                 border: 1px solid red;
             }
         }
