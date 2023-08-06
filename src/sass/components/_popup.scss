@@ -36,7 +36,8 @@
                 border-radius: 50%;
                 width: 35px;
                 height: 35px;
-                position: relative;
+                position: absolute;
+                // bottom: 18rem;
                 bottom: 18rem;
 
                 img{
@@ -49,7 +50,7 @@
                 left: -1.4rem;
             }
             .next-div{
-                right: 0rem;
+                right: -1.4rem;
             }
         }
 
