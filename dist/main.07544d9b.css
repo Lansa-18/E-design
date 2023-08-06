@@ -204,6 +204,7 @@ header {
   width: 35px;
   height: 35px;
   position: relative;
+  bottom: 18rem;
 }
 .popup__content .popup__img .prevs-div img, .popup__content .popup__img .next-div img {
   position: absolute;
@@ -214,7 +215,9 @@ header {
 }
 .popup__content .popup__img .prevs-div {
   left: -1.4rem;
-  bottom: 18rem;
+}
+.popup__content .popup__img .next-div {
+  left: -1.4rem;
 }
 .popup__content .popup__img-gallery img {
   width: 10%;

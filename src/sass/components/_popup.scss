@@ -36,7 +36,7 @@
                 width: 35px;
                 height: 35px;
                 position: relative;
-                // top: 5rem;
+                bottom: 18rem;
 
                 img{
                     @include center-vertical-horizontal;
@@ -46,7 +46,9 @@
 
             .prevs-div{
                 left: -1.4rem;
-                bottom: 18rem;
+            }
+            .next-div{
+                left: -1.4rem;
             }
         }
 
