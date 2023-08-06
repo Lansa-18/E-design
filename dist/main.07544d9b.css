@@ -192,6 +192,7 @@ header {
 .popup__content .popup__img {
   width: 100%;
   position: relative;
+  border: 1px solid blue;
 }
 .popup__content .popup__img img {
   width: 100%;
@@ -217,7 +218,7 @@ header {
   left: -1.4rem;
 }
 .popup__content .popup__img .next-div {
-  left: -1.4rem;
+  right: 0rem;
 }
 .popup__content .popup__img-gallery img {
   width: 10%;
