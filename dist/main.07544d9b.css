@@ -219,6 +219,8 @@ header {
   right: -1.4rem;
 }
 .popup__content .popup__img-gallery {
+  width: 90%;
+  margin: 2rem auto 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
