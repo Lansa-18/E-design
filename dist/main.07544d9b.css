@@ -205,7 +205,7 @@ header {
   width: 35px;
   height: 35px;
   position: absolute;
-  bottom: 18rem;
+  bottom: 50%;
 }
 .popup__content .popup__img .prevs-div img, .popup__content .popup__img .next-div img {
   position: absolute;
