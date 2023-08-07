@@ -128,7 +128,7 @@ var cartAmt = document.querySelector(".cart-amount");
 var mImg = document.querySelectorAll(".m-img");
 // const renderedImg = document.querySelector(".render-img");
 // const renderedImg2 = document.querySelector(".render-img2");
-var renderedImg = document.querySelectorAll(".render-img");
+var renderedImgs = document.querySelectorAll(".render-img");
 var cartIcon = document.querySelector(".img-cart");
 var cartDrop = document.querySelector(".cart__dropdown");
 var cartContFlex = document.querySelector(".cart__content--flex");
@@ -218,6 +218,7 @@ amtSubmit.addEventListener("click", function () {
 //   });
 // });
 
+console.log(renderedImgs);
 mImg.forEach(function (cur, i, arr) {
   cur.addEventListener("click", function (e) {
     if (i === 0) {
