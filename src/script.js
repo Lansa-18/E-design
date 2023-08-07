@@ -111,6 +111,9 @@ amtSubmit.addEventListener("click", () => {
 // });
 
 console.log(renderedImgs);
+renderedImgs.forEach(renderedImg =>{
+    renderedImg.setAttribute("src", "/image-product-1.12c5dacc.jpg");
+})
 // mImg.forEach((cur, i, arr) => {
 //   cur.addEventListener("click", (e) => {
 //     if (i === 0) {

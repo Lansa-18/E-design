@@ -219,6 +219,9 @@ amtSubmit.addEventListener("click", function () {
 // });
 
 console.log(renderedImgs);
+renderedImgs.forEach(function (renderedImg) {
+  renderedImg.setAttribute("src", "/image-product-1.12c5dacc.jpg");
+});
 // mImg.forEach((cur, i, arr) => {
 //   cur.addEventListener("click", (e) => {
 //     if (i === 0) {
