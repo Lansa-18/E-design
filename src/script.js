@@ -22,7 +22,7 @@ const thumb1 = "/image-product-1-thumbnail.64dcbb28.jpg";
 // const thumb3 = "/image-product-1-thumbnail.64dcbb28.jpg";
 // const thumb4 = "/image-product-1-thumbnail.64dcbb28.jpg";
 
-const popup = document.querySelector('.popup');
+const popup = document.querySelector(".popup");
 
 // Implemwnting the plus sign
 amtAdd.addEventListener("click", (e) => {
@@ -42,13 +42,12 @@ amtSub.addEventListener("click", (e) => {
 //     popup.style.viibility = 'visible';
 // })
 
-
 //  Function responsibe for adding items into the cart
 const addToCart = (cartamt) => {
-    // calculation of the price of shoe
-    const priceShoe = 125 * cartamt;
+  // calculation of the price of shoe
+  const priceShoe = 125 * cartamt;
 
-    cartContFlex.innerHTML = `
+  cartContFlex.innerHTML = `
     <img class="img-thumb" src = ${thumb1} alt="shoe1-thumb">
     <div class="content-texts">
       <p class="p1">Fall Limited Edition Sneakers</p>
@@ -57,7 +56,6 @@ const addToCart = (cartamt) => {
     <img class="img-delete" src="/icon-delete.022a9515.svg" alt="icon-delete">
     `;
 };
-
 
 // const delIcon = document.querySelector('.img-delete');
 
@@ -114,39 +112,37 @@ amtSubmit.addEventListener("click", () => {
 
 console.log(renderedImgs);
 mImg.forEach((cur, i, arr) => {
-    cur.addEventListener("click", (e) => {
-      if (i === 0) {
-        renderedImg.setAttribute("src", "/image-product-1.12c5dacc.jpg");
-      } else if (i === 1) {
-        renderedImg.setAttribute("src", "/image-product-2.a6df5b34.jpg");
-      } else if (i === 2) {
-        renderedImg.setAttribute("src", "/image-product-3.143cec63.jpg");
-      } else if (i === 3) {
-        renderedImg.setAttribute("src", "/image-product-4.8eede8d0.jpg");
+  cur.addEventListener("click", (e) => {
+    if (i === 0) {
+      renderedImg.setAttribute("src", "/image-product-1.12c5dacc.jpg");
+    } else if (i === 1) {
+      renderedImg.setAttribute("src", "/image-product-2.a6df5b34.jpg");
+    } else if (i === 2) {
+      renderedImg.setAttribute("src", "/image-product-3.143cec63.jpg");
+    } else if (i === 3) {
+      renderedImg.setAttribute("src", "/image-product-4.8eede8d0.jpg");
+    }
+
+    // Removing the active-img class from other images
+    mImg.forEach((img, index) => {
+      if (index !== i) {
+        img.classList.remove("active-img");
       }
-  
-      // Removing the active-img class from other images
-      mImg.forEach((img, index) => {
-        if (index !== i) {
-          img.classList.remove("active-img");
-        }
-      });
-  
-      // Adding the active-img to the clicked class
-      cur.classList.add("active-img");
     });
+
+    // Adding the active-img to the clicked class
+    cur.classList.add("active-img");
   });
+});
 
 // Implementing the cart dropdown functionality
 cartIcon.addEventListener("click", () => {
   cartDrop.classList.toggle("hidden");
 });
 
-
 const isTrue = true == [];
 const isFalse = true == ![];
 // console.log(isTrue + isFalse);
 console.log(![]);
-
 
 // console.log(mImg);
