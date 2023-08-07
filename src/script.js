@@ -8,6 +8,7 @@ const cartAmt = document.querySelector(".cart-amount");
 
 const mImg = document.querySelectorAll(".m-img");
 const renderedImg = document.querySelector(".render-img");
+const renderedImg2 = document.querySelector(".render-img2");
 // const renderedImg = document.querySelectorAll(".render-img");
 
 const cartIcon = document.querySelector(".img-cart");

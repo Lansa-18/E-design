@@ -127,6 +127,7 @@ var amtSubmit = document.querySelector(".amount__submit");
 var cartAmt = document.querySelector(".cart-amount");
 var mImg = document.querySelectorAll(".m-img");
 var renderedImg = document.querySelector(".render-img");
+var renderedImg2 = document.querySelector(".render-img2");
 // const renderedImg = document.querySelectorAll(".render-img");
 
 var cartIcon = document.querySelector(".img-cart");
