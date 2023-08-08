@@ -155,11 +155,6 @@ amtSub.addEventListener("click", function (e) {
   amtVal.textContent > 0 ? amtVal.textContent-- : 0;
 });
 
-// Implementing img-popup
-renderedImg.addEventListener('click', function () {
-  popup.classList.toggle('hidden');
-});
-
 //  Function responsibe for adding items into the cart
 var addToCart = function addToCart(cartamt) {
   // calculation of the price of shoe
@@ -254,6 +249,11 @@ mImg.forEach(function (cur, i, arr) {
 // Implementing the cart dropdown functionality
 cartIcon.addEventListener("click", function () {
   cartDrop.classList.toggle("hidden");
+});
+
+// Implementing img-popup
+renderedImg.addEventListener('click', function () {
+  popup.classList.toggle('hidden');
 });
 var isTrue = true == [];
 var isFalse = true == ![];
