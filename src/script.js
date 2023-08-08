@@ -23,6 +23,7 @@ const thumb1 = "/image-product-1-thumbnail.64dcbb28.jpg";
 // const thumb4 = "/image-product-1-thumbnail.64dcbb28.jpg";
 
 const popup = document.querySelector(".popup");
+const closeIcon = document.querySelector('.close-icon');
 
 // Implemwnting the plus sign
 amtAdd.addEventListener("click", (e) => {
@@ -142,7 +143,7 @@ mImg.forEach((cur, i, arr) => {
 cartIcon.addEventListener("click", () => {
     cartDrop.classList.toggle("hidden");
 });
-    
+
 // Implementing img-popup
 renderedImg.addEventListener('click', ()=>{
     popup.classList.toggle('hidden');
