@@ -23,7 +23,7 @@ const thumb1 = "/image-product-1-thumbnail.64dcbb28.jpg";
 // const thumb4 = "/image-product-1-thumbnail.64dcbb28.jpg";
 
 const popup = document.querySelector(".popup");
-const closeIcon = document.querySelector(".close-icon");
+const closeIcon = document.querySelector(".svg-close");
 
 // Implemwnting the plus sign
 amtAdd.addEventListener("click", (e) => {
