@@ -157,8 +157,7 @@ amtSub.addEventListener("click", function (e) {
 
 // Implementing img-popup
 renderedImg.addEventListener('click', function () {
-  popup.style.opacity = '100';
-  popup.style.viibility = 'visible';
+  popup.classList.toggle('hidden');
 });
 
 //  Function responsibe for adding items into the cart
