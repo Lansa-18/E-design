@@ -7,9 +7,9 @@ const amtSubmit = document.querySelector(".amount__submit");
 const cartAmt = document.querySelector(".cart-amount");
 
 const mImg = document.querySelectorAll(".m-img");
-// const renderedImg = document.querySelector(".render-img");
+const renderedImg = document.querySelector(".render-img");
 // const renderedImg2 = document.querySelector(".render-img2");
-const renderedImgs = document.querySelectorAll(".render-img");
+// const renderedImgs = document.querySelectorAll(".render-img");
 
 const cartIcon = document.querySelector(".img-cart");
 const cartDrop = document.querySelector(".cart__dropdown");
