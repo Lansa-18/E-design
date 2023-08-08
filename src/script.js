@@ -142,7 +142,7 @@ mImg.forEach((cur, i, arr) => {
 cartIcon.addEventListener("click", () => {
     cartDrop.classList.toggle("hidden");
 });
-
+    
 // Implementing img-popup
 renderedImg.addEventListener('click', ()=>{
     popup.classList.toggle('hidden');
