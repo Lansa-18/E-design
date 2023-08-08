@@ -194,9 +194,9 @@ header {
 }
 .popup__content .popup__img .close-icon {
   width: 5%;
-  position: relative;
-  right: 0;
-  border: 1px solid red;
+  position: absolute;
+  right: 0rem;
+  top: -2.5rem;
 }
 .popup__content .popup__img img {
   width: 100%;
