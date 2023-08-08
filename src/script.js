@@ -39,7 +39,7 @@ amtSub.addEventListener("click", (e) => {
 // Implementing img-popup
 renderedImg.addEventListener('click', ()=>{
     popup.classList.toggle('hidden');
-    
+
 })
 
 //  Function responsibe for adding items into the cart
@@ -86,49 +86,16 @@ amtSubmit.addEventListener("click", () => {
 });
 
 // Implementing the img-thumbnails functionality.
-// mImg.forEach((cur, i, arr) => {
-//   cur.addEventListener("click", (e) => {
-//     if (i === 0) {
-//       renderedImg.setAttribute("src", "/image-product-1.12c5dacc.jpg");
-//     } else if (i === 1) {
-//       renderedImg.setAttribute("src", "/image-product-2.a6df5b34.jpg");
-//     } else if (i === 2) {
-//       renderedImg.setAttribute("src", "/image-product-3.143cec63.jpg");
-//     } else if (i === 3) {
-//       renderedImg.setAttribute("src", "/image-product-4.8eede8d0.jpg");
-//     }
-
-//     // Removing the active-img class from other images
-//     mImg.forEach((img, index) => {
-//       if (index !== i) {
-//         img.classList.remove("active-img");
-//       }
-//     });
-
-//     // Adding the active-img to the clicked class
-//     cur.classList.add("active-img");
-//   });
-// });
-
-console.log(renderedImgs);
 mImg.forEach((cur, i, arr) => {
   cur.addEventListener("click", (e) => {
     if (i === 0) {
-      renderedImgs.forEach((renderedImg) => {
-        renderedImg.setAttribute("src", "/image-product-1.12c5dacc.jpg");
-      });
+      renderedImg.setAttribute("src", "/image-product-1.12c5dacc.jpg");
     } else if (i === 1) {
-      renderedImgs.forEach((renderedImg) => {
-        renderedImg.setAttribute("src", "/image-product-2.a6df5b34.jpg");
-      });
+      renderedImg.setAttribute("src", "/image-product-2.a6df5b34.jpg");
     } else if (i === 2) {
-      renderedImgs.forEach((renderedImg) => {
-        renderedImg.setAttribute("src", "/image-product-3.143cec63.jpg");
-      });
+      renderedImg.setAttribute("src", "/image-product-3.143cec63.jpg");
     } else if (i === 3) {
-      renderedImgs.forEach((renderedImg) => {
-        renderedImg.setAttribute("src", "/image-product-4.8eede8d0.jpg");
-      });
+      renderedImg.setAttribute("src", "/image-product-4.8eede8d0.jpg");
     }
 
     // Removing the active-img class from other images
@@ -142,6 +109,39 @@ mImg.forEach((cur, i, arr) => {
     cur.classList.add("active-img");
   });
 });
+
+// console.log(renderedImgs);
+// mImg.forEach((cur, i, arr) => {
+//   cur.addEventListener("click", (e) => {
+//     if (i === 0) {
+//       renderedImgs.forEach((renderedImg) => {
+//         renderedImg.setAttribute("src", "/image-product-1.12c5dacc.jpg");
+//       });
+//     } else if (i === 1) {
+//       renderedImgs.forEach((renderedImg) => {
+//         renderedImg.setAttribute("src", "/image-product-2.a6df5b34.jpg");
+//       });
+//     } else if (i === 2) {
+//       renderedImgs.forEach((renderedImg) => {
+//         renderedImg.setAttribute("src", "/image-product-3.143cec63.jpg");
+//       });
+//     } else if (i === 3) {
+//       renderedImgs.forEach((renderedImg) => {
+//         renderedImg.setAttribute("src", "/image-product-4.8eede8d0.jpg");
+//       });
+//     }
+
+//     // Removing the active-img class from other images
+//     mImg.forEach((img, index) => {
+//       if (index !== i) {
+//         img.classList.remove("active-img");
+//       }
+//     });
+
+//     // Adding the active-img to the clicked class
+//     cur.classList.add("active-img");
+//   });
+// });
 
 // Implementing the cart dropdown functionality
 cartIcon.addEventListener("click", () => {
