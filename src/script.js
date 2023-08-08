@@ -37,10 +37,10 @@ amtSub.addEventListener("click", (e) => {
 });
 
 // Implementing img-popup
-// renderedImg.addEventListener('click', ()=>{
-//     popup.style.opacity = '100';
-//     popup.style.viibility = 'visible';
-// })
+renderedImg.addEventListener('click', ()=>{
+    popup.style.opacity = '100';
+    popup.style.viibility = 'visible';
+})
 
 //  Function responsibe for adding items into the cart
 const addToCart = (cartamt) => {

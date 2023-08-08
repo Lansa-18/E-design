@@ -156,10 +156,10 @@ amtSub.addEventListener("click", function (e) {
 });
 
 // Implementing img-popup
-// renderedImg.addEventListener('click', ()=>{
-//     popup.style.opacity = '100';
-//     popup.style.viibility = 'visible';
-// })
+renderedImg.addEventListener('click', function () {
+  popup.style.opacity = '100';
+  popup.style.viibility = 'visible';
+});
 
 //  Function responsibe for adding items into the cart
 var addToCart = function addToCart(cartamt) {
