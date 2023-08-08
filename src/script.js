@@ -146,9 +146,14 @@ cartIcon.addEventListener("click", () => {
 
 // Implementing img-popup
 renderedImg.addEventListener('click', ()=>{
-    popup.classList.toggle('hidden');
-
+    popup.classList.remove('hidden');
 })
+
+closeIcon.addEventListener('click', ()=> {
+    popup.classList.add('hidden');
+})
+
+
 
 const isTrue = true == [];
 const isFalse = true == ![];

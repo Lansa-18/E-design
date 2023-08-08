@@ -254,7 +254,10 @@ cartIcon.addEventListener("click", function () {
 
 // Implementing img-popup
 renderedImg.addEventListener('click', function () {
-  popup.classList.toggle('hidden');
+  popup.classList.remove('hidden');
+});
+closeIcon.addEventListener('click', function () {
+  popup.classList.add('hidden');
 });
 var isTrue = true == [];
 var isFalse = true == ![];
