@@ -126,10 +126,9 @@ var amtVal = document.querySelector(".amount-value");
 var amtSubmit = document.querySelector(".amount__submit");
 var cartAmt = document.querySelector(".cart-amount");
 var mImg = document.querySelectorAll(".m-img");
+var mImg2 = document.querySelectorAll(".m-img2");
 var renderedImg = document.querySelector(".render-img");
-// const renderedImg2 = document.querySelector(".render-img2");
-// const renderedImgs = document.querySelectorAll(".render-img");
-
+var renderedImg2 = document.querySelector(".render-img2");
 var cartIcon = document.querySelector(".img-cart");
 var cartDrop = document.querySelector(".cart__dropdown");
 var cartContFlex = document.querySelector(".cart__content--flex");
@@ -137,10 +136,6 @@ var cartConth3 = document.querySelector(".cart__content--h3");
 
 // Defining img file path of the images
 var thumb1 = "/image-product-1-thumbnail.64dcbb28.jpg";
-// const thumb2 = "/image-product-2-thumbnail.e8d992f7.jpg";
-// const thumb3 = "/image-product-1-thumbnail.64dcbb28.jpg";
-// const thumb4 = "/image-product-1-thumbnail.64dcbb28.jpg";
-
 var popup = document.querySelector(".popup");
 var closeIcon = document.querySelector(".svg-close");
 
@@ -189,63 +184,37 @@ amtSubmit.addEventListener("click", function () {
   addToCart(cartAmt.textContent);
 });
 
-// Implementing the img-thumbnails functionality.
-mImg.forEach(function (cur, i, arr) {
-  cur.addEventListener("click", function (e) {
-    if (i === 0) {
-      renderedImg.setAttribute("src", "/image-product-1.12c5dacc.jpg");
-    } else if (i === 1) {
-      renderedImg.setAttribute("src", "/image-product-2.a6df5b34.jpg");
-    } else if (i === 2) {
-      renderedImg.setAttribute("src", "/image-product-3.143cec63.jpg");
-    } else if (i === 3) {
-      renderedImg.setAttribute("src", "/image-product-4.8eede8d0.jpg");
-    }
+// function that changes img-thumbnails on click
 
-    // Removing the active-img class from other images
-    mImg.forEach(function (img, index) {
-      if (index !== i) {
-        img.classList.remove("active-img");
+var changeImg = function changeImg(imgNodeList, imgRender) {
+  // Implementing the img-thumbnail functionality
+
+  imgNodeList.forEach(function (cur, i, arr) {
+    cur.addEventListener("click", function () {
+      if (i === 0) {
+        imgRender.setAttribute("src", "/image-product-1.12c5dacc.jpg");
+      } else if (i === 1) {
+        imgRender.setAttribute("src", "image-product-2.a6df5b34.jpg");
+      } else if (i === 2) {
+        imgRender.setAttribute("src", "/image-product-3.143cec63.jpg");
+      } else if (i === 3) {
+        imgRender.setAttribute("src", "/image-product-4.8eede8d0.jpg");
       }
+
+      // Removing the actuve-img class from other images
+      imgNodeList.forEach(function (img, index) {
+        if (index !== i) {
+          img.classList.remove("active-img");
+        }
+      });
+
+      // Adding the active-img class to the currently clicked image
+      cur.classList.add("active-img");
     });
-
-    // Adding the active-img to the clicked class
-    cur.classList.add("active-img");
   });
-});
-
-// console.log(renderedImgs);
-// mImg.forEach((cur, i, arr) => {
-//   cur.addEventListener("click", (e) => {
-//     if (i === 0) {
-//       renderedImgs.forEach((renderedImg) => {
-//         renderedImg.setAttribute("src", "/image-product-1.12c5dacc.jpg");
-//       });
-//     } else if (i === 1) {
-//       renderedImgs.forEach((renderedImg) => {
-//         renderedImg.setAttribute("src", "/image-product-2.a6df5b34.jpg");
-//       });
-//     } else if (i === 2) {
-//       renderedImgs.forEach((renderedImg) => {
-//         renderedImg.setAttribute("src", "/image-product-3.143cec63.jpg");
-//       });
-//     } else if (i === 3) {
-//       renderedImgs.forEach((renderedImg) => {
-//         renderedImg.setAttribute("src", "/image-product-4.8eede8d0.jpg");
-//       });
-//     }
-
-//     // Removing the active-img class from other images
-//     mImg.forEach((img, index) => {
-//       if (index !== i) {
-//         img.classList.remove("active-img");
-//       }
-//     });
-
-//     // Adding the active-img to the clicked class
-//     cur.classList.add("active-img");
-//   });
-// });
+};
+changeImg(mImg, renderedImg);
+changeImg(mImg2, renderedImg2);
 
 // Implementing the cart dropdown functionality
 cartIcon.addEventListener("click", function () {
@@ -259,12 +228,6 @@ renderedImg.addEventListener("click", function () {
 closeIcon.addEventListener("click", function () {
   popup.classList.add("hidden");
 });
-var isTrue = true == [];
-var isFalse = true == ![];
-// console.log(isTrue + isFalse);
-console.log(![]);
-
-// console.log(mImg);
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -290,7 +253,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62471" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50501" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
