@@ -197,7 +197,11 @@ header {
   position: absolute;
   right: 0rem;
   top: -2.5rem;
-  color: hsl(0, 0%, 100%);
+  fill: hsl(0, 0%, 100%);
+  transition: all 0.2s;
+}
+.popup__content .popup__img .svg-close:hover {
+  fill: #ff7d1a;
 }
 .popup__content .popup__img img {
   width: 100%;
