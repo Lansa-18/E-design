@@ -193,10 +193,11 @@ header {
   position: relative;
 }
 .popup__content .popup__img .svg-close {
-  width: 5%;
+  width: 15%;
   position: absolute;
   right: 0rem;
   top: -2.5rem;
+  color: hsl(0, 0%, 100%);
 }
 .popup__content .popup__img img {
   width: 100%;
