@@ -138,6 +138,8 @@ var cartConth3 = document.querySelector(".cart__content--h3");
 var thumb1 = "/image-product-1-thumbnail.64dcbb28.jpg";
 var popup = document.querySelector(".popup");
 var closeIcon = document.querySelector(".svg-close");
+var prevsIcon = document.querySelector('.prevs-icon');
+var nextIcon = document.querySelector('.next-icon');
 
 // Implemwnting the plus sign
 amtAdd.addEventListener("click", function (e) {
