@@ -193,6 +193,7 @@ header {
   position: relative;
 }
 .popup__content .popup__img .svg-close {
+  width: 3.5%;
   position: absolute;
   right: 0rem;
   top: -2.5rem;
