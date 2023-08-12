@@ -127,4 +127,6 @@ closeIcon.addEventListener("click", () => {
   popup.classList.add("hidden");
 });
 
-
+nextIcon.addEventListener('click', ()=>{
+  
+})
