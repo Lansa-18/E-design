@@ -206,7 +206,7 @@ var changeImg = function changeImg(imgNodeList, imgRender) {
         imgRender.setAttribute("src", img4);
       }
 
-      // Removing the actuve-img class from other images
+      // Removing the active-img class from other images
       imgNodeList.forEach(function (img, index) {
         if (index !== i) {
           img.classList.remove("active-img");
@@ -247,7 +247,16 @@ nextIcon.addEventListener('click', function (e) {
   e.preventDefault();
   currentIndex = (currentIndex + 1) % newMimg2.length;
   renderedImg2.setAttribute("src", newMimg2[currentIndex]);
-  mImg2.forEach(function (cur, i) {});
+
+  // Removing the active-img class from other images
+  imgNodeList.forEach(function (img, index) {
+    if (index !== i) {
+      img.classList.remove("active-img");
+    }
+  });
+
+  // Adding the active-img class to the currently clicked image
+  cur.classList.add("active-img");
   console.log('Next was clicked');
 });
 prevsIcon.addEventListener('click', function (e) {
