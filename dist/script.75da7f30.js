@@ -233,11 +233,15 @@ renderedImg.addEventListener("click", function () {
 closeIcon.addEventListener("click", function () {
   popup.classList.add("hidden");
 });
+
+// Implementing the NEXT nd PREVS icon functionality.
+var newMimg2 = [img1, img2, img3, img4];
+console.log(newMimg2);
 var currentIndex = 0;
 nextIcon.addEventListener('click', function (e) {
   e.preventDefault();
-  currentIndex = (currentIndex + 1) % mImg2.length;
-  renderedImg2.setAttribute("src", mImg2[currentIndex]);
+  currentIndex = (currentIndex + 1) % newMimg2.length;
+  renderedImg2.setAttribute("src", newMimg2[currentIndex]);
   console.log('Next was clicked');
 });
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
