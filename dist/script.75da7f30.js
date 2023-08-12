@@ -233,9 +233,13 @@ renderedImg.addEventListener("click", function () {
 closeIcon.addEventListener("click", function () {
   popup.classList.add("hidden");
 });
-nextIcon.addEventListener('click', function () {
-  mImg2.forEach(function (cur, i) {
-    if (cur === renderedImg2) {}
+nextIcon.addEventListener('click', function (e) {
+  e.preventDefault();
+  console.log('Next was clicked');
+  mImg2.forEach(function (cur, i, arr) {
+    if (cur.src === renderedImg2) {
+      cur.setAttribute("src", img2);
+    }
   });
 });
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {

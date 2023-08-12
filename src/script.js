@@ -131,10 +131,12 @@ closeIcon.addEventListener("click", () => {
   popup.classList.add("hidden");
 });
 
-nextIcon.addEventListener('click', ()=>{
-  mImg2.forEach((cur, i) =>{
-    if (cur === renderedImg2) {
-      
+nextIcon.addEventListener('click', (e)=>{
+  e.preventDefault()
+  console.log('Next was clicked');
+  mImg2.forEach((cur, i, arr) =>{
+    if (cur.src  === renderedImg2) {
+      cur.setAttribute("src", img2)
     }
   })
 })
