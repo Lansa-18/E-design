@@ -146,6 +146,10 @@ nextIcon.addEventListener('click', (e)=>{
   currentIndex = (currentIndex + 1) % newMimg2.length;
   renderedImg2.setAttribute("src", newMimg2[currentIndex]);
 
+  mImg2.forEach((cur, i) => {
+    
+  })
+
 
   console.log('Next was clicked');
 })
@@ -155,6 +159,6 @@ prevsIcon.addEventListener('click', (e)=>{
   currentIndex = (currentIndex - 1 + newMimg2.length) % newMimg2.length;
   renderedImg2.setAttribute("src", newMimg2[currentIndex]);
 
-  
+
   console.log('prevs was clicked');
 })
