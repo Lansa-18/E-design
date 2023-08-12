@@ -91,13 +91,13 @@ const changeImg = (imgNodeList, imgRender) => {
   imgNodeList.forEach((cur, i, arr) => {
     cur.addEventListener("click", () => {
       if (i === 0) {
-        imgRender.setAttribute("src",);
+        imgRender.setAttribute("src", img1);
       } else if (i === 1) {
-        imgRender.setAttribute("src",);
+        imgRender.setAttribute("src", img2);
       } else if (i === 2) {
-        imgRender.setAttribute("src",);
+        imgRender.setAttribute("src", img3);
       } else if (i === 3) {
-        imgRender.setAttribute("src",);
+        imgRender.setAttribute("src", img4);
       }
 
       // Removing the actuve-img class from other images
