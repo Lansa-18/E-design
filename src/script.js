@@ -128,5 +128,7 @@ closeIcon.addEventListener("click", () => {
 });
 
 nextIcon.addEventListener('click', ()=>{
-  
+  mImg2.forEach((cur, i) =>{
+    
+  })
 })
