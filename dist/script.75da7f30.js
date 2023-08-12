@@ -201,9 +201,9 @@ var changeImg = function changeImg(imgNodeList, imgRender) {
       } else if (i === 1) {
         imgRender.setAttribute("src");
       } else if (i === 2) {
-        imgRender.setAttribute("src", "/image-product-3.143cec63.jpg");
+        imgRender.setAttribute("src");
       } else if (i === 3) {
-        imgRender.setAttribute("src", "/image-product-4.8eede8d0.jpg");
+        imgRender.setAttribute("src");
       }
 
       // Removing the actuve-img class from other images
