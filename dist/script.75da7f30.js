@@ -138,8 +138,8 @@ var cartConth3 = document.querySelector(".cart__content--h3");
 var thumb1 = "/image-product-1-thumbnail.64dcbb28.jpg";
 var popup = document.querySelector(".popup");
 var closeIcon = document.querySelector(".svg-close");
-var prevsIcon = document.querySelector('.prevs-icon');
-var nextIcon = document.querySelector('.next-icon');
+var prevsIcon = document.querySelector(".prevs-icon");
+var nextIcon = document.querySelector(".next-icon");
 
 // Implemwnting the plus sign
 amtAdd.addEventListener("click", function (e) {
@@ -243,13 +243,14 @@ var newMimg2 = [img1, img2, img3, img4];
 var currentIndex = 0;
 
 // the next icon functionality
-nextIcon.addEventListener('click', function (e) {
+nextIcon.addEventListener("click", function (e) {
   e.preventDefault();
   currentIndex = (currentIndex + 1) % newMimg2.length;
   renderedImg2.setAttribute("src", newMimg2[currentIndex]);
+  mImg2.forEach(function (cur, i) {});
 
   // Removing the active-img class from other images
-  imgNodeList.forEach(function (img, index) {
+  mImg2.forEach(function (img, index) {
     if (index !== i) {
       img.classList.remove("active-img");
     }
@@ -257,13 +258,13 @@ nextIcon.addEventListener('click', function (e) {
 
   // Adding the active-img class to the currently clicked image
   cur.classList.add("active-img");
-  console.log('Next was clicked');
+  console.log("Next was clicked");
 });
-prevsIcon.addEventListener('click', function (e) {
+prevsIcon.addEventListener("click", function (e) {
   e.preventDefault();
   currentIndex = (currentIndex - 1 + newMimg2.length) % newMimg2.length;
   renderedImg2.setAttribute("src", newMimg2[currentIndex]);
-  console.log('prevs was clicked');
+  console.log("prevs was clicked");
 });
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];

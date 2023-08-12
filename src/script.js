@@ -21,8 +21,8 @@ const thumb1 = "/image-product-1-thumbnail.64dcbb28.jpg";
 
 const popup = document.querySelector(".popup");
 const closeIcon = document.querySelector(".svg-close");
-const prevsIcon = document.querySelector('.prevs-icon');
-const nextIcon = document.querySelector('.next-icon');
+const prevsIcon = document.querySelector(".prevs-icon");
+const nextIcon = document.querySelector(".next-icon");
 
 // Implemwnting the plus sign
 amtAdd.addEventListener("click", (e) => {
@@ -116,7 +116,6 @@ const changeImg = (imgNodeList, imgRender) => {
 changeImg(mImg, renderedImg);
 changeImg(mImg2, renderedImg2);
 
-
 // Implementing the cart dropdown functionality
 cartIcon.addEventListener("click", () => {
   cartDrop.classList.toggle("hidden");
@@ -131,7 +130,6 @@ closeIcon.addEventListener("click", () => {
   popup.classList.add("hidden");
 });
 
-
 // Implementing the NEXT nd PREVS icon functionality.
 
 // creating an array containing the images that would be changing.
@@ -141,30 +139,32 @@ const newMimg2 = [img1, img2, img3, img4];
 let currentIndex = 0;
 
 // the next icon functionality
-nextIcon.addEventListener('click', (e)=>{
-  e.preventDefault()
+nextIcon.addEventListener("click", (e) => {
+  e.preventDefault();
   currentIndex = (currentIndex + 1) % newMimg2.length;
   renderedImg2.setAttribute("src", newMimg2[currentIndex]);
 
-       // Removing the active-img class from other images
-       imgNodeList.forEach((img, index) => {
-        if (index !== i) {
-          img.classList.remove("active-img");
-        }
-      });
+  mImg2.forEach((cur, i) => {
+    
+  })
 
-      // Adding the active-img class to the currently clicked image
-      cur.classList.add("active-img");
+  // Removing the active-img class from other images
+  mImg2.forEach((img, index) => {
+    if (index !== i) {
+      img.classList.remove("active-img");
+    }
+  });
 
+  // Adding the active-img class to the currently clicked image
+  cur.classList.add("active-img");
 
-  console.log('Next was clicked');
-})
+  console.log("Next was clicked");
+});
 
-prevsIcon.addEventListener('click', (e)=>{
-  e.preventDefault()
+prevsIcon.addEventListener("click", (e) => {
+  e.preventDefault();
   currentIndex = (currentIndex - 1 + newMimg2.length) % newMimg2.length;
   renderedImg2.setAttribute("src", newMimg2[currentIndex]);
 
-
-  console.log('prevs was clicked');
-})
+  console.log("prevs was clicked");
+});
