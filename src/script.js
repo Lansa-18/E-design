@@ -134,9 +134,8 @@ closeIcon.addEventListener("click", () => {
 nextIcon.addEventListener('click', (e)=>{
   e.preventDefault()
   console.log('Next was clicked');
-  mImg2.forEach((cur, i, arr) =>{
-    if (cur.src  === renderedImg2) {
-      cur.setAttribute("src", img2)
-    }
-  })
+  if (renderedImg2 = img1) {
+    renderedImg2.setAttribute("src", img2)
+    console.log('condition satisfied');
+  }
 })
