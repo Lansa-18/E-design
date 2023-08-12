@@ -145,18 +145,20 @@ nextIcon.addEventListener("click", (e) => {
   renderedImg2.setAttribute("src", newMimg2[currentIndex]);
 
   mImg2.forEach((cur, i) => {
-    
+
+    // Removing the active-img class from other images
+    mImg2.forEach((img, index) => {
+      if (index !== i) {
+        img.classList.remove("active-img");
+      }
+    });
+
+    // Adding the active-img class to the currently clicked image
+    cur.classList.add("active-img");
+
   })
 
-  // Removing the active-img class from other images
-  mImg2.forEach((img, index) => {
-    if (index !== i) {
-      img.classList.remove("active-img");
-    }
-  });
 
-  // Adding the active-img class to the currently clicked image
-  cur.classList.add("active-img");
 
   console.log("Next was clicked");
 });
