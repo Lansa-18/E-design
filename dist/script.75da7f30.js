@@ -120,7 +120,6 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 })({"script.js":[function(require,module,exports) {
 "use strict";
 
-function _readOnlyError(name) { throw new TypeError("\"" + name + "\" is read-only"); }
 var amtAdd = document.querySelector(".amount-plus");
 var amtSub = document.querySelector(".amount-minus");
 var amtVal = document.querySelector(".amount-value");
@@ -234,13 +233,12 @@ renderedImg.addEventListener("click", function () {
 closeIcon.addEventListener("click", function () {
   popup.classList.add("hidden");
 });
+var currentIndex = 0;
 nextIcon.addEventListener('click', function (e) {
   e.preventDefault();
+  currentIndex = (currentIndex + 1) % mImg2.length;
+  renderedImg2.setAttribute("src", mImg2[currentIndex]);
   console.log('Next was clicked');
-  if (img1, _readOnlyError("renderedImg2")) {
-    renderedImg2.setAttribute("src", img2);
-    console.log('condition satisfied');
-  }
 });
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];

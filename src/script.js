@@ -131,11 +131,11 @@ closeIcon.addEventListener("click", () => {
   popup.classList.add("hidden");
 });
 
+let currentIndex = 0;
+
 nextIcon.addEventListener('click', (e)=>{
   e.preventDefault()
+  currentIndex = (currentIndex + 1) % mImg2.length;
+  renderedImg2.setAttribute("src", mImg2[currentIndex]);
   console.log('Next was clicked');
-  if (renderedImg2 = img1) {
-    renderedImg2.setAttribute("src", img2)
-    console.log('condition satisfied');
-  }
 })
