@@ -133,9 +133,20 @@ closeIcon.addEventListener("click", () => {
 
 
 // Implementing the NEXT nd PREVS icon functionality.
+
+// creating an array containing the images that would be changing.
 const newMimg2 = [img1, img2, img3, img4];
-console.log(newMimg2);
+
+// setting a new count to keep track of the current index.
 let currentIndex = 0;
+
+// the next icon functionality
+nextIcon.addEventListener('click', (e)=>{
+  e.preventDefault()
+  currentIndex = (currentIndex + 1) % newMimg2.length;
+  renderedImg2.setAttribute("src", newMimg2[currentIndex]);
+  console.log('Next was clicked');
+})
 
 nextIcon.addEventListener('click', (e)=>{
   e.preventDefault()
