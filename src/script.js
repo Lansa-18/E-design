@@ -80,6 +80,10 @@ amtSubmit.addEventListener("click", () => {
 });
 
 // function that changes img-thumbnails on click
+const img1 = "/image-product-1.12c5dacc.jpg";
+const img2 = "image-product-2.a6df5b34.jpg";
+const img3 = "/image-product-3.143cec63.jpg";
+const img4 = "/image-product-4.8eede8d0.jpg";
 
 const changeImg = (imgNodeList, imgRender) => {
   // Implementing the img-thumbnail functionality
@@ -87,9 +91,9 @@ const changeImg = (imgNodeList, imgRender) => {
   imgNodeList.forEach((cur, i, arr) => {
     cur.addEventListener("click", () => {
       if (i === 0) {
-        imgRender.setAttribute("src", "/image-product-1.12c5dacc.jpg");
+        imgRender.setAttribute("src",);
       } else if (i === 1) {
-        imgRender.setAttribute("src", "image-product-2.a6df5b34.jpg");
+        imgRender.setAttribute("src",);
       } else if (i === 2) {
         imgRender.setAttribute("src", "/image-product-3.143cec63.jpg");
       } else if (i === 3) {
@@ -129,6 +133,8 @@ closeIcon.addEventListener("click", () => {
 
 nextIcon.addEventListener('click', ()=>{
   mImg2.forEach((cur, i) =>{
-    
+    if (cur === renderedImg2) {
+      
+    }
   })
 })

@@ -187,16 +187,19 @@ amtSubmit.addEventListener("click", function () {
 });
 
 // function that changes img-thumbnails on click
-
+var img1 = "/image-product-1.12c5dacc.jpg";
+var img2 = "image-product-2.a6df5b34.jpg";
+var img3 = "/image-product-3.143cec63.jpg";
+var img4 = "/image-product-4.8eede8d0.jpg";
 var changeImg = function changeImg(imgNodeList, imgRender) {
   // Implementing the img-thumbnail functionality
 
   imgNodeList.forEach(function (cur, i, arr) {
     cur.addEventListener("click", function () {
       if (i === 0) {
-        imgRender.setAttribute("src", "/image-product-1.12c5dacc.jpg");
+        imgRender.setAttribute("src");
       } else if (i === 1) {
-        imgRender.setAttribute("src", "image-product-2.a6df5b34.jpg");
+        imgRender.setAttribute("src");
       } else if (i === 2) {
         imgRender.setAttribute("src", "/image-product-3.143cec63.jpg");
       } else if (i === 3) {
@@ -231,7 +234,9 @@ closeIcon.addEventListener("click", function () {
   popup.classList.add("hidden");
 });
 nextIcon.addEventListener('click', function () {
-  mImg2.forEach(function (cur, i) {});
+  mImg2.forEach(function (cur, i) {
+    if (cur === renderedImg2) {}
+  });
 });
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
