@@ -147,6 +147,7 @@ nextIcon.addEventListener("click", (e) => {
 
 
   console.log("Next was clicked");
+  
 });
 
 prevsIcon.addEventListener("click", (e) => {
