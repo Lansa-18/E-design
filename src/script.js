@@ -143,8 +143,6 @@ nextIcon.addEventListener("click", (e) => {
   e.preventDefault();
   currentIndex = (currentIndex + 1) % newMimg2.length;
   renderedImg2.setAttribute("src", newMimg2[currentIndex]);
-  
-
 
   console.log("Next was clicked");
 });
