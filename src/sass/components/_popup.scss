@@ -1,91 +1,93 @@
 @use "../abstracts" as *;
 
-.popup{
-    background-color: $black-o;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    z-index: 3000;
-    transition: all 0.5s;
-    // opacity: 0;
-    // visibility: hidden;
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(20px);
+.popup {
+  background-color: $black-o;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 3000;
+  transition: all 0.5s;
+  // opacity: 0;
+  // visibility: hidden;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(20px);
 
+  &__content {
+    @include center-vertical-horizontal;
+    // border: 1px solid red;
+    width: 34%;
 
-    &__content{
-        @include center-vertical-horizontal;
-        // border: 1px solid red;
-        width: 34%;
+    .popup__img {
+      width: 100%;
+      position: relative;
 
-        .popup__img{
-            width: 100%;
-            position: relative;
+      .svg-close {
+        width: 3.5%;
+        position: absolute;
+        right: 0rem;
+        top: -2.5rem;
+        fill: $white;
+        transition: all 0.2s;
 
-            .svg-close{
-                width: 3.5%;
-                position: absolute;
-                right: 0rem;
-                top: -2.5rem;
-                fill: $white;
-                transition: all .2s;
-
-                &:hover{
-                    fill: $pry-orange;
-                }
-            }
-
-            img{
-                width: 100%;
-                display: block;
-                border-radius: 0.7rem;
-            }
-
-            .prevs-div, .next-div{
-                background-color: $white;
-                border-radius: 50%;
-                width: 35px;
-                height: 35px;
-                position: absolute;
-                bottom: 50%;
-
-                .arrow-left{
-                    @include center-vertical-horizontal;
-                    @include arrow-icons;
-                    left: 1.3rem;
-                    // position: relative;
-
-                    &:hover{
-                        stroke: $pry-orange;
-                    }
-                }
-            }
-
-            .prevs-div{
-                left: -1.4rem;
-            }
-            .next-div{
-                right: -1.4rem;
-            }
+        &:hover {
+          fill: $pry-orange;
         }
+      }
 
-        .popup__img-gallery{
-            width: 90%;
-            margin: 2rem auto 0 auto;
-            @include dflexcomp;
-            
-            img{
-                width: 20%;
+      img {
+        width: 100%;
+        display: block;
+        border-radius: 0.7rem;
+      }
 
-                border-radius: .7rem;
-            }
+      .prevs-div {
+        @include arrow-divs;
+        left: -1.4rem;
+
+        .arrow-left {
+          @include center-vertical-horizontal;
+          @include arrow-icons;
+          left: 1.3rem;
+
+          &:hover {
+            stroke: $pry-orange;
+          }
         }
+      }
+
+      .next-div {
+        @include arrow-divs;
+        right: -1.4rem;
+
+        .arrow-right {
+            @include center-vertical-horizontal;
+            @include arrow-icons;
+            left: 1.5rem;
+  
+            &:hover {
+              stroke: $pry-orange;
+            }
+          }
+      }
     }
 
-    &:target{
-        opacity: 1;
-        visibility: visible;
+    .popup__img-gallery {
+      width: 90%;
+      margin: 2rem auto 0 auto;
+      @include dflexcomp;
+
+      img {
+        width: 20%;
+
+        border-radius: 0.7rem;
+      }
     }
+  }
+
+  &:target {
+    opacity: 1;
+    visibility: visible;
+  }
 }

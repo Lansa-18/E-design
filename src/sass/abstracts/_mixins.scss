@@ -45,6 +45,15 @@ $breakpoints: (
   transform: translate(-50%, -50%);
 }
 
+@mixin arrow-divs{
+  background-color: white;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  bottom: 50%;
+}
+
 @mixin arrow-icons {
   width: 35%;
   display: inline-block;
