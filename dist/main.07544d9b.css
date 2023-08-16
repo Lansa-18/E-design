@@ -222,7 +222,11 @@ header {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 35%;
-  border: 1px solid blue;
+  position: absolute;
+  top: 6.8rem;
+  left: 1.3rem;
+  fill: hsl(0, 0%, 100%);
+  stroke: black;
 }
 .popup__content .popup__img .prevs-div {
   left: -1.4rem;
