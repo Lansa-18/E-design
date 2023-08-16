@@ -216,7 +216,7 @@ header {
   position: absolute;
   bottom: 50%;
 }
-.popup__content .popup__img .prevs-div .arrow-icon, .popup__content .popup__img .next-div .arrow-icon {
+.popup__content .popup__img .prevs-div .arrow-left, .popup__content .popup__img .next-div .arrow-left {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -227,15 +227,13 @@ header {
   left: 1.3rem;
   fill: hsl(0, 0%, 100%);
   stroke: black;
-  border: 1px solid blue;
   transition: all 0.2s;
 }
-.popup__content .popup__img .prevs-div .arrow-icon:hover, .popup__content .popup__img .next-div .arrow-icon:hover {
+.popup__content .popup__img .prevs-div .arrow-left:hover, .popup__content .popup__img .next-div .arrow-left:hover {
   stroke: #ff7d1a;
 }
 .popup__content .popup__img .prevs-div {
   left: -1.4rem;
-  border: 1px solid red;
 }
 .popup__content .popup__img .next-div {
   right: -1.4rem;
