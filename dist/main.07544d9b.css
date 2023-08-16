@@ -222,6 +222,7 @@ header {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 35%;
+  display: inline-block;
   top: 6.8rem;
   left: 1.3rem;
   fill: hsl(0, 0%, 100%);
