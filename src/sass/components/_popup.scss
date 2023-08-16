@@ -53,6 +53,7 @@
 
                 .arrow-left{
                     @include center-vertical-horizontal;
+                    @include arrow-icons;
                     left: 1.3rem;
                     // position: relative;
 
