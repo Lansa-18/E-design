@@ -62,14 +62,14 @@
         right: -1.4rem;
 
         .arrow-right {
-            @include center-vertical-horizontal;
-            @include arrow-icons;
-            left: 1.5rem;
-  
-            &:hover {
-              stroke: $pry-orange;
-            }
+          @include center-vertical-horizontal;
+          @include arrow-icons;
+          left: 1.5rem;
+
+          &:hover {
+            stroke: $pry-orange;
           }
+        }
       }
     }
 
