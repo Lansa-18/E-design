@@ -54,11 +54,13 @@
                 img{
                     @include center-vertical-horizontal;
                     width: 35%;
+                    border: 1px solid blue;
                 }
             }
 
             .prevs-div{
                 left: -1.4rem;
+                border: 1px solid red;
             }
             .next-div{
                 right: -1.4rem;
