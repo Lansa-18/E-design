@@ -51,7 +51,7 @@
                 position: absolute;
                 bottom: 50%;
 
-                img{
+                .arrow-icon{
                     @include center-vertical-horizontal;
                     width: 35%;
                     border: 1px solid blue;
