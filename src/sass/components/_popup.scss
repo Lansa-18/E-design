@@ -53,14 +53,8 @@
 
                 .arrow-left{
                     @include center-vertical-horizontal;
-                    width: 35%;
-                    display: inline-block;
-                    // position: relative;
-                    top: 6.8rem;
                     left: 1.3rem;
-                    fill: $white;
-                    stroke: $black;
-                    transition: all .2s;
+                    // position: relative;
 
                     &:hover{
                         stroke: $pry-orange;

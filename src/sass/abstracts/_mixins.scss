@@ -40,3 +40,12 @@ $breakpoints: (
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+@mixin arrow-icons{
+  width: 35%;
+  display: inline-block;
+  top: 6.8rem;
+  fill: $white;
+  stroke: $black;
+  transition: all .2s;
+}
