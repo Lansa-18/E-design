@@ -54,14 +54,17 @@
                 .arrow-icon{
                     @include center-vertical-horizontal;
                     width: 35%;
-                    position: absolute;
+                    // display: inline;
+                    // position: relative;
                     top: 6.8rem;
                     left: 1.3rem;
                     fill: $white;
                     stroke: $black;
+                    border: 1px solid blue;
+                    transition: all .2s;
 
                     &:hover{
-                        
+                        stroke: $pry-orange;
                     }
                 }
             }
