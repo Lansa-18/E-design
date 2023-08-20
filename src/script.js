@@ -124,6 +124,7 @@ cartIcon.addEventListener("click", () => {
 // Implementing img-popup
 renderedImg.addEventListener("click", () => {
   popup.classList.remove("hidden");
+  
 });
 
 closeIcon.addEventListener("click", () => {
