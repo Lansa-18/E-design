@@ -13,7 +13,7 @@ const renderedImg2 = document.querySelector(".render-img2");
 
 const cartIcon = document.querySelector(".img-cart");
 const cartDrop = document.querySelector(".cart__dropdown");
-const cartDropCont = document.querySelector('.cart__dropdown--contents');
+const cartDropCont = document.querySelector(".cart__dropdown--contents");
 const cartConth3 = document.querySelector(".cart__content--h3");
 
 // Defining img file path of the images
@@ -37,8 +37,8 @@ amtSub.addEventListener("click", (e) => {
 });
 
 let cartItem;
-cartItem = document.createElement('div');
-cartItem.classList.add('cart__content--flex');
+cartItem = document.createElement("div");
+cartItem.classList.add("cart__content--flex");
 //  Function responsibe for adding items into the cart
 const addToCart = (cartamt) => {
   // calculation of the price of shoe
@@ -53,20 +53,20 @@ const addToCart = (cartamt) => {
     <img class="img-delete" src="/icon-delete.022a9515.svg" alt="icon-delete">
     `;
 
-    cartDropCont.appendChild(cartItem);
+  cartDropCont.appendChild(cartItem);
 
-    // Event delegation for the functionality
-    cartDropCont.addEventListener('click', (e)=>{
-      if (e.target.classList.contains('img-delete')) {
-        cartItem = e.target.closest('.cart__content--flex');
-        if (cartItem) {
-          cartItem.remove();
-          cartAmt.style.display = 'none';
-          cartConth3.classList.remove('hidden')
-        }
+  // Event delegation for the functionality
+  cartDropCont.addEventListener("click", (e) => {
+    if (e.target.classList.contains("img-delete")) {
+      cartItem = e.target.closest(".cart__content--flex");
+      if (cartItem) {
+        cartItem.remove();
+        cartAmt.style.display = "none";
+        cartConth3.classList.remove("hidden");
       }
-    })
-  };
+    }
+  });
+};
 
 // Implementing the add to cart functionality
 let cartAmtHolder = [];
