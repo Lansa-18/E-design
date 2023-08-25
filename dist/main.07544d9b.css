@@ -127,8 +127,6 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 90%;
-  margin: auto;
 }
 .nav__right .cart__dropdown--contents .cart__content--flex .img-thumb {
   width: 20%;

@@ -90,8 +90,6 @@ header {
 
         .cart__content--flex {
           @include dflexcomp;
-          width: 90%;
-          margin: auto;
 
           .img-thumb {
             width: 20%;
