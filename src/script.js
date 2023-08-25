@@ -139,18 +139,20 @@ const newMimg2 = [img1, img2, img3, img4];
 let currentIndex = 0;
 
 // the next icon functionality
-nextIcon.addEventListener("click", (e) => {
-  e.preventDefault();
-  currentIndex = (currentIndex + 1) % newMimg2.length;
-  renderedImg2.setAttribute("src", newMimg2[currentIndex]);
+// nextIcon.addEventListener("click", (e) => {
+//   e.preventDefault();
+//   currentIndex = (currentIndex + 1) % newMimg2.length;
+//   renderedImg2.setAttribute("src", newMimg2[currentIndex]);
 
-  console.log("Next was clicked");
-});
+//   console.log("Next was clicked");
+// });
 
-prevsIcon.addEventListener("click", (e) => {
-  e.preventDefault();
-  currentIndex = (currentIndex - 1 + newMimg2.length) % newMimg2.length;
-  renderedImg2.setAttribute("src", newMimg2[currentIndex]);
+// prevsIcon.addEventListener("click", (e) => {
+//   e.preventDefault();
+//   currentIndex = (currentIndex - 1 + newMimg2.length) % newMimg2.length;
+//   renderedImg2.setAttribute("src", newMimg2[currentIndex]);
 
-  console.log("prevs was clicked");
-});
+//   console.log("prevs was clicked");
+// });
+
+// console.log(mImg);

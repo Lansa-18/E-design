@@ -243,18 +243,23 @@ var newMimg2 = [img1, img2, img3, img4];
 var currentIndex = 0;
 
 // the next icon functionality
-nextIcon.addEventListener("click", function (e) {
-  e.preventDefault();
-  currentIndex = (currentIndex + 1) % newMimg2.length;
-  renderedImg2.setAttribute("src", newMimg2[currentIndex]);
-  console.log("Next was clicked");
-});
-prevsIcon.addEventListener("click", function (e) {
-  e.preventDefault();
-  currentIndex = (currentIndex - 1 + newMimg2.length) % newMimg2.length;
-  renderedImg2.setAttribute("src", newMimg2[currentIndex]);
-  console.log("prevs was clicked");
-});
+// nextIcon.addEventListener("click", (e) => {
+//   e.preventDefault();
+//   currentIndex = (currentIndex + 1) % newMimg2.length;
+//   renderedImg2.setAttribute("src", newMimg2[currentIndex]);
+
+//   console.log("Next was clicked");
+// });
+
+// prevsIcon.addEventListener("click", (e) => {
+//   e.preventDefault();
+//   currentIndex = (currentIndex - 1 + newMimg2.length) % newMimg2.length;
+//   renderedImg2.setAttribute("src", newMimg2[currentIndex]);
+
+//   console.log("prevs was clicked");
+// });
+
+// console.log(mImg);
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -280,7 +285,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58437" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53996" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
