@@ -131,6 +131,7 @@ var renderedImg = document.querySelector(".render-img");
 var renderedImg2 = document.querySelector(".render-img2");
 var cartIcon = document.querySelector(".img-cart");
 var cartDrop = document.querySelector(".cart__dropdown");
+var cartDropCont = document.querySelector('.cart__dropdown--contents');
 var cartContFlex = document.querySelector(".cart__content--flex");
 var cartConth3 = document.querySelector(".cart__content--h3");
 
