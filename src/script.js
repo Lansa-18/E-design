@@ -14,7 +14,7 @@ const renderedImg2 = document.querySelector(".render-img2");
 const cartIcon = document.querySelector(".img-cart");
 const cartDrop = document.querySelector(".cart__dropdown");
 const cartDropCont = document.querySelector('.cart__dropdown--contents');
-// const cartContFlex = document.querySelector(".cart__content--flex");
+const cartContFlex = document.querySelector(".cart__content--flex");
 const cartConth3 = document.querySelector(".cart__content--h3");
 
 // Defining img file path of the images
@@ -37,12 +37,13 @@ amtSub.addEventListener("click", (e) => {
   amtVal.textContent > 0 ? amtVal.textContent-- : 0;
 });
 
+let cartItem;
 //  Function responsibe for adding items into the cart
 const addToCart = (cartamt) => {
   // calculation of the price of shoe
   const priceShoe = 125 * cartamt;
 
-  const cartItem = document.createElement('div');
+  cartItem = document.createElement('div');
   cartItem.classList.add('cart__content--flex');
 
   cartItem.innerHTML = `

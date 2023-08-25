@@ -132,7 +132,7 @@ var renderedImg2 = document.querySelector(".render-img2");
 var cartIcon = document.querySelector(".img-cart");
 var cartDrop = document.querySelector(".cart__dropdown");
 var cartDropCont = document.querySelector('.cart__dropdown--contents');
-// const cartContFlex = document.querySelector(".cart__content--flex");
+var cartContFlex = document.querySelector(".cart__content--flex");
 var cartConth3 = document.querySelector(".cart__content--h3");
 
 // Defining img file path of the images
@@ -153,12 +153,12 @@ amtSub.addEventListener("click", function (e) {
   e.preventDefault();
   amtVal.textContent > 0 ? amtVal.textContent-- : 0;
 });
-
+var cartItem;
 //  Function responsibe for adding items into the cart
 var addToCart = function addToCart(cartamt) {
   // calculation of the price of shoe
   var priceShoe = 125 * cartamt;
-  var cartItem = document.createElement('div');
+  cartItem = document.createElement('div');
   cartItem.classList.add('cart__content--flex');
   cartItem.innerHTML = "\n    <img class=\"img-thumb\" src = ".concat(thumb1, " alt=\"shoe1-thumb\">\n    <div class=\"content-texts\">\n      <p class=\"p1\">Fall Limited Edition Sneakers</p>\n      <p class=\"p2\">$125 x ").concat(cartamt, " = <span>$").concat(priceShoe, ".00</span></p>\n    </div>\n    <img class=\"img-delete\" src=\"/icon-delete.022a9515.svg\" alt=\"icon-delete\">\n    ");
   cartDropCont.appendChild(cartItem);
