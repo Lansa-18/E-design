@@ -44,9 +44,6 @@ const addToCart = (cartamt) => {
   // calculation of the price of shoe
   const priceShoe = 125 * cartamt;
 
-  // cartItem = document.createElement('div');
-  // cartItem.classList.add('cart__content--flex');
-
   cartItem.innerHTML = `
     <img class="img-thumb" src = ${thumb1} alt="shoe1-thumb">
     <div class="content-texts">
@@ -58,7 +55,6 @@ const addToCart = (cartamt) => {
 
     cartDropCont.appendChild(cartItem);
   };
-  // cartItem = document.querySelector('.cart__content--flex');
 
 // Implementing the add to cart functionality
 let cartAmtHolder = [];

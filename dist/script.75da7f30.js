@@ -159,14 +159,9 @@ cartItem.classList.add('cart__content--flex');
 var addToCart = function addToCart(cartamt) {
   // calculation of the price of shoe
   var priceShoe = 125 * cartamt;
-
-  // cartItem = document.createElement('div');
-  // cartItem.classList.add('cart__content--flex');
-
   cartItem.innerHTML = "\n    <img class=\"img-thumb\" src = ".concat(thumb1, " alt=\"shoe1-thumb\">\n    <div class=\"content-texts\">\n      <p class=\"p1\">Fall Limited Edition Sneakers</p>\n      <p class=\"p2\">$125 x ").concat(cartamt, " = <span>$").concat(priceShoe, ".00</span></p>\n    </div>\n    <img class=\"img-delete\" src=\"/icon-delete.022a9515.svg\" alt=\"icon-delete\">\n    ");
   cartDropCont.appendChild(cartItem);
 };
-// cartItem = document.querySelector('.cart__content--flex');
 
 // Implementing the add to cart functionality
 var cartAmtHolder = [];
