@@ -132,7 +132,6 @@ var renderedImg2 = document.querySelector(".render-img2");
 var cartIcon = document.querySelector(".img-cart");
 var cartDrop = document.querySelector(".cart__dropdown");
 var cartDropCont = document.querySelector('.cart__dropdown--contents');
-var cartContFlex = document.querySelector(".cart__content--flex");
 var cartConth3 = document.querySelector(".cart__content--h3");
 
 // Defining img file path of the images
@@ -162,17 +161,13 @@ var addToCart = function addToCart(cartamt) {
   cartItem.classList.add('cart__content--flex');
   cartItem.innerHTML = "\n    <img class=\"img-thumb\" src = ".concat(thumb1, " alt=\"shoe1-thumb\">\n    <div class=\"content-texts\">\n      <p class=\"p1\">Fall Limited Edition Sneakers</p>\n      <p class=\"p2\">$125 x ").concat(cartamt, " = <span>$").concat(priceShoe, ".00</span></p>\n    </div>\n    <img class=\"img-delete\" src=\"/icon-delete.022a9515.svg\" alt=\"icon-delete\">\n    ");
   cartDropCont.appendChild(cartItem);
+  console.log(cartItem);
 };
-
-// const delIcon = document.querySelector('.img-delete');
-
-// delIcon.addEventListener('click', ()=>{
-//     console.log('i was clicked');
-// })
 
 // Implementing the add to cart functionality
 var cartAmtHolder = [];
 amtSubmit.addEventListener("click", function () {
+  cartItem = document.querySelector(".cart__content--flex");
   // setting the cart amount to be visible
   cartAmt.style.display = "block";
   cartAmtHolder.push(amtVal.textContent);
@@ -184,7 +179,7 @@ amtSubmit.addEventListener("click", function () {
   }, 0);
 
   // Updating the UI based on the condition true or false of the amtTotal variable.
-  amtTotal > 0 ? (cartAmt.textContent = amtTotal, cartConth3.classList.add("hidden"), cartContFlex.style.display = "flex") : (cartAmt.style.display = "none", cartContFlex.style.display = "none");
+  amtTotal > 0 ? (cartAmt.textContent = amtTotal, cartConth3.classList.add("hidden"), cartItem.style.display = "flex") : (cartAmt.style.display = "none", cartItem.style.display = "none");
 
   // calling the function addToCart to display the UI in the cart.
   addToCart(cartAmt.textContent);

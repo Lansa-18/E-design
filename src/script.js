@@ -14,7 +14,6 @@ const renderedImg2 = document.querySelector(".render-img2");
 const cartIcon = document.querySelector(".img-cart");
 const cartDrop = document.querySelector(".cart__dropdown");
 const cartDropCont = document.querySelector('.cart__dropdown--contents');
-const cartContFlex = document.querySelector(".cart__content--flex");
 const cartConth3 = document.querySelector(".cart__content--h3");
 
 // Defining img file path of the images
@@ -56,17 +55,13 @@ const addToCart = (cartamt) => {
     `;
 
     cartDropCont.appendChild(cartItem);
-};
-
-// const delIcon = document.querySelector('.img-delete');
-
-// delIcon.addEventListener('click', ()=>{
-//     console.log('i was clicked');
-// })
+    console.log(cartItem);
+  };
 
 // Implementing the add to cart functionality
 let cartAmtHolder = [];
 amtSubmit.addEventListener("click", () => {
+  cartItem = document.querySelector(".cart__content--flex");
   // setting the cart amount to be visible
   cartAmt.style.display = "block";
   cartAmtHolder.push(amtVal.textContent);
@@ -79,8 +74,8 @@ amtSubmit.addEventListener("click", () => {
   amtTotal > 0
     ? ((cartAmt.textContent = amtTotal),
       cartConth3.classList.add("hidden"),
-      (cartContFlex.style.display = "flex"))
-    : ((cartAmt.style.display = "none"), (cartContFlex.style.display = "none"));
+      (cartItem.style.display = "flex"))
+    : ((cartAmt.style.display = "none"), (cartItem.style.display = "none"));
 
   // calling the function addToCart to display the UI in the cart.
   addToCart(cartAmt.textContent);
