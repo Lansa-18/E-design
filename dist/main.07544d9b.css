@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
 *,
 *::after,
 *::before {
@@ -24,6 +24,10 @@ html {
   html {
     font-size: 50%;
   }
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
 }
 
 .active-img {
