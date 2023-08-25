@@ -53,6 +53,8 @@ const addToCart = (cartamt) => {
     </div>
     <img class="img-delete" src="/icon-delete.022a9515.svg" alt="icon-delete">
     `;
+
+    cartDropCont.appendChild(cartItem);
 };
 
 // const delIcon = document.querySelector('.img-delete');
