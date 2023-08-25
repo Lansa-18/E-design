@@ -161,6 +161,18 @@ var addToCart = function addToCart(cartamt) {
   var priceShoe = 125 * cartamt;
   cartItem.innerHTML = "\n    <img class=\"img-thumb\" src = ".concat(thumb1, " alt=\"shoe1-thumb\">\n    <div class=\"content-texts\">\n      <p class=\"p1\">Fall Limited Edition Sneakers</p>\n      <p class=\"p2\">$125 x ").concat(cartamt, " = <span>$").concat(priceShoe, ".00</span></p>\n    </div>\n    <img class=\"img-delete\" src=\"/icon-delete.022a9515.svg\" alt=\"icon-delete\">\n    ");
   cartDropCont.appendChild(cartItem);
+
+  // Event delegation for the functionality
+  cartDropCont.addEventListener('click', function (e) {
+    if (e.target.classList.contains('img-delete')) {
+      cartItem = e.target.closest('.cart__content--flex');
+      if (cartItem) {
+        cartItem.remove();
+        cartAmt.style.display = 'none';
+        cartConth3.classList.remove('hidden');
+      }
+    }
+  });
 };
 
 // Implementing the add to cart functionality

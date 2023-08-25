@@ -54,6 +54,18 @@ const addToCart = (cartamt) => {
     `;
 
     cartDropCont.appendChild(cartItem);
+
+    // Event delegation for the functionality
+    cartDropCont.addEventListener('click', (e)=>{
+      if (e.target.classList.contains('img-delete')) {
+        cartItem = e.target.closest('.cart__content--flex');
+        if (cartItem) {
+          cartItem.remove();
+          cartAmt.style.display = 'none';
+          cartConth3.classList.remove('hidden')
+        }
+      }
+    })
   };
 
 // Implementing the add to cart functionality
