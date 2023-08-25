@@ -158,6 +158,7 @@ amtSub.addEventListener("click", function (e) {
 var addToCart = function addToCart(cartamt) {
   // calculation of the price of shoe
   var priceShoe = 125 * cartamt;
+  var cartItem = document.createElement('div');
   cartContFlex.innerHTML = "\n    <img class=\"img-thumb\" src = ".concat(thumb1, " alt=\"shoe1-thumb\">\n    <div class=\"content-texts\">\n      <p class=\"p1\">Fall Limited Edition Sneakers</p>\n      <p class=\"p2\">$125 x ").concat(cartamt, " = <span>$").concat(priceShoe, ".00</span></p>\n    </div>\n    <img class=\"img-delete\" src=\"/icon-delete.022a9515.svg\" alt=\"icon-delete\">\n    ");
 };
 
