@@ -37,13 +37,15 @@ amtSub.addEventListener("click", (e) => {
 });
 
 let cartItem;
+cartItem = document.createElement('div');
+cartItem.classList.add('cart__content--flex');
 //  Function responsibe for adding items into the cart
 const addToCart = (cartamt) => {
   // calculation of the price of shoe
   const priceShoe = 125 * cartamt;
 
-  cartItem = document.createElement('div');
-  cartItem.classList.add('cart__content--flex');
+  // cartItem = document.createElement('div');
+  // cartItem.classList.add('cart__content--flex');
 
   cartItem.innerHTML = `
     <img class="img-thumb" src = ${thumb1} alt="shoe1-thumb">
@@ -55,13 +57,12 @@ const addToCart = (cartamt) => {
     `;
 
     cartDropCont.appendChild(cartItem);
-    console.log(cartItem);
   };
+  // cartItem = document.querySelector('.cart__content--flex');
 
 // Implementing the add to cart functionality
 let cartAmtHolder = [];
 amtSubmit.addEventListener("click", () => {
-  cartItem = document.querySelector(".cart__content--flex");
   // setting the cart amount to be visible
   cartAmt.style.display = "block";
   cartAmtHolder.push(amtVal.textContent);
