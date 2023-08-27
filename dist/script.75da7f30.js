@@ -143,6 +143,9 @@ var closeIcon = document.querySelector(".svg-close");
 var prevsIcon = document.querySelector(".prevs-icon");
 var nextIcon = document.querySelector(".next-icon");
 
+// Slider
+var slides = document.querySelectorAll('.slide');
+
 // Implemwnting the plus sign
 amtAdd.addEventListener("click", function (e) {
   e.preventDefault();

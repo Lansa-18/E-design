@@ -211,56 +211,6 @@ header {
   display: block;
   border-radius: 0.7rem;
 }
-.popup__content .popup__img .prevs-div {
-  background-color: white;
-  border-radius: 50%;
-  width: 35px;
-  height: 35px;
-  position: absolute;
-  bottom: 50%;
-  left: -1.4rem;
-}
-.popup__content .popup__img .prevs-div .arrow-left {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 35%;
-  display: inline-block;
-  top: 6.8rem;
-  fill: white;
-  stroke: black;
-  transition: all 0.2s;
-  left: 1.3rem;
-}
-.popup__content .popup__img .prevs-div .arrow-left:hover {
-  stroke: #ff7d1a;
-}
-.popup__content .popup__img .next-div {
-  background-color: white;
-  border-radius: 50%;
-  width: 35px;
-  height: 35px;
-  position: absolute;
-  bottom: 50%;
-  right: -1.4rem;
-}
-.popup__content .popup__img .next-div .arrow-right {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 35%;
-  display: inline-block;
-  top: 6.8rem;
-  fill: white;
-  stroke: black;
-  transition: all 0.2s;
-  left: 1.5rem;
-}
-.popup__content .popup__img .next-div .arrow-right:hover {
-  stroke: #ff7d1a;
-}
 .popup__content .popup__img-gallery {
   width: 90%;
   margin: 2rem auto 0 auto;

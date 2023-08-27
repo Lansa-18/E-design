@@ -42,35 +42,35 @@
         border-radius: 0.7rem;
       }
 
-      .prevs-div {
-        @include arrow-divs;
-        left: -1.4rem;
+      // .prevs-div {
+      //   @include arrow-divs;
+      //   left: -1.4rem;
 
-        .arrow-left {
-          @include center-vertical-horizontal;
-          @include arrow-icons;
-          left: 1.3rem;
+      //   .arrow-left {
+      //     @include center-vertical-horizontal;
+      //     @include arrow-icons;
+      //     left: 1.3rem;
 
-          &:hover {
-            stroke: $pry-orange;
-          }
-        }
-      }
+      //     &:hover {
+      //       stroke: $pry-orange;
+      //     }
+      //   }
+      // }
 
-      .next-div {
-        @include arrow-divs;
-        right: -1.4rem;
+      // .next-div {
+      //   @include arrow-divs;
+      //   right: -1.4rem;
 
-        .arrow-right {
-          @include center-vertical-horizontal;
-          @include arrow-icons;
-          left: 1.5rem;
+      //   .arrow-right {
+      //     @include center-vertical-horizontal;
+      //     @include arrow-icons;
+      //     left: 1.5rem;
 
-          &:hover {
-            stroke: $pry-orange;
-          }
-        }
-      }
+      //     &:hover {
+      //       stroke: $pry-orange;
+      //     }
+      //   }
+      // }
     }
 
     .popup__img-gallery {

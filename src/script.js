@@ -27,6 +27,10 @@ const closeIcon = document.querySelector(".svg-close");
 const prevsIcon = document.querySelector(".prevs-icon");
 const nextIcon = document.querySelector(".next-icon");
 
+
+// Slider
+const slides = document.querySelectorAll('.slide');
+
 // Implemwnting the plus sign
 amtAdd.addEventListener("click", (e) => {
   e.preventDefault();
