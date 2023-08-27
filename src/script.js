@@ -30,6 +30,7 @@ const nextIcon = document.querySelector(".next-icon");
 
 // Slider
 const slides = document.querySelectorAll('.slide');
+slides.forEach((s, i) => s.style.transform = `translateX(${100 * i})`);
 
 // Implemwnting the plus sign
 amtAdd.addEventListener("click", (e) => {

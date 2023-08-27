@@ -145,6 +145,9 @@ var nextIcon = document.querySelector(".next-icon");
 
 // Slider
 var slides = document.querySelectorAll('.slide');
+slides.forEach(function (s, i) {
+  return s.style.transform = "translateX(".concat(100 * i, ")");
+});
 
 // Implemwnting the plus sign
 amtAdd.addEventListener("click", function (e) {
