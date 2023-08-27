@@ -257,27 +257,10 @@ closeIcon.addEventListener("click", function () {
 // Implementing the NEXT nd PREVS icon functionality.
 
 // creating an array containing the images that would be changing.
-// const newMimg2 = [img1, img2, img3, img4];
+var newMimg2 = [img1, img2, img3, img4];
 
 // setting a new count to keep track of the current index.
-// let currentIndex = 0;
-
-// the next icon functionality
-// nextIcon.addEventListener("click", (e) => {
-//   e.preventDefault();
-//   currentIndex = (currentIndex + 1) % newMimg2.length;
-//   renderedImg2.setAttribute("src", newMimg2[currentIndex]);
-
-//   console.log("Next was clicked");
-// });
-
-// prevsIcon.addEventListener("click", (e) => {
-//   e.preventDefault();
-//   currentIndex = (currentIndex - 1 + newMimg2.length) % newMimg2.length;
-//   renderedImg2.setAttribute("src", newMimg2[currentIndex]);
-
-//   console.log("prevs was clicked");
-// });
+var currentIndex = 0;
 
 // console.log(mImg);
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
