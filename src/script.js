@@ -24,8 +24,8 @@ const thumb1 = "/image-product-1-thumbnail.64dcbb28.jpg";
 
 const popup = document.querySelector(".popup");
 const closeIcon = document.querySelector(".svg-close");
-const prevsIcon = document.querySelector(".prevs-icon");
-const nextIcon = document.querySelector(".next-icon");
+const prevsIcon = document.querySelector(".prevs-div");
+const nextIcon = document.querySelector(".next-div");
 
 
 // Slider
@@ -105,10 +105,10 @@ amtSubmit.addEventListener("click", () => {
 });
 
 // function that changes img-thumbnails on click
-const img1 = "/image-product-1.12c5dacc.jpg";
-const img2 = "image-product-2.a6df5b34.jpg";
-const img3 = "/image-product-3.143cec63.jpg";
-const img4 = "/image-product-4.8eede8d0.jpg";
+// const img1 = "/image-product-1.12c5dacc.jpg";
+// const img2 = "image-product-2.a6df5b34.jpg";
+// const img3 = "/image-product-3.143cec63.jpg";
+// const img4 = "/image-product-4.8eede8d0.jpg";
 
 const changeImg = (imgNodeList, imgRender) => {
   // Implementing the img-thumbnail functionality
@@ -158,11 +158,32 @@ closeIcon.addEventListener("click", () => {
 // Implementing the NEXT nd PREVS icon functionality.
 
 // creating an array containing the images that would be changing.
+const img1 = "/image-product-1.12c5dacc.jpg";
+const img2 = "image-product-2.a6df5b34.jpg";
+const img3 = "/image-product-3.143cec63.jpg";
+const img4 = "/image-product-4.8eede8d0.jpg";
 const newMimg2 = [img1, img2, img3, img4];
 
 // setting a new count to keep track of the current index.
-let currentIndex = 0;
+let currentImageIndex = 0;
 
+const slideImg = offset =>{
+  currentImageIndex += offset;
 
+  // Handle wrapping around the gallery.
 
-// console.log(mImg);
+  if (currentImageIndex < 0) {
+    currentImageIndex = newMimg2.length - 1;
+  } else if (currentImageIndex >= newMimg2.length) {
+    currentImageIndex = 0;
+  }
+
+  // setting the source of the rendered image.
+  renderedImg2.src = newMimg2[currentImageIndex];
+}
+
+prevsIcon.addEventListener('click', () => slideImg(-1));
+
+nextIcon.addEventListener('click', () => slideImg(1));
+
+console.log(prevsIcon);

@@ -140,8 +140,8 @@ var cartConth3 = document.querySelector(".cart__content--h3");
 var thumb1 = "/image-product-1-thumbnail.64dcbb28.jpg";
 var popup = document.querySelector(".popup");
 var closeIcon = document.querySelector(".svg-close");
-var prevsIcon = document.querySelector(".prevs-icon");
-var nextIcon = document.querySelector(".next-icon");
+var prevsIcon = document.querySelector(".prevs-div");
+var nextIcon = document.querySelector(".next-div");
 
 // Slider
 // const slider = document.querySelector('.slider');
@@ -207,10 +207,11 @@ amtSubmit.addEventListener("click", function () {
 });
 
 // function that changes img-thumbnails on click
-var img1 = "/image-product-1.12c5dacc.jpg";
-var img2 = "image-product-2.a6df5b34.jpg";
-var img3 = "/image-product-3.143cec63.jpg";
-var img4 = "/image-product-4.8eede8d0.jpg";
+// const img1 = "/image-product-1.12c5dacc.jpg";
+// const img2 = "image-product-2.a6df5b34.jpg";
+// const img3 = "/image-product-3.143cec63.jpg";
+// const img4 = "/image-product-4.8eede8d0.jpg";
+
 var changeImg = function changeImg(imgNodeList, imgRender) {
   // Implementing the img-thumbnail functionality
 
@@ -257,12 +258,35 @@ closeIcon.addEventListener("click", function () {
 // Implementing the NEXT nd PREVS icon functionality.
 
 // creating an array containing the images that would be changing.
+var img1 = "/image-product-1.12c5dacc.jpg";
+var img2 = "image-product-2.a6df5b34.jpg";
+var img3 = "/image-product-3.143cec63.jpg";
+var img4 = "/image-product-4.8eede8d0.jpg";
 var newMimg2 = [img1, img2, img3, img4];
 
 // setting a new count to keep track of the current index.
-var currentIndex = 0;
+var currentImageIndex = 0;
+var slideImg = function slideImg(offset) {
+  currentImageIndex += offset;
 
-// console.log(mImg);
+  // Handle wrapping around the gallery.
+
+  if (currentImageIndex < 0) {
+    currentImageIndex = newMimg2.length - 1;
+  } else if (currentImageIndex >= newMimg2.length) {
+    currentImageIndex = 0;
+  }
+
+  // setting the source of the rendered image.
+  renderedImg2.src = newMimg2[currentImageIndex];
+};
+prevsIcon.addEventListener('click', function () {
+  return slideImg(-1);
+});
+nextIcon.addEventListener('click', function () {
+  return slideImg(1);
+});
+console.log(prevsIcon);
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
