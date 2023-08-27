@@ -144,10 +144,12 @@ var prevsIcon = document.querySelector(".prevs-icon");
 var nextIcon = document.querySelector(".next-icon");
 
 // Slider
-var slides = document.querySelectorAll('.slide');
-slides.forEach(function (s, i) {
-  return s.style.transform = "translateX(".concat(100 * i, ")");
-});
+// const slider = document.querySelector('.slider');
+// slider.style.transform = 'scale(0.5)';
+// slider.style.overflow = 'visible';
+
+// const slides = document.querySelectorAll('.slide');
+// slides.forEach((s, i) => s.style.transform = `translateX(${100 * i})`);
 
 // Implemwnting the plus sign
 amtAdd.addEventListener("click", function (e) {
@@ -255,10 +257,10 @@ closeIcon.addEventListener("click", function () {
 // Implementing the NEXT nd PREVS icon functionality.
 
 // creating an array containing the images that would be changing.
-var newMimg2 = [img1, img2, img3, img4];
+// const newMimg2 = [img1, img2, img3, img4];
 
 // setting a new count to keep track of the current index.
-var currentIndex = 0;
+// let currentIndex = 0;
 
 // the next icon functionality
 // nextIcon.addEventListener("click", (e) => {
@@ -303,7 +305,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53996" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61156" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];

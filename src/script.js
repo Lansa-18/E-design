@@ -29,8 +29,13 @@ const nextIcon = document.querySelector(".next-icon");
 
 
 // Slider
-const slides = document.querySelectorAll('.slide');
-slides.forEach((s, i) => s.style.transform = `translateX(${100 * i})`);
+// const slider = document.querySelector('.slider');
+// slider.style.transform = 'scale(0.5)';
+// slider.style.overflow = 'visible';
+
+
+// const slides = document.querySelectorAll('.slide');
+// slides.forEach((s, i) => s.style.transform = `translateX(${100 * i})`);
 
 // Implemwnting the plus sign
 amtAdd.addEventListener("click", (e) => {
@@ -153,10 +158,10 @@ closeIcon.addEventListener("click", () => {
 // Implementing the NEXT nd PREVS icon functionality.
 
 // creating an array containing the images that would be changing.
-const newMimg2 = [img1, img2, img3, img4];
+// const newMimg2 = [img1, img2, img3, img4];
 
 // setting a new count to keep track of the current index.
-let currentIndex = 0;
+// let currentIndex = 0;
 
 // the next icon functionality
 // nextIcon.addEventListener("click", (e) => {
