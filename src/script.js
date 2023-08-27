@@ -27,12 +27,10 @@ const closeIcon = document.querySelector(".svg-close");
 const prevsIcon = document.querySelector(".prevs-div");
 const nextIcon = document.querySelector(".next-div");
 
-
 // Slider
 // const slider = document.querySelector('.slider');
 // slider.style.transform = 'scale(0.5)';
 // slider.style.overflow = 'visible';
-
 
 // const slides = document.querySelectorAll('.slide');
 // slides.forEach((s, i) => s.style.transform = `translateX(${100 * i})`);
@@ -167,11 +165,10 @@ const newMimg2 = [img1, img2, img3, img4];
 // setting a new count to keep track of the current index.
 let currentImageIndex = 0;
 
-const slideImg = offset =>{
+const slideImg = (offset) => {
   currentImageIndex += offset;
 
   // Handle wrapping around the gallery.
-
   if (currentImageIndex < 0) {
     currentImageIndex = newMimg2.length - 1;
   } else if (currentImageIndex >= newMimg2.length) {
@@ -180,10 +177,26 @@ const slideImg = offset =>{
 
   // setting the source of the rendered image.
   renderedImg2.src = newMimg2[currentImageIndex];
-}
+};
 
-prevsIcon.addEventListener('click', () => slideImg(-1));
+const updateThumbImgBorder = () => {
+  mImg2.forEach((img, index) => {
+    if (index === currentImageIndex) {
+      img.classList.add("active-img");
+    } else {
+      img.classList.remove("active-img");
+    }
+  });
+};
 
-nextIcon.addEventListener('click', () => slideImg(1));
+prevsIcon.addEventListener("click", () => {
+  slideImg(-1);
+  updateThumbImgBorder();
+});
 
-console.log(prevsIcon);
+nextIcon.addEventListener("click", () => {
+  slideImg(1);
+  updateThumbImgBorder();
+});
+
+// console.log(prevsIcon);

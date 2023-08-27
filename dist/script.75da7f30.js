@@ -270,7 +270,6 @@ var slideImg = function slideImg(offset) {
   currentImageIndex += offset;
 
   // Handle wrapping around the gallery.
-
   if (currentImageIndex < 0) {
     currentImageIndex = newMimg2.length - 1;
   } else if (currentImageIndex >= newMimg2.length) {
@@ -280,13 +279,25 @@ var slideImg = function slideImg(offset) {
   // setting the source of the rendered image.
   renderedImg2.src = newMimg2[currentImageIndex];
 };
-prevsIcon.addEventListener('click', function () {
-  return slideImg(-1);
+var updateThumbImgBorder = function updateThumbImgBorder() {
+  mImg2.forEach(function (img, index) {
+    if (index === currentImageIndex) {
+      img.classList.add("active-img");
+    } else {
+      img.classList.remove("active-img");
+    }
+  });
+};
+prevsIcon.addEventListener("click", function () {
+  slideImg(-1);
+  updateThumbImgBorder();
 });
-nextIcon.addEventListener('click', function () {
-  return slideImg(1);
+nextIcon.addEventListener("click", function () {
+  slideImg(1);
+  updateThumbImgBorder();
 });
-console.log(prevsIcon);
+
+// console.log(prevsIcon);
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
