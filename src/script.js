@@ -1,5 +1,8 @@
 "use strict";
 
+// import Swiper from 'swiper';
+// import 'swiper/scss/bundle';
+
 const amtAdd = document.querySelector(".amount-plus");
 const amtSub = document.querySelector(".amount-minus");
 const amtVal = document.querySelector(".amount-value");

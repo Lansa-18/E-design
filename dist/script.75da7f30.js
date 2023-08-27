@@ -120,6 +120,8 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 })({"script.js":[function(require,module,exports) {
 "use strict";
 
+// import Swiper from 'swiper';
+// import 'swiper/scss/bundle';
 var amtAdd = document.querySelector(".amount-plus");
 var amtSub = document.querySelector(".amount-minus");
 var amtVal = document.querySelector(".amount-value");
