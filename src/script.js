@@ -1,8 +1,5 @@
 "use strict";
 
-// import Swiper from 'swiper';
-// import 'swiper/scss/bundle';
-
 const amtAdd = document.querySelector(".amount-plus");
 const amtSub = document.querySelector(".amount-minus");
 const amtVal = document.querySelector(".amount-value");
@@ -26,14 +23,6 @@ const popup = document.querySelector(".popup");
 const closeIcon = document.querySelector(".svg-close");
 const prevsIcon = document.querySelector(".prevs-div");
 const nextIcon = document.querySelector(".next-div");
-
-// Slider
-// const slider = document.querySelector('.slider');
-// slider.style.transform = 'scale(0.5)';
-// slider.style.overflow = 'visible';
-
-// const slides = document.querySelectorAll('.slide');
-// slides.forEach((s, i) => s.style.transform = `translateX(${100 * i})`);
 
 // Implemwnting the plus sign
 amtAdd.addEventListener("click", (e) => {
@@ -102,11 +91,6 @@ amtSubmit.addEventListener("click", () => {
   addToCart(cartAmt.textContent);
 });
 
-// function that changes img-thumbnails on click
-// const img1 = "/image-product-1.12c5dacc.jpg";
-// const img2 = "image-product-2.a6df5b34.jpg";
-// const img3 = "/image-product-3.143cec63.jpg";
-// const img4 = "/image-product-4.8eede8d0.jpg";
 
 const changeImg = (imgNodeList, imgRender) => {
   // Implementing the img-thumbnail functionality

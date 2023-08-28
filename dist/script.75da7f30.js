@@ -120,8 +120,6 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 })({"script.js":[function(require,module,exports) {
 "use strict";
 
-// import Swiper from 'swiper';
-// import 'swiper/scss/bundle';
 var amtAdd = document.querySelector(".amount-plus");
 var amtSub = document.querySelector(".amount-minus");
 var amtVal = document.querySelector(".amount-value");
@@ -142,14 +140,6 @@ var popup = document.querySelector(".popup");
 var closeIcon = document.querySelector(".svg-close");
 var prevsIcon = document.querySelector(".prevs-div");
 var nextIcon = document.querySelector(".next-div");
-
-// Slider
-// const slider = document.querySelector('.slider');
-// slider.style.transform = 'scale(0.5)';
-// slider.style.overflow = 'visible';
-
-// const slides = document.querySelectorAll('.slide');
-// slides.forEach((s, i) => s.style.transform = `translateX(${100 * i})`);
 
 // Implemwnting the plus sign
 amtAdd.addEventListener("click", function (e) {
@@ -205,13 +195,6 @@ amtSubmit.addEventListener("click", function () {
   // calling the function addToCart to display the UI in the cart.
   addToCart(cartAmt.textContent);
 });
-
-// function that changes img-thumbnails on click
-// const img1 = "/image-product-1.12c5dacc.jpg";
-// const img2 = "image-product-2.a6df5b34.jpg";
-// const img3 = "/image-product-3.143cec63.jpg";
-// const img4 = "/image-product-4.8eede8d0.jpg";
-
 var changeImg = function changeImg(imgNodeList, imgRender) {
   // Implementing the img-thumbnail functionality
 
