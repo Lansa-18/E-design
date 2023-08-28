@@ -67,6 +67,7 @@ const addToCart = (cartamt) => {
       }
     }
   });
+  
 };
 
 // Implementing the add to cart functionality
