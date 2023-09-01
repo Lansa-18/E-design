@@ -54,6 +54,11 @@ header {
   display: flex;
   align-items: center;
 }
+@media (max-width: 61.999em) {
+  .nav-list {
+    display: none;
+  }
+}
 .nav li {
   list-style: none;
   font-size: 1.3rem;

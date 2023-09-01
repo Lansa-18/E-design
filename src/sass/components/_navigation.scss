@@ -11,6 +11,10 @@ header {
 
   &-list {
     @include dflexhalf;
+
+    @include mq(tab-port){
+      display: none;
+    }
   }
 
   li {
