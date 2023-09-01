@@ -13,7 +13,7 @@ header {
     @include dflexhalf;
 
     @include mq(tab-port){
-      display: none;
+      // display: none;
     }
   }
 
