@@ -41,6 +41,10 @@ header {
     @include dflexcomp;
     flex-basis: 50%;
 
+    &--hamMenu{
+      border: 1px solid red;
+    }
+
     @include mq(tab-land){
       flex-basis: 21%
     }
