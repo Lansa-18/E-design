@@ -82,7 +82,8 @@ header {
   flex-basis: 50%;
 }
 .nav__left--hamMenu {
-  border: 1px solid red;
+  width: 10%;
+  height: 2.05rem;
 }
 @media (max-width: 74.999em) {
   .nav__left {

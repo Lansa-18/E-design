@@ -42,7 +42,8 @@ header {
     flex-basis: 50%;
 
     &--hamMenu{
-      border: 1px solid red;
+      width: 10%;
+      height: 2.05rem;
     }
 
     @include mq(tab-land){
