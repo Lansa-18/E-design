@@ -54,7 +54,6 @@ header {
 
     @include mq(tab-port){
       flex-basis: 21%;
-      border: 1px solid red;
     }
   }
 
@@ -64,7 +63,6 @@ header {
 
     @include mq(tab-port){
       min-width: 7rem;
-      border: 1px solid blue;
     }
 
     .cart-div {

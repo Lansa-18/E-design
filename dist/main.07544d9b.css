@@ -95,7 +95,6 @@ header {
 @media (max-width: 61.999em) {
   .nav__left {
     flex-basis: 21%;
-    border: 1px solid red;
   }
 }
 .nav__right {
@@ -107,7 +106,6 @@ header {
 @media (max-width: 61.999em) {
   .nav__right {
     min-width: 7rem;
-    border: 1px solid blue;
   }
 }
 .nav__right .cart-div {
