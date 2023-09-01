@@ -40,20 +40,32 @@ header {
   &__left {
     @include dflexcomp;
     flex-basis: 50%;
+    min-width: 22rem;
 
     &--hamMenu{
+      display: none;
       width: 10%;
       height: 2.05rem;
+
+      @include mq(tab-port){
+        display: flex;
+      }
     }
 
-    @include mq(tab-land){
-      flex-basis: 21%
+    @include mq(tab-port){
+      flex-basis: 21%;
+      border: 1px solid red;
     }
   }
 
   &__right {
     @include dflexcomp;
     width: 8%;
+
+    @include mq(tab-port){
+      min-width: 7rem;
+      border: 1px solid blue;
+    }
 
     .cart-div {
       position: relative;
