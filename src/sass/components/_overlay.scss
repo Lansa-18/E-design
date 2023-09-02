@@ -1,7 +1,9 @@
 @use "../abstracts/" as *;
 
 .overlay{
+    display: none;
     @include mq(tab-port){
+        display: block;
         border: 1px solid red;
         background-color: white;
         height: 100vh;

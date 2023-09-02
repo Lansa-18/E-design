@@ -351,8 +351,12 @@ header {
   visibility: visible;
 }
 
+.overlay {
+  display: none;
+}
 @media (max-width: 61.999em) {
   .overlay {
+    display: block;
     border: 1px solid red;
     background-color: white;
     height: 100vh;
