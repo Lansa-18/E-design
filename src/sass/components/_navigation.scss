@@ -41,8 +41,7 @@ header {
     @include dflexcomp;
     flex-basis: 50%;
     border: 1px solid red;
-    width: 120%;
-    min-width: 22rem;
+    min-width: 52rem;
 
     &--hamMenu{
       display: none;

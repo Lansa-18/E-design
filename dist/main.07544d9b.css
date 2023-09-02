@@ -81,8 +81,7 @@ header {
   justify-content: space-between;
   flex-basis: 50%;
   border: 1px solid red;
-  width: 120%;
-  min-width: 22rem;
+  min-width: 52rem;
 }
 .nav__left--hamMenu {
   display: none;
