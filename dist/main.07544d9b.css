@@ -351,10 +351,16 @@ header {
   visibility: visible;
 }
 
-.overlay {
-  border: 1px solid red;
-  height: 100vh;
-  width: 70vw;
+@media (max-width: 61.999em) {
+  .overlay {
+    border: 1px solid red;
+    background-color: white;
+    height: 100vh;
+    width: 70vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 }
 
 .main__content {
