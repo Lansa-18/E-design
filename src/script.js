@@ -23,7 +23,7 @@ const popup = document.querySelector(".popup");
 const closeIcon = document.querySelector(".svg-close");
 const prevsIcon = document.querySelector(".prevs-div");
 const nextIcon = document.querySelector(".next-div");
-const hamMenu = document.querySelector('#hamburger-menu')
+const hamMenu = document.querySelector('#hamburger-menu');
 
 // Implemwnting the plus sign
 amtAdd.addEventListener("click", (e) => {
