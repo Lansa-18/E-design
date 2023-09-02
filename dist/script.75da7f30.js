@@ -140,6 +140,7 @@ var popup = document.querySelector(".popup");
 var closeIcon = document.querySelector(".svg-close");
 var prevsIcon = document.querySelector(".prevs-div");
 var nextIcon = document.querySelector(".next-div");
+var hamMenu = document.querySelector('#hamburger-menu');
 
 // Implemwnting the plus sign
 amtAdd.addEventListener("click", function (e) {
