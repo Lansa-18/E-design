@@ -2,7 +2,7 @@
 
 .overlay{
     display: none;
-    @include mq(tab-port){
+    @include mq(land-phone){
         display: block;
         border: 1px solid red;
         background-color: white;

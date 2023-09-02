@@ -54,7 +54,7 @@ header {
   display: flex;
   align-items: center;
 }
-@media (max-width: 61.999em) {
+@media (max-width: 47.999em) {
   .nav-list {
     display: none;
   }
@@ -87,7 +87,7 @@ header {
   width: 10%;
   height: 2.05rem;
 }
-@media (max-width: 61.999em) {
+@media (max-width: 47.999em) {
   .nav__left--hamMenu {
     display: flex;
   }
@@ -354,7 +354,7 @@ header {
 .overlay {
   display: none;
 }
-@media (max-width: 61.999em) {
+@media (max-width: 47.999em) {
   .overlay {
     display: block;
     border: 1px solid red;

@@ -12,7 +12,7 @@ header {
   &-list {
     @include dflexhalf;
 
-    @include mq(tab-port){
+    @include mq(land-phone){
       display: none;
     }
   }
@@ -47,7 +47,7 @@ header {
       width: 10%;
       height: 2.05rem;
 
-      @include mq(tab-port){
+      @include mq(land-phone){
         display: flex;
       }
     }
