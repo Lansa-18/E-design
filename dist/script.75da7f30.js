@@ -236,6 +236,7 @@ renderedImg.addEventListener("click", function () {
   popup.classList.remove("hidden");
 });
 closeIcon.addEventListener("click", function () {
+  console.log('I was ciicked');
   popup.classList.add("hidden");
 });
 

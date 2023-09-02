@@ -135,6 +135,7 @@ renderedImg.addEventListener("click", () => {
 });
 
 closeIcon.addEventListener("click", () => {
+  console.log('I was ciicked');
   popup.classList.add("hidden");
 });
 
