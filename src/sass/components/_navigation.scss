@@ -40,7 +40,6 @@ header {
   &__left {
     @include dflexcomp;
     flex-basis: 50%;
-    border: 1px solid red;
     min-width: 52rem;
 
     &--hamMenu{

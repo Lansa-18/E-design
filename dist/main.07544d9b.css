@@ -80,7 +80,6 @@ header {
   align-items: center;
   justify-content: space-between;
   flex-basis: 50%;
-  border: 1px solid red;
   min-width: 52rem;
 }
 .nav__left--hamMenu {
@@ -357,15 +356,23 @@ header {
 }
 @media (max-width: 47.999em) {
   .overlay {
-    display: block;
-    border: 1px solid red;
-    background-color: white;
     height: 100vh;
-    width: 70vw;
+    width: 100vw;
+    display: block;
     position: absolute;
     top: 0;
     left: 0;
+    border: 1px solid red;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(20px);
   }
+}
+.overlay__content {
+  background: hsl(0, 0%, 100%);
+  position: absolute;
+  height: 100vh;
+  width: 60vw;
+  border: 1px solid blue;
 }
 
 .main__content {
