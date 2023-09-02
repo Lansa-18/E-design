@@ -351,6 +351,12 @@ header {
   visibility: visible;
 }
 
+.overlay {
+  border: 1px solid red;
+  height: 100vh;
+  width: 70vw;
+}
+
 .main__content {
   width: 85%;
   margin: auto;
