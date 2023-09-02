@@ -224,6 +224,7 @@ header {
 }
 .popup__content .popup__img .svg-close {
   width: 3.5%;
+  height: 1.5rem;
   position: absolute;
   right: 0rem;
   top: -2.5rem;
@@ -372,6 +373,21 @@ header {
   position: absolute;
   height: 100vh;
   width: 66vw;
+}
+.overlay__content--close {
+  height: 1.5rem;
+}
+.overlay__content--close:hover {
+  fill: #ff7d1a;
+}
+.overlay__content--nav-list2 {
+  list-style: none;
+}
+.overlay__content--nav-list2 .nav-link {
+  color: black;
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 3.5rem;
 }
 
 .main__content {
