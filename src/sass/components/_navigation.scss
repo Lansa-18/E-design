@@ -40,6 +40,8 @@ header {
   &__left {
     @include dflexcomp;
     flex-basis: 50%;
+    border: 1px solid red;
+    width: 120%;
     min-width: 22rem;
 
     &--hamMenu{
@@ -52,7 +54,7 @@ header {
       }
     }
 
-    @include mq(tab-port){
+    @include mq(land-phone){
       flex-basis: 21%;
     }
   }

@@ -80,6 +80,8 @@ header {
   align-items: center;
   justify-content: space-between;
   flex-basis: 50%;
+  border: 1px solid red;
+  width: 120%;
   min-width: 22rem;
 }
 .nav__left--hamMenu {
@@ -92,7 +94,7 @@ header {
     display: flex;
   }
 }
-@media (max-width: 61.999em) {
+@media (max-width: 47.999em) {
   .nav__left {
     flex-basis: 21%;
   }
