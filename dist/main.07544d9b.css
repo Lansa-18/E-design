@@ -114,7 +114,6 @@ header {
 .nav__right .cart-div .img-cart {
   display: block;
   cursor: pointer;
-  border: 1px solid red;
 }
 .nav__right .cart-div .cart-amount {
   display: none;
