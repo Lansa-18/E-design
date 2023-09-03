@@ -167,6 +167,7 @@ var addToCart = function addToCart(cartamt) {
   cartDropCont.addEventListener("click", function (e) {
     // checking if the clicked element contains the 'img-delete' class.
     if (e.target.classList.contains("img-delete")) {
+      e.target.style.cursor = 'pointer';
       cartItem = e.target.closest(".cart__content--flex");
       if (cartItem) {
         cartItem.remove();
