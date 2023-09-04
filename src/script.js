@@ -193,7 +193,9 @@ nextIcon.addEventListener("click", () => {
 //   overlay.classList.add('hidden');
 // })
 
-
+hamMenu.addEventListener('click', ()=>{
+  overlay.style.display = 'block';
+})
 
 
   overlayClose.addEventListener('click', function () {

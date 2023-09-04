@@ -160,6 +160,9 @@ header {
   width: 20%;
   border-radius: 0.5rem;
 }
+.nav__right .cart__dropdown--contents .cart__content--flex .img-delete {
+  cursor: pointer;
+}
 .nav__right .cart__dropdown--contents .cart__content--flex .content-texts p {
   color: hsl(219, 9%, 45%);
   font-weight: 600;

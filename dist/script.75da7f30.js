@@ -288,6 +288,9 @@ nextIcon.addEventListener("click", function () {
 //   overlay.classList.add('hidden');
 // })
 
+hamMenu.addEventListener('click', function () {
+  overlay.style.display = 'block';
+});
 overlayClose.addEventListener('click', function () {
   overlay.style.display = 'none';
   // document.querySelector('overlay').style.display = none;

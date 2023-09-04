@@ -122,6 +122,10 @@ header {
             border-radius: 0.5rem;
           }
 
+          .img-delete{
+            cursor: pointer;
+          }
+
           .content-texts {
             p {
               color: $dark-blue;
