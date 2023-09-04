@@ -21,7 +21,8 @@
         width: 66vw;
 
         &--close{
-            height: 1.5rem;
+            height: 2rem;
+            fill: $dark-blue;
             
             &:hover{
                 fill: $pry-orange;
@@ -29,13 +30,11 @@
         }
 
         &--nav-list2{
-            // border: 1px solid red;
             list-style: none;
             margin-top: 10rem;
 
             li{
                 &:not(:last-child){
-                    // border: 1px solid blue;
                     margin-bottom: 3rem;
                 }
             }

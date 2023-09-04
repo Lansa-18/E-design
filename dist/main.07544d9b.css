@@ -376,7 +376,8 @@ header {
   width: 66vw;
 }
 .overlay__content--close {
-  height: 1.5rem;
+  height: 2rem;
+  fill: hsl(219, 9%, 45%);
 }
 .overlay__content--close:hover {
   fill: #ff7d1a;
