@@ -141,8 +141,8 @@ var closeIcon = document.querySelector(".svg-close");
 var prevsIcon = document.querySelector(".prevs-div");
 var nextIcon = document.querySelector(".next-div");
 var hamMenu = document.querySelector('#hamburger-menu');
-// const overlay = document.querySelector('.overlay');
-// const overlayClose = document.querySelector('.overlay__content--close');
+var overlay = document.querySelector('.overlay');
+var overlayClose = document.querySelector('.overlay__content--close');
 
 // Implemwnting the plus sign
 amtAdd.addEventListener("click", function (e) {
@@ -288,13 +288,9 @@ nextIcon.addEventListener("click", function () {
 //   overlay.classList.add('hidden');
 // })
 
-document.addEventListener('DOMContentLoaded', function () {
-  var overlay = document.querySelector('.overlay');
-  var overlayClose = document.querySelector('.overlay__content--close');
-  overlayClose.addEventListener('click', function () {
-    overlay.classList.add('hidden');
-    // document.querySelector('overlay').style.display = none;
-  });
+overlayClose.addEventListener('click', function () {
+  overlay.style.display = 'none';
+  // document.querySelector('overlay').style.display = none;
 });
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];

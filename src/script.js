@@ -24,8 +24,10 @@ const closeIcon = document.querySelector(".svg-close");
 const prevsIcon = document.querySelector(".prevs-div");
 const nextIcon = document.querySelector(".next-div");
 const hamMenu = document.querySelector('#hamburger-menu');
-// const overlay = document.querySelector('.overlay');
-// const overlayClose = document.querySelector('.overlay__content--close');
+
+const overlay = document.querySelector('.overlay');
+const overlayClose = document.querySelector('.overlay__content--close');
+
 
 // Implemwnting the plus sign
 amtAdd.addEventListener("click", (e) => {
@@ -191,12 +193,10 @@ nextIcon.addEventListener("click", () => {
 //   overlay.classList.add('hidden');
 // })
 
-document.addEventListener('DOMContentLoaded', function () {
-  const overlay = document.querySelector('.overlay');
-  const overlayClose = document.querySelector('.overlay__content--close');
+
+
 
   overlayClose.addEventListener('click', function () {
-    overlay.classList.add('hidden');
+    overlay.style.display = 'none';
     // document.querySelector('overlay').style.display = none;
   });
-});
