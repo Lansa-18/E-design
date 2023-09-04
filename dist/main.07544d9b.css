@@ -376,6 +376,7 @@ header {
   width: 66vw;
 }
 .overlay__content--close {
+  width: 2rem;
   height: 2rem;
   fill: hsl(219, 9%, 45%);
 }
