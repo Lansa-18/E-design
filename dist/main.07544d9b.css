@@ -383,12 +383,20 @@ header {
 }
 .overlay__content--nav-list2 {
   list-style: none;
+  margin-top: 10rem;
+}
+.overlay__content--nav-list2 li:not(:last-child) {
+  margin-bottom: 3rem;
 }
 .overlay__content--nav-list2 .nav-link {
   color: black;
   text-decoration: none;
   font-weight: 900;
   font-size: 3.5rem;
+  transition: all 0.3s;
+}
+.overlay__content--nav-list2 .nav-link:hover {
+  color: #ff7d1a;
 }
 
 .main__content {
