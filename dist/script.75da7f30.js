@@ -289,7 +289,7 @@ nextIcon.addEventListener("click", function () {
 // })
 
 document.addEventListener('DOMContentLoaded', function () {
-  var overlay = document.querySelector('.overlay__content');
+  var overlay = document.querySelector('.overlay');
   var overlayClose = document.querySelector('.overlay__content--close');
   overlayClose.addEventListener('click', function () {
     overlay.classList.add('hidden');

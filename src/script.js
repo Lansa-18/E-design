@@ -192,7 +192,7 @@ nextIcon.addEventListener("click", () => {
 // })
 
 document.addEventListener('DOMContentLoaded', function () {
-  const overlay = document.querySelector('.overlay__content');
+  const overlay = document.querySelector('.overlay');
   const overlayClose = document.querySelector('.overlay__content--close');
 
   overlayClose.addEventListener('click', function () {
