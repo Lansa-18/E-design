@@ -141,8 +141,8 @@ var closeIcon = document.querySelector(".svg-close");
 var prevsIcon = document.querySelector(".prevs-div");
 var nextIcon = document.querySelector(".next-div");
 var hamMenu = document.querySelector('#hamburger-menu');
-var overlay = document.querySelector('.overlay');
-var overlayClose = document.querySelector('.overlay__content--close');
+// const overlay = document.querySelector('.overlay');
+// const overlayClose = document.querySelector('.overlay__content--close');
 
 // Implemwnting the plus sign
 amtAdd.addEventListener("click", function (e) {
@@ -283,10 +283,18 @@ nextIcon.addEventListener("click", function () {
   slideImg(1);
   updateThumbImgBorder();
 });
-overlay.addEventListener('click', function (e) {
-  if (e.target.tagName === 'svg') {
+
+// overlayClose.addEventListener('click', (e)=>{
+//   overlay.classList.add('hidden');
+// })
+
+document.addEventListener('DOMContentLoaded', function () {
+  var overlay = document.querySelector('.overlay__content');
+  var overlayClose = document.querySelector('.overlay__content--close');
+  overlayClose.addEventListener('click', function () {
     overlay.classList.add('hidden');
-  }
+    // document.querySelector('overlay').style.display = none;
+  });
 });
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -313,7 +321,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54380" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62261" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
