@@ -141,6 +141,8 @@ var closeIcon = document.querySelector(".svg-close");
 var prevsIcon = document.querySelector(".prevs-div");
 var nextIcon = document.querySelector(".next-div");
 var hamMenu = document.querySelector('#hamburger-menu');
+var overlay = document.querySelector('.overlay');
+var overlayClose = document.querySelector('.overlay__content--close');
 
 // Implemwnting the plus sign
 amtAdd.addEventListener("click", function (e) {
@@ -281,8 +283,11 @@ nextIcon.addEventListener("click", function () {
   slideImg(1);
   updateThumbImgBorder();
 });
-
-// console.log(prevsIcon);
+overlay.addEventListener('click', function (e) {
+  if (e.target.tagName === 'svg') {
+    overlay.classList.add('hidden');
+  }
+});
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';

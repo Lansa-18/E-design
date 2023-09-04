@@ -24,6 +24,8 @@ const closeIcon = document.querySelector(".svg-close");
 const prevsIcon = document.querySelector(".prevs-div");
 const nextIcon = document.querySelector(".next-div");
 const hamMenu = document.querySelector('#hamburger-menu');
+const overlay = document.querySelector('.overlay');
+const overlayClose = document.querySelector('.overlay__content--close');
 
 // Implemwnting the plus sign
 amtAdd.addEventListener("click", (e) => {
@@ -185,4 +187,8 @@ nextIcon.addEventListener("click", () => {
   updateThumbImgBorder();
 });
 
-// console.log(prevsIcon);
+overlay.addEventListener('click', (e)=>{
+  if (e.target.tagName === 'svg') {
+    overlay.classList.add('hidden');
+  }
+})
